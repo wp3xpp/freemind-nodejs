@@ -2,7 +2,8 @@
 //RESTful主要思想是对一个资源的操作主要体现在HTTP请求方法上，而不是体现在URL上
 var url = require('url');
 var logger = require('./logger.js');
-
+var handlers = require('./controllers/handlers.js');
+var handle404 = handlers.handle404;
 
 var routes = {'all': []};
 var app = {};
@@ -18,16 +19,16 @@ app.use = function(path, action){
 });
 //目的是由以下方式完成路由映射
 //增加用户
-app.post('/user/:username', aadUser);
+//app.post('/user/:username', aadUser);
 //删除用户
-app.delete('/user/:username', removeUser);
+//app.delete('/user/:username', removeUser);
 //修改用户
-app.put('/user/:username', updateUser);
+//app.put('/user/:username', updateUser);
 //查询用户
-app.get('/user/:username', getUser);
+//app.get('/user/:username', getUser);
 
 //匹配部分由下面的match方法完成
-var match = function(pathname, routes){
+var match = function(pathname, routes, req, res){
 	for(var i=0;i < routes.length; i++){
 		var route = routes[i];
 		//正则匹配
@@ -57,21 +58,21 @@ var dispatch = function(req, res){
 	var pathname = url.parse(req.url).pathname;
 	//将请求方法变为小写
 	var method = req.method.toLowerCase();
-	if(routes.hasOwnPerperty(method)){
+	if(routes.hasOwnProperty(method)){
 		//根据请求方法分发
-		if(match(pathname, routes[method])){
+		if(match(pathname, routes[method], req, res)){
 			return;
 		}
 		else{
 			//如果路径没有匹配成功,尝试让all()来处理
-			if(match(pathname, routes.all)){
+			if(match(pathname, routes.all, req, res)){
 				return;
 			}
 		}
 	}
 	else{
 		//直接让all处理
-		if(match(pathname, routes.all)){
+		if(match(pathname, routes.all, req, res)){
 			return;
 		}
 	}
@@ -83,12 +84,13 @@ var dispatch = function(req, res){
 // /user.:ext => /user.xml, /user.json
 var pathRegexp = function(path){
 	var keys = [];
+	var strict = strict || false;
 
 	path = path
 		   .concat(strict ? '' : '/?')
 		   .replace(/\/\(/g, '(?:/')
 		   .replace(/(\/)?(\.)?:(\w+)(?:(\(.*?\)))?(\?)?(\*)?/g, function(_, slash, format, key, capture, 
-		   	optional, start){
+		   	optional, star){
 		   	//将匹配到的键值保存起来
 		   	keys.push(key);
 
@@ -99,17 +101,16 @@ var pathRegexp = function(path){
 		   		   + (optional ? slash : '')
 		   		   + (format || '') + (capture || (format &&  '([^/.]+?' || '(^/]+?)')) + ')' 
 		   		   + (optional || '')
-		   		   + (start ? '(/)');
+		   		   + (star ? '(/*)' : '');
 		   })
 		   .replace(/([\/.])/g, '\\$1')
 		   .replace(/\*/g, '(.*)');
 	return {
 		keys : keys,
-		regexp : new RegExp('^' + path + '$');}
+		regexp : new RegExp('^' + path + '$')};
 }
 
-var handle404 = function(req, res){
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-	res.end('Not Found Page!\n');
-	logger.info(req.headers['host'] + req.method + req.url);
-}
+
+
+exports.app = app;
+exports.dispatch = dispatch;
