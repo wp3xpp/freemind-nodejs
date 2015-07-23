@@ -1,5 +1,9 @@
 //RESTful
 //RESTful主要思想是对一个资源的操作主要体现在HTTP请求方法上，而不是体现在URL上
+var url = require('url');
+var logger = require('./logger.js');
+
+
 var routes = {'all': []};
 var app = {};
 app.use = function(path, action){
@@ -49,7 +53,7 @@ var match = function(pathname, routes){
 	return false;
 };
 //以下为分发部分
-function(req, res){
+var dispatch = function(req, res){
 	var pathname = url.parse(req.url).pathname;
 	//将请求方法变为小写
 	var method = req.method.toLowerCase();
@@ -73,4 +77,39 @@ function(req, res){
 	}
 	//处理404请求
 	handle404(req, res);
+}
+//以下为改进路由匹配方式,将路径转换为正则表达式
+// /profile/:username => /profile/jacksontian, /profile/hushiwei
+// /user.:ext => /user.xml, /user.json
+var pathRegexp = function(path){
+	var keys = [];
+
+	path = path
+		   .concat(strict ? '' : '/?')
+		   .replace(/\/\(/g, '(?:/')
+		   .replace(/(\/)?(\.)?:(\w+)(?:(\(.*?\)))?(\?)?(\*)?/g, function(_, slash, format, key, capture, 
+		   	optional, start){
+		   	//将匹配到的键值保存起来
+		   	keys.push(key);
+
+		   	slash = slash || '';
+		   	return ''
+		   		   + (optional ? '' : slash)
+		   		   + '(?:'
+		   		   + (optional ? slash : '')
+		   		   + (format || '') + (capture || (format &&  '([^/.]+?' || '(^/]+?)')) + ')' 
+		   		   + (optional || '')
+		   		   + (start ? '(/)');
+		   })
+		   .replace(/([\/.])/g, '\\$1')
+		   .replace(/\*/g, '(.*)');
+	return {
+		keys : keys,
+		regexp : new RegExp('^' + path + '$');}
+}
+
+var handle404 = function(req, res){
+	res.writeHead(200, {'Content-Type': 'text/plain'});
+	res.end('Not Found Page!\n');
+	logger.info(req.headers['host'] + req.method + req.url);
 }
