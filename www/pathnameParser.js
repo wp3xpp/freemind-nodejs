@@ -7,7 +7,7 @@ var staticParser = function(req, res){
 			res.end('找不到相关文件， = = !');
 			return;
 		}
-		res.writeHead(200);
+		res.writeHead(200, 'text/html');
 		res.end(file);
 	});
 };

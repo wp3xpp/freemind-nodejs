@@ -3,22 +3,29 @@ var logger = require('./logger.js');
 var app = require('./restful.js').app;
 var dispatch = require('./restful.js').dispatch;
 
-var test = function(req, res){
+var test = function(req, res, next){
+	next = next || null;
 	res.writeHead(200, {'Content-Type': 'text/plain'});
 	res.end("It's ok\n");
+	next();
+	
 }
-var test2 = function(req, res){
-	res.writeHead(200, {'Content-Type': 'text/plain'});
-	res.end("It's ok la \n");
+var test2 = function(req, res, next){
+	next = next || null;
+	res.writeHead(200, {'Content-Type': 'text/html'});
+	res.write("It's ok la \n");
+	next();
 }
-var init = function(){
+var alertTest = function(req, res, next){
+	res.end("<script>alert('hehe')</script>");
+}
+var addRoutes = function(){
 	app.use('/', test);
-	app.post('/haha', test2)
+	app.get('/haha', test2, alertTest);
 }
-init(); 
+addRoutes(); 
 http.createServer(function(req, res){
-	//res.writeHead(200, {'Content-Type': 'text/plain'});
-	//res.end('Hello World\n');
+	logger.info(req.headers['host'] + ' ' + req.method + ' ' + req.url);
 	dispatch(req, res); //分发请求
 }).listen(8000, '127.0.0.1');
 logger.info('Server running at http://127.0.0.1');

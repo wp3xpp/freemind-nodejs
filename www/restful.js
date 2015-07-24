@@ -7,33 +7,139 @@ var handle404 = handlers.handle404;
 
 var routes = {'all': []};
 var app = {};
-app.use = function(path, action){
-	routes.all.push([pathRegexp(path), action]);
+
+//记录中间件和路由注册
+var recordRegister = function(method, path){
+	logger.info('register: ' + method + ' ' + path );
+}
+
+//可以使用如下注册中间件方法
+//app.use(querystring)
+//app.use(cookie)
+//app.use(session)
+//app.get('/user/:username', getUser)
+//app.put('/user/:username', authorize, updateUser)
+app.use = function(path){
+	var handle;
+	if(typeof path === 'string'){
+		recordRegister('use', path);
+		handle = {
+			//第一个参数作为路径
+			path : pathRegexp(path),
+			//其他都是处理单元
+			stack : Array.prototype.slice.call(arguments, 1)
+		};
+	}
+	else{
+		recordRegister('use', '/');
+		handle = {
+			//第一个参数作为路径
+			path : pathRegexp('/'),
+			//其他是处理单元
+			stack : Array.prototype.slice.call(arguments, 0)
+		};
+	}
+
+	routes.all.push(handle);
 };
 
 ['get', 'put', 'delete', 'post'].forEach(function(method){
 	routes[method] = [];
-	app[method] = function(path, action){
-		routes[method].push([pathRegexp(path), action]);
+	app[method] = function(path){
+		var handle;
+		if(typeof path === 'string'){
+			recordRegister(method, path);
+			handle = {
+				//第一个参数作为路径
+				path : pathRegexp(path),
+				//其他都是处理单元
+				stack : Array.prototype.slice.call(arguments, 1)
+			};
+		}
+		else{
+			recordRegister(method, '/');
+			handle = {
+				//第一个参数作为路径
+				path : pathRegexp('/'),
+				//其他是处理单元
+				stack : Array.prototype.slice.call(arguments, 0)
+			};
+		}
+		routes[method].push(handle);
 	};
 });
-//目的是由以下方式完成路由映射
-//增加用户
-//app.post('/user/:username', aadUser);
-//删除用户
-//app.delete('/user/:username', removeUser);
-//修改用户
-//app.put('/user/:username', updateUser);
-//查询用户
-//app.get('/user/:username', getUser);
+
+//中间件具体如何调用交给handle,递归性的执行数组中的中间件
+//为next方法添加err参数,捕获中间件直接抛出的同步异常
+var handle = function(req, res, stack){
+	var next = function(err){
+		if (err) {
+			return handle500(err, req, res, stack);
+		}
+		//从stack数组中取出中间件并执行
+		var middleware = stack.shift();
+		if(middleware){
+			//传入next()函数自身，使中间件能够执行结束后递归
+			try{
+				middleware(req, res, next);
+			}		
+			catch(err){
+				next(err);
+			}	
+		}
+	};
+
+	//启动执行
+	next();
+};
+
+//为了区分普通中间件和异常处理中间件,handle500()方法会按照参数个数进行选取
+
+var handle500 = function(err, req, res, stack){
+	//选取异常处理中间件
+	stack = stack.filter(function(middleware){
+		return middleware.length === 4;
+	});
+
+	var next = function(){
+		//从stack数组中取出中间件并执行
+		var middleware = stack.shift();
+		if(middleware){
+			//传递异常对象
+			middleware(err, req, res, next);
+		}
+	};
+
+	//启动执行
+	next();
+};
+
+//如果app.use(staticFile);这样注册误伤率会太高
+//应该使用app.use('/static', staticFile)类似方式注册提高效率
+//静态文件加载中间件
+var staticFile = function(req, res, next){
+	var pathname = url.parse(req.url).pathname;
+
+	fs.readFile(path.join(ROOT, pathname), function(err, file){
+		if(err){
+			return next();
+		}
+		res.writeHead(200);
+		res.end(file);
+	});
+};
+
+
 
 //匹配部分由下面的match方法完成
+//返回路由所匹配的中间件
 var match = function(pathname, routes, req, res){
+	var stacks = [];
 	for(var i=0;i < routes.length; i++){
 		var route = routes[i];
 		//正则匹配
-		var reg = route[0].regexp;
-		var keys = route[0].keys;
+		var reg = route.path.regexp;
+		var keys = route.path.keys;
 		var matched = reg.exec(pathname);
 		if(matched){
 			//抽取具体值
@@ -45,39 +151,30 @@ var match = function(pathname, routes, req, res){
 				}
 			}
 			req.params = params;
-
-			var action = route[1];
-			action(req, res);
-			return true;
+			//储存匹配中间件
+			stacks = stacks.concat(route.stack);
 		}
 	}
-	return false;
+	return stacks;
 };
 //以下为分发部分
 var dispatch = function(req, res){
 	var pathname = url.parse(req.url).pathname;
 	//将请求方法变为小写
 	var method = req.method.toLowerCase();
+	//获取all方法的中间件
+	var stacks = match(pathname, routes.all, req, res);
 	if(routes.hasOwnProperty(method)){
-		//根据请求方法分发
-		if(match(pathname, routes[method], req, res)){
-			return;
-		}
-		else{
-			//如果路径没有匹配成功,尝试让all()来处理
-			if(match(pathname, routes.all, req, res)){
-				return;
-			}
-		}
+		//根据请求方法分发,获取相关的中间件	
+		//stacks.concat(match(pathname, routes[method], req, res));
+		stacks.push.apply(stacks, match(pathname, routes[method], req, res));
+	}
+	if(stacks.length){
+		handle(req, res, stacks);
 	}
 	else{
-		//直接让all处理
-		if(match(pathname, routes.all, req, res)){
-			return;
-		}
+		handle404(req, res);
 	}
-	//处理404请求
-	handle404(req, res);
 }
 //以下为改进路由匹配方式,将路径转换为正则表达式
 // /profile/:username => /profile/jacksontian, /profile/hushiwei
@@ -105,9 +202,8 @@ var pathRegexp = function(path){
 		   })
 		   .replace(/([\/.])/g, '\\$1')
 		   .replace(/\*/g, '(.*)');
-	return {
-		keys : keys,
-		regexp : new RegExp('^' + path + '$')};
+	return {keys : keys, 
+			regexp : new RegExp('^' + path + '$')};
 }
 
 
