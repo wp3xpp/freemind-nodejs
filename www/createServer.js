@@ -24,9 +24,17 @@ var addRoutes = function(){
 	app.get('/haha', test2, alertTest);
 }
 addRoutes(); 
-http.createServer(function(req, res){
+var awesomeServer = http.createServer();
+awesomeServer.listen(8000, '127.0.0.1');
+logger.info('Server running at http://127.0.0.1');
+
+awesomeServer.on('request', function(req, res){
 	logger.info(req.headers['host'] + ' ' + req.method + ' ' + req.url);
 	dispatch(req, res); //分发请求
-}).listen(8000, '127.0.0.1');
-logger.info('Server running at http://127.0.0.1');
+})
+
+awesomeServer.on('close', function(){
+	logger.info('AWESOMESERVER CLOSED');
+})
+awesomeServer.close();
 

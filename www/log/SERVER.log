@@ -41,3 +41,45 @@
 [2015-07-24 17:54:47.713] [INFO] SERVER - 127.0.0.1:8000 GET /haha
 [2015-07-24 17:55:55.882] [INFO] SERVER - 127.0.0.1:8000 GET /haha
 [2015-07-24 17:56:47.978] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-24 21:50:46.409] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-25 11:06:42.024] [INFO] SERVER - register: use /
+[2015-07-25 11:06:42.044] [INFO] SERVER - register: get /haha
+[2015-07-25 11:06:42.054] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 11:06:54.957] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-25 11:06:55.380] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-25 12:21:23.785] [INFO] SERVER - register: use /
+[2015-07-25 12:21:23.847] [INFO] SERVER - register: get /haha
+[2015-07-25 12:21:23.882] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 12:21:29.672] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-25 12:22:05.608] [INFO] SERVER - register: use /
+[2015-07-25 12:22:05.670] [INFO] SERVER - register: get /haha
+[2015-07-25 12:22:05.691] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 12:22:06.339] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-25 12:22:11.857] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-25 12:23:25.217] [INFO] SERVER - register: use /
+[2015-07-25 12:23:25.249] [INFO] SERVER - register: get /haha
+[2015-07-25 12:23:25.292] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 12:23:30.498] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-25 12:24:44.991] [INFO] SERVER - register: use /
+[2015-07-25 12:24:45.032] [INFO] SERVER - register: get /haha
+[2015-07-25 12:24:45.088] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 12:24:47.466] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-25 12:25:33.105] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-25 12:25:37.773] [INFO] SERVER - register: use /
+[2015-07-25 12:25:37.804] [INFO] SERVER - register: get /haha
+[2015-07-25 12:25:37.823] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 12:25:39.244] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-25 12:26:09.347] [INFO] SERVER - register: use /
+[2015-07-25 12:26:09.379] [INFO] SERVER - register: get /haha
+[2015-07-25 12:26:09.393] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 12:26:12.697] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-25 12:41:29.448] [INFO] SERVER - register: use /
+[2015-07-25 12:41:29.481] [INFO] SERVER - register: get /haha
+[2015-07-25 12:41:29.499] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 12:41:37.232] [INFO] SERVER - register: use /
+[2015-07-25 12:41:37.255] [INFO] SERVER - register: get /haha
+[2015-07-25 12:41:37.268] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 12:41:50.452] [INFO] SERVER - register: use /
+[2015-07-25 12:41:50.488] [INFO] SERVER - register: get /haha
+[2015-07-25 12:41:50.500] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 12:41:50.533] [INFO] SERVER - AWESOMESERVER CLOSED

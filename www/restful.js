@@ -133,7 +133,7 @@ var staticFile = function(req, res, next){
 
 //匹配部分由下面的match方法完成
 //返回路由所匹配的中间件
-var match = function(pathname, routes, req, res){
+var match = function(pathname, routes, req){
 	var stacks = [];
 	for(var i=0;i < routes.length; i++){
 		var route = routes[i];
@@ -163,11 +163,11 @@ var dispatch = function(req, res){
 	//将请求方法变为小写
 	var method = req.method.toLowerCase();
 	//获取all方法的中间件
-	var stacks = match(pathname, routes.all, req, res);
+	var stacks = match(pathname, routes.all, req);
 	if(routes.hasOwnProperty(method)){
 		//根据请求方法分发,获取相关的中间件	
 		//stacks.concat(match(pathname, routes[method], req, res));
-		stacks.push.apply(stacks, match(pathname, routes[method], req, res));
+		stacks.push.apply(stacks, match(pathname, routes[method], req));
 	}
 	if(stacks.length){
 		handle(req, res, stacks);

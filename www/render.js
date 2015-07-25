@@ -100,7 +100,7 @@ app.get('/path', function(req, res){
 //做如下改进
 
 var cache = {};
-var VIEW_FOLDER = '/path/to/wwwroot/views';
+var VIEW_FOLDER = '/www/templates';
 
 res.render = function(viewname, data){
 	if(!cache[viewname]){
@@ -163,6 +163,16 @@ var renderLayout = function(str, viewname){
 };
 
 //res.render()方法修改如下
+//如下，可以如此实现重用布局文件
+//res.render('user', {
+//	layout: 'layout.html',
+//	users: []
+//});
+//或者
+//res.render('profile', {
+//	layout: 'layout.html',
+//	users: []
+//});
 res.render = function(viewname, data){
 	var layout = data.layout;
 	if(layout){
@@ -199,13 +209,3 @@ res.render = function(viewname, data){
 	res.end(html);
 };
 
-//如上，可以如此实现重用布局文件
-//res.render('user', {
-//	layout: 'layout.html',
-//	users: []
-//});
-//或者
-//res.render('profile', {
-//	layout: 'layout.html',
-//	users: []
-//});
