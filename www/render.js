@@ -1,13 +1,4 @@
 //通常将渲染方法设计为render()，参数就是模板路径和数据
-
-res.render = function(view, data){
-	res.setHeader('Content-Type', 'text/html');
-	res.writeHead(200);
-	//实际渲染
-	var html = render(view, data);
-	res.end(html);
-};
-
 //形成模板技术的四个要素:
 //1.模板语言
 //2.包含动态数据的数据对象
@@ -21,17 +12,17 @@ res.render = function(view, data){
 //处理表达式，将标签表达式转换成普通的语言表达式
 //生成待执行语句
 //与数据一起执行，生成最终字符串
+var logger = require('logger');
+var fs = require('fs');
+var path = require('path');
 
-var render = function(str, data){
-	//模板技术，就是替换特殊字标签的技术
-	var tpl = str.replace(/<%=(\s\S)+?%>/g, function(match, code){
-		return "' + obj." + code + "+ '";
-	});
+//cache用于缓存模板
+var cache = {};
+var VIEW_FOLDER = '/www/templates';
 
-	tpl = "var tpl = '" + tpl + "'\nreturn tpl;";
-	var complied = new Function('obj', tpl);
-	return complied(data);
-};
+//子模板
+//实现子模板的诀窍就是先将include语句进行替换,再进行整体性编译
+var files = {};
 
 //为了保证模板的安全性,预防xss漏洞，使用转义函数
 var escape = function(html){
@@ -42,11 +33,6 @@ var escape = function(html){
 			.replace(/"/g, '&quot;')
 			.replace(/'/g, '&#039;'); //IE不支持&apos;(单引号)转义
 };
-
-//调用上述模板函数如下:
-//var tpl = 'Hello <%=username%>.';
-//console.log(render(tpl, {username: 'hushwiei'}));
-// =>Hello hushiwei
 
 //上述模板编译技术中间生成函数只与模板字符串相关，与具体数据无关，如果每次生成这个
 //中间函数，会浪费CPU，为了提升模板渲染性能，会使用模板预编译的方式
@@ -76,11 +62,6 @@ var complie = function(str){
 	return new Function('obj', 'escape', tpl);
 };
 
-//一次编译，多次执行
-//var complied = complie(view);
-var render = function(complied, data){
-	return complied(data);
-};
 
 //集成文件系统,响应一个客户端的请求大致如下
 app.get('/path', function(req, res){
@@ -96,40 +77,11 @@ app.get('/path', function(req, res){
 	});
 });
 
-//但是上面的写法会导致每次请求都要编译和读取磁盘上的文件
-//做如下改进
-
-var cache = {};
-var VIEW_FOLDER = '/www/templates';
-
-res.render = function(viewname, data){
-	if(!cache[viewname]){
-		var text;
-		try{
-			text = fs.readFileSync(path.join(VIEW_FOLDER, viewname), 'utf8');
-		}
-		catch(e){
-			res.writeHead(500, {'Content-Type': 'text/html'});
-			res.end('模板文件错误');
-			return;
-		}
-		cache[viewname] = complie(text);
-	}
-	var complied = cache[viewname];
-	res.writeHead(200, {'Content-Type': 'text/html'});
-	var html = complied(data);
-	res.end(html);
-};
-
 //调用方式如下
 //引入缓存可以很好的解决性能问题，接口也得到简化
 app.get('/path', function(req, res){
 	res.render('viewname', {});
 });
-
-//子模板
-//实现子模板的诀窍就是先将include语句进行替换,再进行整体性编译
-var files = {};
 
 var preComplie = function(str){
 	var replaced = str.replace(/<%\s+(include.*)\s+%>/g, function(match, code){

@@ -31,10 +31,10 @@ app.use = function(path){
 		};
 	}
 	else{
-		recordRegister('use', '/');
+		recordRegister('use', 'all');
 		handle = {
 			//第一个参数作为路径
-			path : pathRegexp('/'),
+			path : pathRegexp('all'),
 			//其他是处理单元
 			stack : Array.prototype.slice.call(arguments, 0)
 		};
@@ -57,10 +57,10 @@ app.use = function(path){
 			};
 		}
 		else{
-			recordRegister(method, '/');
+			recordRegister(method, 'all');
 			handle = {
 				//第一个参数作为路径
-				path : pathRegexp('/'),
+				path : pathRegexp('all'),
 				//其他是处理单元
 				stack : Array.prototype.slice.call(arguments, 0)
 			};
@@ -140,18 +140,20 @@ var match = function(pathname, routes, req){
 		//正则匹配
 		var reg = route.path.regexp;
 		var keys = route.path.keys;
+		console.log(keys);
 		var matched = reg.exec(pathname);
 		if(matched){
 			//抽取具体值
 			var params = {};
-			for(var i=0, l=keys.length; i < l; i++){
-				var value = matched[i+1];
+			for(var j=0, l=keys.length; j < l; j++){
+				var value = matched[j+1];
 				if (value) {
-					params[keys[i]] = value;
+					params[keys[j]] = value;
 				}
 			}
 			req.params = params;
 			//储存匹配中间件
+			console.log('匹配');
 			stacks = stacks.concat(route.stack);
 		}
 	}
@@ -170,6 +172,7 @@ var dispatch = function(req, res){
 		stacks.push.apply(stacks, match(pathname, routes[method], req));
 	}
 	if(stacks.length){
+		console.log(stacks.length);
 		handle(req, res, stacks);
 	}
 	else{
@@ -182,6 +185,13 @@ var dispatch = function(req, res){
 var pathRegexp = function(path){
 	var keys = [];
 	var strict = strict || false;
+
+	if(path === 'all'){
+		return {
+			keys : keys,
+			regexp : new RegExp('^.*$')
+		};
+	}
 
 	path = path
 		   .concat(strict ? '' : '/?')
@@ -202,8 +212,10 @@ var pathRegexp = function(path){
 		   })
 		   .replace(/([\/.])/g, '\\$1')
 		   .replace(/\*/g, '(.*)');
-	return {keys : keys, 
-			regexp : new RegExp('^' + path + '$')};
+	return {
+		keys : keys, 
+		regexp : new RegExp('^' + path + '$')
+	};
 }
 
 
