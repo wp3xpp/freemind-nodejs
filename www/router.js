@@ -114,23 +114,6 @@ var handle500 = function(err, req, res, stack){
 	next();
 };
 
-//如果app.use(staticFile);这样注册误伤率会太高
-//应该使用app.use('/static', staticFile)类似方式注册提高效率
-//静态文件加载中间件
-var staticFile = function(req, res, next){
-	var pathname = url.parse(req.url).pathname;
-
-	fs.readFile(path.join(ROOT, pathname), function(err, file){
-		if(err){
-			return next();
-		}
-		res.writeHead(200);
-		res.end(file);
-	});
-};
-
-
-
 //匹配部分由下面的match方法完成
 //返回路由所匹配的中间件
 var match = function(pathname, routes, req){
@@ -140,7 +123,6 @@ var match = function(pathname, routes, req){
 		//正则匹配
 		var reg = route.path.regexp;
 		var keys = route.path.keys;
-		console.log(keys);
 		var matched = reg.exec(pathname);
 		if(matched){
 			//抽取具体值
@@ -153,7 +135,6 @@ var match = function(pathname, routes, req){
 			}
 			req.params = params;
 			//储存匹配中间件
-			console.log('匹配');
 			stacks = stacks.concat(route.stack);
 		}
 	}
@@ -172,7 +153,6 @@ var dispatch = function(req, res){
 		stacks.push.apply(stacks, match(pathname, routes[method], req));
 	}
 	if(stacks.length){
-		console.log(stacks.length);
 		handle(req, res, stacks);
 	}
 	else{

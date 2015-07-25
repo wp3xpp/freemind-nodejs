@@ -9,21 +9,7 @@ var querystring = function(req, res, next){
 	next();
 };
 
-//cookie解析中间件
-var cookie = function(req, res, next){
-	var cookie = req.headers.cookie;
-	var cookies = {};
-	if(cookie){
-		var list = cookie.split(';');
-		for(var i=0;i < list.length; i++){
-			var pair = list[i].split('=');
-			cookies[pair[0].trim()] = pair[1];
-		}
-	}
 
-	req.cookies = cookies;
-	next();
-};
 
 //将路由分离开来，将中间件和具体业务逻辑都看成业务处理单元，改进use()方法如下
 //将use()方法存进stack数组中保存，等待匹配后触发执行
@@ -184,20 +170,7 @@ var handle = function(req, res, stack){
 	next();
 };
 
-//由于异步方法不能直接捕获，中间件异步产生的异常需要自己传递出来
-//下面是session中间件的例子
 
-var session = function(req, res, next){
-	var id = req.cookies.sessionid;
-	store.get(id, function(err, session){
-		if(err){
-			//将异常通过next()传递
-			return next(err);
-		}
-		req.session = session;
-		next();
-	});
-};
 
 //可以通过use()将左右异常处理的中间件注册起来
 app.use(function(err, req, res, next){

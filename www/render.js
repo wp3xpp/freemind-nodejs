@@ -12,13 +12,16 @@
 //处理表达式，将标签表达式转换成普通的语言表达式
 //生成待执行语句
 //与数据一起执行，生成最终字符串
-var logger = require('logger');
+var logger = require('./logger');
+var handlers = require('./controllers/handlers');
 var fs = require('fs');
 var path = require('path');
 
+var handle500 = handlers.handle500;
+
 //cache用于缓存模板
 var cache = {};
-var VIEW_FOLDER = '/www/templates';
+var VIEW_FOLDER = './templates';
 
 //子模板
 //实现子模板的诀窍就是先将include语句进行替换,再进行整体性编译
@@ -42,11 +45,12 @@ var complie = function(str){
 	//模板技术，就是替换特殊字标签的技术
 	//预解析子模板
 	str = preComplie(str);
+	return str;
 	var tpl  = str.replace(/\n/g, '\\n') //将换行符替换掉
 	.replace(/<%=(\s\S)+?%>/g, function(match, code){
 		//转义
 		return "' + escape(" + code + ") + '";
-	}).replace(/<%=(\s\S)+?%>/g, function(match, code){
+	}).replace(/<%-(\s\S)+?%>/g, function(match, code){
 		//正常输出
 		return "' + " + code + "+ '";
 	}).replace(/<%(\s\S)+?%>/g, function(match, code){
@@ -56,32 +60,15 @@ var complie = function(str){
 	.replace(/\n\'/gm, '\'');
 
 	//为了使字符串继续表达为字符串，变量能够自寻找属于他的对象，这里使用with
-	tpl = "tpl = '" + tpl + "'";
+	tpl = "tpl = '" + tpl + "';";
+	//转换空行
+	tpl = tpl.replace(/''/g, '\'\\n\'');
 	tpl = 'var tpl = "";\nwith(obj || {}){\n' + tpl +'\n}\nreturn tpl;';
-	//加上escape函数
+	//加上escape函数 
+	logger.trace(tpl);
 	return new Function('obj', 'escape', tpl);
 };
 
-
-//集成文件系统,响应一个客户端的请求大致如下
-app.get('/path', function(req, res){
-	fs.readFile('file/path', 'utf8', function(err, text){
-		if(err){
-			res.writeHead(500, {'Content-Type': 'text/html'});
-			res.end('模板文件错误');
-			return;
-		}
-		res.writeHead(200, {'Content-Type': 'text/html'});
-		var html = render(complie(text), data);
-		res.end(html);
-	});
-});
-
-//调用方式如下
-//引入缓存可以很好的解决性能问题，接口也得到简化
-app.get('/path', function(req, res){
-	res.render('viewname', {});
-});
 
 var preComplie = function(str){
 	var replaced = str.replace(/<%\s+(include.*)\s+%>/g, function(match, code){
@@ -109,6 +96,7 @@ var renderLayout = function(str, viewname){
 	return str.replace(/<%-\s*body\s*%>/g, function(match, code){
 		if(!cache[viewname]){
 			cache[viewname] = fs.readFileSync(path.join(VIEW_FOLDER, viewname), 'utf8');
+			//console.log(path.join(VIEW_FOLDER, viewname).toString());
 		}
 		return cache[viewname];
 	});
@@ -125,29 +113,32 @@ var renderLayout = function(str, viewname){
 //	layout: 'layout.html',
 //	users: []
 //});
-res.render = function(viewname, data){
-	var layout = data.layout;
+var render = function(res, viewname, data){
+	var layout;
+	if(data && data.hasOwnProperty(layout)){
+		layout = data.layout;
+	}
 	if(layout){
 		if(!cache[layout]){
 			try{
 				cache[layout] = fs.readFileSync(path.join(VIEW_FOLDER, layout), 'utf8');
 			}
 			catch(e){
-				res.writeHead(500, {'Content-Type': 'text/html'});
+				res.writeHead(500, {'Content-Type': 'text/html;charset=utf8'});
 				res.end('布局文件错误');
 				return;
 			}
 		}
 	}
-	var layoutContent = cache[layout] || '<%-body%>';
+	var layoutContent = cache[layout] || '<%- body%>';
 
 	var replaced;
 	try{
 		replaced = renderLayout(layoutContent, viewname);
 	}
 	catch(e){
-		res.writeHead(500, {'Content-Type': 'text/html'});
-		res.end('模板文件错误');
+		logger.error('模板文件错误'+e.toString());
+		handle500(null, res);
 		return;
 	}
 	//将模板和布局文件名做key缓存
@@ -157,7 +148,9 @@ res.render = function(viewname, data){
 		cache[key] = complie(replaced);
 	}
 	res.writeHead(200, {'Content-Type': 'text/html'});
-	var html = cache[key](data);
-	res.end(html);
+	//var html = cache[key](data);
+	var html = cache[key];
+	res.write(html);
 };
 
+module.exports = render;

@@ -1,41 +1,36 @@
 var http = require('http');
 var logger = require('./logger.js');
-var app = require('./restful.js').app;
-var dispatch = require('./restful.js').dispatch;
+var app = require('./router.js').app;
+var dispatch = require('./router.js').dispatch;
+var middlewares = require('./middlewares/middlewares.js');
+var render = require('./render.js');
 
-var test = function(req, res, next){
-	res.write("It's ok\n");
-	next();
-	
-}
+
 var test2 = function(req, res, next){
 	
-	res.write("It's ok la \n");
+	res.end("It's ok la \n");
 	next();
 }
-var alertTest = function(req, res, next){
-	res.writeHead(200, {'Content-Type': 'text/html'});
-	res.write("<script>alert('hehe')</script>");
-	next();
-}
+
 var addRoutes = function(){
-	app.use(alertTest);
-	app.use('/', test);
+	app.use(middlewares.getQueryString);
+	app.use('/static/*', middlewares.staticFile);
 	app.get('/haha', test2);
 }
 addRoutes(); 
-var awesomeServer = http.createServer();
+var awesomeServer = http.createServer(function(req, res){
+	app.use('/', render(res, 'index.html',{}));
+});
 awesomeServer.listen(8000, '127.0.0.1');
 logger.info('Server running at http://127.0.0.1');
 
 awesomeServer.on('request', function(req, res){
 	logger.info(req.headers['host'] + ' ' + req.method + ' ' + req.url);
 	dispatch(req, res); //分发请求
-	res.end();
 })
 
 awesomeServer.on('close', function(){
-	logger.info('AWESOMESERVER CLOSED');
+	logger.info('SERVER CLOSED');
 })
 
 
