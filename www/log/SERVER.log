@@ -3121,3 +3121,867 @@ function fatal(err) {
 [2015-07-26 11:39:49.784] [INFO] SERVER - register: get /haha
 [2015-07-26 11:39:49.789] [INFO] SERVER - register: use /
 [2015-07-26 11:39:49.799] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 12:15:18.092] [INFO] SERVER - register: use /static/*
+[2015-07-26 12:15:18.116] [INFO] SERVER - register: get /haha
+[2015-07-26 12:15:18.122] [INFO] SERVER - register: use /
+[2015-07-26 12:15:18.134] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 12:15:20.485] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 12:15:20.496] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 12:15:20.514] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 12:15:20.525] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 12:24:16.618] [INFO] SERVER - register: use /static/*
+[2015-07-26 12:24:16.640] [INFO] SERVER - register: get /haha
+[2015-07-26 12:24:16.645] [INFO] SERVER - register: use /
+[2015-07-26 12:24:16.655] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 12:24:19.854] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 12:24:19.864] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 12:24:19.888] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 12:24:19.900] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 12:25:18.872] [INFO] SERVER - register: use /static/*
+[2015-07-26 12:25:18.901] [INFO] SERVER - register: get /haha
+[2015-07-26 12:25:18.908] [INFO] SERVER - register: use /
+[2015-07-26 12:25:18.927] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 12:25:20.768] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 12:25:20.777] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 12:25:20.798] [ERROR] SERVER - function (req, res, next){
+	try{
+		logger.error(res.render.toString());
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 12:25:20.809] [ERROR] SERVER - TypeError: Cannot read property 'toString' of undefined
+[2015-07-26 12:26:34.938] [INFO] SERVER - register: use /static/*
+[2015-07-26 12:26:34.958] [INFO] SERVER - register: get /haha
+[2015-07-26 12:26:34.962] [INFO] SERVER - register: use /
+[2015-07-26 12:26:34.970] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 12:26:37.294] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 12:26:37.310] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 12:26:37.326] [ERROR] SERVER - function (req, res, next){
+	try{
+		logger.error(res.toString());
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 12:26:37.332] [ERROR] SERVER - [object Object]
+[2015-07-26 12:26:37.342] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 12:28:37.299] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 12:28:37.301] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 12:28:37.309] [ERROR] SERVER - function (req, res, next){
+	try{
+		logger.error(res.toString());
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 12:28:37.316] [ERROR] SERVER - [object Object]
+[2015-07-26 12:28:37.318] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 13:31:14.137] [INFO] SERVER - register: use /static/*
+[2015-07-26 13:31:14.157] [INFO] SERVER - register: get /haha
+[2015-07-26 13:31:14.161] [INFO] SERVER - register: use /
+[2015-07-26 13:31:14.170] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 13:31:19.398] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 13:31:19.409] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 13:31:19.425] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 13:31:19.432] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 13:33:19.414] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 13:33:19.417] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 13:33:19.432] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 13:33:19.440] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 16:01:41.392] [INFO] SERVER - register: use /static/*
+[2015-07-26 16:01:41.412] [INFO] SERVER - register: get /haha
+[2015-07-26 16:01:41.416] [INFO] SERVER - register: use /
+[2015-07-26 16:01:41.426] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 16:01:54.232] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 16:01:54.258] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 16:01:54.264] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 16:01:54.548] [INFO] SERVER - 127.0.0.1:8888 GET /favicon.ico
+[2015-07-26 16:01:54.551] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 16:03:54.552] [INFO] SERVER - 127.0.0.1:8888 GET /favicon.ico
+[2015-07-26 16:03:54.555] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:13:00.399] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:13:00.420] [INFO] SERVER - register: get /haha
+[2015-07-26 17:13:00.425] [INFO] SERVER - register: use /
+[2015-07-26 17:13:00.436] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:13:24.758] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:13:35.301] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:14:50.874] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:14:50.897] [INFO] SERVER - register: get /haha
+[2015-07-26 17:14:50.902] [INFO] SERVER - register: use /
+[2015-07-26 17:14:50.915] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:14:52.874] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:15:45.276] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:15:45.299] [INFO] SERVER - register: get /haha
+[2015-07-26 17:15:45.304] [INFO] SERVER - register: use /
+[2015-07-26 17:15:45.318] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:15:49.594] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:24:24.348] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:24:24.367] [INFO] SERVER - register: get /haha
+[2015-07-26 17:24:24.371] [INFO] SERVER - register: use /
+[2015-07-26 17:24:24.375] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:24:24.390] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:24:28.693] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:24:28.704] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:24:28.718] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:24:43.143] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:24:43.151] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:24:43.162] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:24:43.180] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:24:43.379] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:24:43.399] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:24:43.419] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:26:43.390] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:26:43.394] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:26:43.396] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:26:57.143] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:26:57.162] [INFO] SERVER - register: get /haha
+[2015-07-26 17:26:57.165] [INFO] SERVER - register: use /
+[2015-07-26 17:26:57.176] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:27:00.938] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:27:00.948] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:27:00.961] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:27:00.981] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:27:01.138] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:27:01.145] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:27:01.163] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:27:38.297] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:27:38.300] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:27:38.316] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:27:38.329] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:27:58.484] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:27:58.486] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:27:58.496] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:27:59.524] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:27:59.527] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:27:59.543] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:28:09.698] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:28:09.701] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:28:09.717] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:28:09.724] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:28:15.024] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:28:15.027] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:28:15.044] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:28:29.895] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:28:29.898] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:28:29.920] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:29:01.147] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:29:01.151] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:29:01.160] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:29:54.355] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:29:54.379] [INFO] SERVER - register: get /haha
+[2015-07-26 17:29:54.387] [INFO] SERVER - register: use /
+[2015-07-26 17:29:54.404] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:29:56.055] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:29:56.074] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:29:56.090] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:29:58.693] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:29:58.695] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:29:58.710] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:29:58.726] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:29:58.950] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:29:58.953] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:29:58.962] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:31:58.962] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:31:58.977] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:31:58.991] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:32:42.557] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:32:42.583] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:32:42.591] [INFO] SERVER - register: get /haha
+[2015-07-26 17:32:42.595] [INFO] SERVER - register: use /
+[2015-07-26 17:32:47.155] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:32:47.166] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:33:08.601] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:33:08.607] [ERROR] SERVER - function (req, res, next){
+	var app = application();
+	res.__proto__ = app.response;
+	logger.tarce('init success');
+	next();
+}
+[2015-07-26 17:33:42.493] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:33:42.518] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:33:42.523] [INFO] SERVER - register: get /haha
+[2015-07-26 17:33:42.525] [INFO] SERVER - register: use /
+[2015-07-26 17:33:45.205] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:33:45.216] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:33:45.233] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:33:45.433] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:33:45.437] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:33:46.837] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:33:46.839] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:33:46.850] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:33:49.272] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:33:49.277] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:33:49.289] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:34:07.020] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:34:07.023] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:34:09.497] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:34:09.500] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:35:45.443] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:35:45.445] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:36:02.812] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:36:02.832] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:36:02.838] [INFO] SERVER - register: get /haha
+[2015-07-26 17:36:02.840] [INFO] SERVER - register: use /
+[2015-07-26 17:36:05.211] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:36:05.225] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:36:05.246] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:36:05.433] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:36:05.436] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:36:06.639] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:36:06.642] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:36:06.654] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:36:09.050] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:36:09.053] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:36:09.063] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:36:26.822] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:36:26.824] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:36:29.215] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:36:29.219] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:36:46.879] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:36:46.899] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:36:46.904] [INFO] SERVER - register: get /haha
+[2015-07-26 17:36:46.906] [INFO] SERVER - register: use /
+[2015-07-26 17:36:49.395] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:36:49.403] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:36:49.415] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 17:36:49.423] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 17:37:46.571] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:37:46.596] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:37:46.603] [INFO] SERVER - register: get /haha
+[2015-07-26 17:37:46.607] [INFO] SERVER - register: use /
+[2015-07-26 17:37:49.369] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:37:49.378] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:37:49.387] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 17:37:49.393] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 17:42:26.488] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:42:26.507] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:42:26.512] [INFO] SERVER - register: get /haha
+[2015-07-26 17:42:26.515] [INFO] SERVER - register: use /
+[2015-07-26 17:43:22.915] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:43:22.930] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:43:22.936] [INFO] SERVER - register: get /haha
+[2015-07-26 17:43:22.939] [INFO] SERVER - register: use /
+[2015-07-26 17:43:57.947] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:43:57.956] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:43:57.968] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 17:43:57.986] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 17:44:44.965] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:44:44.983] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:44:44.988] [INFO] SERVER - register: get /haha
+[2015-07-26 17:44:44.990] [INFO] SERVER - register: use /
+[2015-07-26 17:44:47.793] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:44:47.805] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:44:47.821] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 17:44:47.829] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 17:46:26.313] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:46:26.344] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:46:26.351] [INFO] SERVER - register: get /haha
+[2015-07-26 17:46:26.354] [INFO] SERVER - register: use /
+[2015-07-26 17:46:28.916] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:46:28.925] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:46:28.943] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 17:46:28.952] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 17:48:28.924] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:48:28.926] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:48:28.928] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 17:48:28.930] [ERROR] SERVER - TypeError: undefined is not a function
+[2015-07-26 17:49:22.056] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:49:22.076] [ERROR] SERVER - ReferenceError: self is not defined
+[2015-07-26 17:49:22.083] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:49:22.086] [INFO] SERVER - register: get /haha
+[2015-07-26 17:49:22.088] [INFO] SERVER - register: use /
+[2015-07-26 17:49:48.513] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:49:48.537] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:49:48.542] [INFO] SERVER - register: get /haha
+[2015-07-26 17:49:48.545] [INFO] SERVER - register: use /
+[2015-07-26 17:49:51.411] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:49:51.421] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:49:51.431] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 17:49:51.437] [ERROR] SERVER - come in
+[2015-07-26 17:49:51.648] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:49:51.657] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:51:51.652] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:51:51.655] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:53:41.212] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:53:41.215] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:53:41.226] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 17:53:41.231] [ERROR] SERVER - come in
+[2015-07-26 17:53:44.149] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:53:44.156] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:53:44.168] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:53:51.658] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:53:51.660] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:54:04.343] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:54:04.350] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:54:52.835] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:54:52.854] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:54:52.859] [INFO] SERVER - register: get /haha
+[2015-07-26 17:54:52.862] [INFO] SERVER - register: use /
+[2015-07-26 17:54:56.043] [INFO] SERVER - 127.0.0.1:8000 GET /haha
+[2015-07-26 17:54:56.050] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:54:56.060] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 17:54:56.224] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:54:56.227] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:54:58.253] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:54:58.259] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:54:58.271] [ERROR] SERVER - function (req, res, next){
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+}
+[2015-07-26 17:55:18.420] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-26 17:55:18.423] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 17:56:34.981] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-26 17:56:35.003] [INFO] SERVER - register: use /static/*
+[2015-07-26 17:56:35.008] [INFO] SERVER - register: get /haha
+[2015-07-26 17:56:35.013] [INFO] SERVER - register: use /
+[2015-07-26 17:56:38.102] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-26 17:56:38.341] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico

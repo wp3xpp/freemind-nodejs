@@ -23,6 +23,10 @@
 //处理表达式，将标签表达式转换成普通的语言表达式
 //生成待执行语句
 //与数据一起执行，生成最终字符串
+
+/**
+ * Module dependencies.
+ */
 var logger = require('./logger');
 var handlers = require('./controllers/handlers');
 var fs = require('fs');
@@ -79,7 +83,6 @@ var complie = function(str){
 	tpl = tpl.replace(/''/g, '\'\\n\'');
 	tpl = 'var tpl = "";\nwith(obj || {}){\n' + tpl +'\n}\nreturn tpl;';
 	//加上escape函数 
-	logger.warn(tpl);
 	return new Function('obj', 'escape', tpl);
 };
 
@@ -126,8 +129,7 @@ var renderLayout = function(str, viewname){
 //	layout: 'layout.html',
 //	users: []
 //});
-res.render = function(viewname, data){
-	logger.error('come in');
+res.render = function render(viewname, data){
 	var layout;
 	if(data && data.hasOwnProperty(layout)){
 		layout = data.layout;

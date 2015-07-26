@@ -9,43 +9,37 @@
 /**
  * Module dependencies.
  */
-var http = require('http');
 var logger = require('./logger.js');
-var app = require('./router.js').app;
-var dispatch = require('./router.js').dispatch;
+var freemind = require('./freemind.js');
 var middlewares = require('./middlewares/middlewares.js');
-var res = require('./render.js');
+var init = require('./middlewares/middlewares.js').init;
 
+var app = freemind(); 
 
-var test2 = function(req, res, next){	
+var test = function(req, res, next){	
 	res.end("It's ok la \n");
 	next();
-}
+};
 
 var renderTest = function(req, res, next){
-	res.render('test.html', {}); 
-	next();
-}
+	try{
+		res.render('test.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+	
+};
 
+app.listen(8000);
 var addRoutes = function(){
 	app.use(middlewares.getQueryString);
 	app.use('/static/*', middlewares.staticFile);
-	app.get('/haha', test2);
+	app.get('/haha', test);
 	app.use('/', renderTest);
-}
+};
 addRoutes(); 
 
-var awesomeServer = http.createServer();
-awesomeServer.listen(8888, '127.0.0.1');
-logger.info('Server running at http://127.0.0.1');
-
-awesomeServer.on('request', function(req, res){
-	logger.info(req.headers['host'] + ' ' + req.method + ' ' + req.url);
-	dispatch(req, res); //分发请求
-})
-
-awesomeServer.on('close', function(){
-	logger.info('SERVER CLOSED');
-})
 
 

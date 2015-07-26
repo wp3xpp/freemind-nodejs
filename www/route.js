@@ -19,6 +19,8 @@ var handle404 = handlers.handle404;
 var routes = {'all': []};
 var app = {};
 
+module.exports = app;
+
 //可以使用如下注册中间件方法
 //app.use(querystring)
 //app.use(cookie)
@@ -85,7 +87,6 @@ var handle = function(req, res, stack){
 		if(middleware){
 			//传入next()函数自身，使中间件能够执行结束后递归
 			try{
-				logger.error(middleware.toString());
 				middleware(req, res, next);
 			}		
 			catch(err){
@@ -99,7 +100,6 @@ var handle = function(req, res, stack){
 };
 
 //为了区分普通中间件和异常处理中间件,handle500()方法会按照参数个数进行选取
-
 var handle500 = function(err, req, res, stack){
 	//选取异常处理中间件
 	stack = stack.filter(function(middleware){
@@ -145,8 +145,9 @@ var match = function(pathname, routes, req){
 	}
 	return stacks;
 };
+
 //以下为分发部分
-var dispatch = function(req, res){
+app.dispatch = function(req, res){
 	var pathname = url.parse(req.url).pathname;
 	//将请求方法变为小写
 	var method = req.method.toLowerCase();
@@ -164,6 +165,7 @@ var dispatch = function(req, res){
 		handle404(req, res);
 	}
 }
+
 //以下为改进路由匹配方式,将路径转换为正则表达式
 // /profile/:username => /profile/jacksontian, /profile/hushiwei
 // /user.:ext => /user.xml, /user.json
@@ -197,6 +199,3 @@ var pathRegexp = function(path){
 }
 
 
-
-exports.app = app;
-exports.dispatch = dispatch;
