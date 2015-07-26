@@ -2561,3 +2561,563 @@ function fatal(err) {
 [2015-07-25 23:36:21.358] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
 [2015-07-25 23:36:21.366] [INFO] SERVER - register: use /
 [2015-07-25 23:36:21.373] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-25 23:42:24.990] [INFO] SERVER - register: use all
+[2015-07-25 23:42:25.010] [INFO] SERVER - register: use /static/*
+[2015-07-25 23:42:25.016] [INFO] SERVER - register: get /haha
+[2015-07-25 23:42:25.024] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 23:42:26.940] [INFO] SERVER - register: use /
+[2015-07-25 23:42:26.944] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-25 23:42:27.031] [INFO] SERVER - register: use /
+[2015-07-25 23:42:27.033] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-25 23:42:27.044] [INFO] SERVER - register: use /
+[2015-07-25 23:42:27.051] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:42:27.058] [INFO] SERVER - register: use /
+[2015-07-25 23:42:27.063] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-25 23:42:27.071] [INFO] SERVER - register: use /
+[2015-07-25 23:42:27.084] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-25 23:42:38.838] [INFO] SERVER - register: use /
+[2015-07-25 23:42:38.844] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-25 23:42:38.919] [INFO] SERVER - register: use /
+[2015-07-25 23:42:38.933] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-25 23:42:38.938] [INFO] SERVER - register: use /
+[2015-07-25 23:42:38.945] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:42:38.954] [INFO] SERVER - register: use /
+[2015-07-25 23:42:38.959] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-25 23:42:38.968] [INFO] SERVER - register: use /
+[2015-07-25 23:42:38.972] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-07-25 23:42:38.982] [INFO] SERVER - register: use /
+[2015-07-25 23:42:38.986] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-25 23:42:38.992] [INFO] SERVER - register: use /
+[2015-07-25 23:42:38.999] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/uikit.min.js
+[2015-07-25 23:42:39.017] [INFO] SERVER - register: use /
+[2015-07-25 23:42:39.033] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
+[2015-07-25 23:42:39.059] [INFO] SERVER - register: use /
+[2015-07-25 23:42:39.073] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-25 23:42:39.082] [INFO] SERVER - register: use /
+[2015-07-25 23:42:39.095] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sticky.min.js
+[2015-07-25 23:45:38.656] [INFO] SERVER - register: use all
+[2015-07-25 23:45:38.680] [INFO] SERVER - register: use /static/*
+[2015-07-25 23:45:38.686] [INFO] SERVER - register: get /haha
+[2015-07-25 23:45:38.694] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 23:45:43.795] [INFO] SERVER - register: use /
+[2015-07-25 23:45:43.803] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-25 23:45:43.910] [INFO] SERVER - register: use /
+[2015-07-25 23:45:43.918] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-25 23:45:43.933] [INFO] SERVER - register: use /
+[2015-07-25 23:45:43.939] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:45:43.960] [INFO] SERVER - register: use /
+[2015-07-25 23:45:43.967] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-25 23:45:43.977] [INFO] SERVER - register: use /
+[2015-07-25 23:45:43.983] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-25 23:45:43.992] [INFO] SERVER - register: use /
+[2015-07-25 23:45:43.997] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-07-25 23:45:44.005] [INFO] SERVER - register: use /
+[2015-07-25 23:45:44.014] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/uikit.min.js
+[2015-07-25 23:45:44.029] [INFO] SERVER - register: use /
+[2015-07-25 23:45:44.032] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sticky.min.js
+[2015-07-25 23:45:44.047] [INFO] SERVER - register: use /
+[2015-07-25 23:45:44.051] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
+[2015-07-25 23:45:44.068] [INFO] SERVER - register: use /
+[2015-07-25 23:45:44.074] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-25 23:46:22.553] [INFO] SERVER - register: use /
+[2015-07-25 23:46:22.557] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:46:22.655] [INFO] SERVER - register: use /
+[2015-07-25 23:46:22.669] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-25 23:46:22.679] [INFO] SERVER - register: use /
+[2015-07-25 23:46:22.686] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:46:22.701] [INFO] SERVER - register: use /
+[2015-07-25 23:46:22.707] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-25 23:46:22.720] [INFO] SERVER - register: use /
+[2015-07-25 23:46:22.739] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-25 23:46:22.747] [INFO] SERVER - register: use /
+[2015-07-25 23:46:22.755] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
+[2015-07-25 23:46:22.762] [INFO] SERVER - register: use /
+[2015-07-25 23:46:22.774] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-25 23:46:22.785] [INFO] SERVER - register: use /
+[2015-07-25 23:46:22.791] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-07-25 23:46:22.803] [INFO] SERVER - register: use /
+[2015-07-25 23:46:22.812] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/uikit.min.js
+[2015-07-25 23:46:22.817] [INFO] SERVER - register: use /
+[2015-07-25 23:46:22.827] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sticky.min.js
+[2015-07-25 23:46:33.181] [INFO] SERVER - register: use /
+[2015-07-25 23:46:33.198] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:46:33.317] [INFO] SERVER - register: use /
+[2015-07-25 23:46:33.325] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-25 23:46:33.332] [INFO] SERVER - register: use /
+[2015-07-25 23:46:33.341] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:46:33.350] [INFO] SERVER - register: use /
+[2015-07-25 23:46:33.356] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-25 23:46:33.365] [INFO] SERVER - register: use /
+[2015-07-25 23:46:33.373] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-25 23:46:33.382] [INFO] SERVER - register: use /
+[2015-07-25 23:46:33.390] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-07-25 23:46:33.401] [INFO] SERVER - register: use /
+[2015-07-25 23:46:33.407] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/uikit.min.js
+[2015-07-25 23:46:33.421] [INFO] SERVER - register: use /
+[2015-07-25 23:46:33.430] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sticky.min.js
+[2015-07-25 23:46:33.441] [INFO] SERVER - register: use /
+[2015-07-25 23:46:33.449] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
+[2015-07-25 23:46:33.460] [INFO] SERVER - register: use /
+[2015-07-25 23:46:33.465] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-25 23:46:48.522] [INFO] SERVER - register: use /
+[2015-07-25 23:46:48.541] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-25 23:46:48.551] [INFO] SERVER - register: use /
+[2015-07-25 23:46:48.557] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:46:48.569] [INFO] SERVER - register: use /
+[2015-07-25 23:46:48.588] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-25 23:46:50.237] [INFO] SERVER - register: use /
+[2015-07-25 23:46:50.241] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-25 23:46:50.339] [INFO] SERVER - register: use /
+[2015-07-25 23:46:50.352] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-25 23:46:50.361] [INFO] SERVER - register: use /
+[2015-07-25 23:46:50.378] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:46:50.387] [INFO] SERVER - register: use /
+[2015-07-25 23:46:50.390] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-25 23:46:50.406] [INFO] SERVER - register: use /
+[2015-07-25 23:46:50.410] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-25 23:46:50.420] [INFO] SERVER - register: use /
+[2015-07-25 23:46:50.424] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-07-25 23:46:50.434] [INFO] SERVER - register: use /
+[2015-07-25 23:46:50.453] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
+[2015-07-25 23:46:50.472] [INFO] SERVER - register: use /
+[2015-07-25 23:46:50.477] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-25 23:46:50.506] [INFO] SERVER - register: use /
+[2015-07-25 23:46:50.516] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/uikit.min.js
+[2015-07-25 23:46:50.526] [INFO] SERVER - register: use /
+[2015-07-25 23:46:50.532] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sticky.min.js
+[2015-07-25 23:52:30.078] [INFO] SERVER - register middlewares: use[object Arguments]
+[2015-07-25 23:52:30.099] [INFO] SERVER - register: use /static/*
+[2015-07-25 23:52:30.105] [INFO] SERVER - register: get /haha
+[2015-07-25 23:52:30.115] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 23:52:32.613] [INFO] SERVER - register: use /
+[2015-07-25 23:52:32.627] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-25 23:52:32.739] [INFO] SERVER - register: use /
+[2015-07-25 23:52:32.748] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-25 23:52:32.760] [INFO] SERVER - register: use /
+[2015-07-25 23:52:32.766] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sticky.min.js
+[2015-07-25 23:52:32.777] [INFO] SERVER - register: use /
+[2015-07-25 23:52:32.783] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:52:32.790] [INFO] SERVER - register: use /
+[2015-07-25 23:52:32.794] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-25 23:52:32.808] [INFO] SERVER - register: use /
+[2015-07-25 23:52:32.833] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-25 23:52:32.852] [INFO] SERVER - register: use /
+[2015-07-25 23:52:32.862] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-07-25 23:52:32.874] [INFO] SERVER - register: use /
+[2015-07-25 23:52:32.884] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/uikit.min.js
+[2015-07-25 23:52:32.901] [INFO] SERVER - register: use /
+[2015-07-25 23:52:32.911] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
+[2015-07-25 23:52:32.925] [INFO] SERVER - register: use /
+[2015-07-25 23:52:32.931] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-25 23:54:11.902] [INFO] SERVER - register: use /static/*
+[2015-07-25 23:54:11.927] [INFO] SERVER - register: get /haha
+[2015-07-25 23:54:11.940] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-25 23:54:14.048] [INFO] SERVER - register: use /
+[2015-07-25 23:54:14.051] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-25 23:54:14.137] [INFO] SERVER - register: use /
+[2015-07-25 23:54:14.142] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-25 23:54:14.153] [INFO] SERVER - register: use /
+[2015-07-25 23:54:14.155] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-25 23:54:14.160] [INFO] SERVER - register: use /
+[2015-07-25 23:54:14.163] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-25 23:54:14.169] [INFO] SERVER - register: use /
+[2015-07-25 23:54:14.171] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-25 23:54:14.178] [INFO] SERVER - register: use /
+[2015-07-25 23:54:14.180] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-07-25 23:54:14.184] [INFO] SERVER - register: use /
+[2015-07-25 23:54:14.186] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/uikit.min.js
+[2015-07-25 23:54:14.191] [INFO] SERVER - register: use /
+[2015-07-25 23:54:14.196] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sticky.min.js
+[2015-07-25 23:54:14.213] [INFO] SERVER - register: use /
+[2015-07-25 23:54:14.216] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
+[2015-07-25 23:54:14.224] [INFO] SERVER - register: use /
+[2015-07-25 23:54:14.230] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-26 10:54:46.292] [INFO] SERVER - register: use /static/*
+[2015-07-26 10:54:46.318] [INFO] SERVER - register: get /haha
+[2015-07-26 10:54:46.323] [INFO] SERVER - register: use /
+[2015-07-26 10:54:46.335] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 10:55:01.119] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 10:55:15.829] [INFO] SERVER - 127.0.0.1:8888 GET /haha
+[2015-07-26 10:55:16.199] [INFO] SERVER - 127.0.0.1:8888 GET /favicon.ico
+[2015-07-26 10:55:22.913] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 10:55:44.376] [INFO] SERVER - 127.0.0.1:8888 GET /haha
+[2015-07-26 10:55:46.829] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 10:56:04.582] [INFO] SERVER - 127.0.0.1:8888 GET /favicon.ico
+[2015-07-26 10:58:44.503] [INFO] SERVER - register: use /static/*
+[2015-07-26 10:58:44.534] [INFO] SERVER - register: get /haha
+[2015-07-26 10:58:44.542] [INFO] SERVER - register: use /
+[2015-07-26 10:58:44.556] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 10:58:47.939] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 10:59:09.491] [INFO] SERVER - 127.0.0.1:8888 GET /haha
+[2015-07-26 10:59:09.663] [INFO] SERVER - 127.0.0.1:8888 GET /favicon.ico
+[2015-07-26 10:59:13.132] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 10:59:48.092] [INFO] SERVER - register: use /static/*
+[2015-07-26 10:59:48.143] [INFO] SERVER - register: get /haha
+[2015-07-26 10:59:48.149] [INFO] SERVER - register: use /
+[2015-07-26 10:59:48.164] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 10:59:49.753] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:01:24.625] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:01:24.648] [INFO] SERVER - register: get /haha
+[2015-07-26 11:01:24.655] [INFO] SERVER - register: use /
+[2015-07-26 11:01:24.665] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:01:26.765] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:07:17.956] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:07:17.992] [INFO] SERVER - register: get /haha
+[2015-07-26 11:07:18.006] [INFO] SERVER - register: use /
+[2015-07-26 11:07:18.023] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:08:31.981] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:08:32.013] [INFO] SERVER - register: get /haha
+[2015-07-26 11:08:32.022] [INFO] SERVER - register: use /
+[2015-07-26 11:08:32.039] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:08:58.442] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:09:14.975] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:09:15.003] [INFO] SERVER - register: get /haha
+[2015-07-26 11:09:15.009] [INFO] SERVER - register: use /
+[2015-07-26 11:09:15.022] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:09:16.864] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:09:16.876] [ERROR] SERVER - 2
+[2015-07-26 11:10:20.683] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:10:20.708] [INFO] SERVER - register: get /haha
+[2015-07-26 11:10:20.713] [INFO] SERVER - register: use /
+[2015-07-26 11:10:20.728] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:10:23.828] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:10:23.838] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+},function (req, res, next){
+	res.render('test.html',{}); 
+	next();
+}
+[2015-07-26 11:10:23.851] [ERROR] SERVER - 
+[2015-07-26 11:11:52.613] [ERROR] SERVER - function (viewname, data){
+	logger.error('come in');
+	var layout;
+	if(data && data.hasOwnProperty(layout)){
+		layout = data.layout;
+	}
+	if(layout){
+		if(!cache[layout]){
+			try{
+				cache[layout] = fs.readFileSync(path.join(VIEW_FOLDER, layout), 'utf8');
+			}
+			catch(e){
+				res.writeHead(500, {'Content-Type': 'text/html;charset=utf8'});
+				res.end('布局文件错误');
+				return;
+			}
+		}
+	}
+	var layoutContent = cache[layout] || '<%- body%>';
+
+	var replaced;
+	try{
+		replaced = renderLayout(layoutContent, viewname);
+	}
+	catch(e){
+		logger.error('模板文件错误'+e.toString());
+		handle500(null, res);
+		return;
+	}
+	//将模板和布局文件名做key缓存
+	var key = viewname + ':' + (layout || '');
+	if(!cache[key]){
+		//编译模板
+		cache[key] = complie(replaced);
+	}
+	res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
+	var html = cache[key](data);
+	res.end(html);
+}
+[2015-07-26 11:11:52.647] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:11:52.656] [INFO] SERVER - register: get /haha
+[2015-07-26 11:11:52.659] [INFO] SERVER - register: use /
+[2015-07-26 11:11:52.672] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:12:10.704] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:12:10.720] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+},function (req, res, next){
+	res.render('test.html',{}); 
+	next();
+}
+[2015-07-26 11:12:10.735] [ERROR] SERVER - 
+[2015-07-26 11:14:17.910] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:14:17.915] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+},function (req, res, next){
+	res.render('test.html',{}); 
+	next();
+}
+[2015-07-26 11:14:17.928] [ERROR] SERVER - 
+[2015-07-26 11:16:57.375] [ERROR] SERVER - function (viewname, data){
+	logger.error('come in');
+	var layout;
+	if(data && data.hasOwnProperty(layout)){
+		layout = data.layout;
+	}
+	if(layout){
+		if(!cache[layout]){
+			try{
+				cache[layout] = fs.readFileSync(path.join(VIEW_FOLDER, layout), 'utf8');
+			}
+			catch(e){
+				res.writeHead(500, {'Content-Type': 'text/html;charset=utf8'});
+				res.end('布局文件错误');
+				return;
+			}
+		}
+	}
+	var layoutContent = cache[layout] || '<%- body%>';
+
+	var replaced;
+	try{
+		replaced = renderLayout(layoutContent, viewname);
+	}
+	catch(e){
+		logger.error('模板文件错误'+e.toString());
+		handle500(null, res);
+		return;
+	}
+	//将模板和布局文件名做key缓存
+	var key = viewname + ':' + (layout || '');
+	if(!cache[key]){
+		//编译模板
+		cache[key] = complie(replaced);
+	}
+	res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
+	var html = cache[key](data);
+	res.end(html);
+}
+[2015-07-26 11:16:57.427] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:16:57.434] [INFO] SERVER - register: get /haha
+[2015-07-26 11:16:57.438] [INFO] SERVER - register: use /
+[2015-07-26 11:16:57.455] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:17:03.140] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:17:03.163] [ERROR] SERVER - [ [Function] ]
+[2015-07-26 11:17:03.180] [ERROR] SERVER - [ [Function] ]
+[2015-07-26 11:17:21.681] [ERROR] SERVER - function (viewname, data){
+	logger.error('come in');
+	var layout;
+	if(data && data.hasOwnProperty(layout)){
+		layout = data.layout;
+	}
+	if(layout){
+		if(!cache[layout]){
+			try{
+				cache[layout] = fs.readFileSync(path.join(VIEW_FOLDER, layout), 'utf8');
+			}
+			catch(e){
+				res.writeHead(500, {'Content-Type': 'text/html;charset=utf8'});
+				res.end('布局文件错误');
+				return;
+			}
+		}
+	}
+	var layoutContent = cache[layout] || '<%- body%>';
+
+	var replaced;
+	try{
+		replaced = renderLayout(layoutContent, viewname);
+	}
+	catch(e){
+		logger.error('模板文件错误'+e.toString());
+		handle500(null, res);
+		return;
+	}
+	//将模板和布局文件名做key缓存
+	var key = viewname + ':' + (layout || '');
+	if(!cache[key]){
+		//编译模板
+		cache[key] = complie(replaced);
+	}
+	res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
+	var html = cache[key](data);
+	res.end(html);
+}
+[2015-07-26 11:17:21.750] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:17:21.766] [INFO] SERVER - register: get /haha
+[2015-07-26 11:17:21.773] [INFO] SERVER - register: use /
+[2015-07-26 11:17:21.793] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:17:23.050] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:17:23.061] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:17:23.072] [ERROR] SERVER - function (req, res, next){
+	res.render('test.html', {}); 
+	next();
+}
+[2015-07-26 11:21:09.109] [ERROR] SERVER - function (viewname, data){
+	logger.error('come in');
+	var layout;
+	if(data && data.hasOwnProperty(layout)){
+		layout = data.layout;
+	}
+	if(layout){
+		if(!cache[layout]){
+			try{
+				cache[layout] = fs.readFileSync(path.join(VIEW_FOLDER, layout), 'utf8');
+			}
+			catch(e){
+				res.writeHead(500, {'Content-Type': 'text/html;charset=utf8'});
+				res.end('布局文件错误');
+				return;
+			}
+		}
+	}
+	var layoutContent = cache[layout] || '<%- body%>';
+
+	var replaced;
+	try{
+		replaced = renderLayout(layoutContent, viewname);
+	}
+	catch(e){
+		logger.error('模板文件错误'+e.toString());
+		handle500(null, res);
+		return;
+	}
+	//将模板和布局文件名做key缓存
+	var key = viewname + ':' + (layout || '');
+	if(!cache[key]){
+		//编译模板
+		cache[key] = complie(replaced);
+	}
+	res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
+	var html = cache[key](data);
+	res.end(html);
+}
+[2015-07-26 11:21:09.152] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:21:09.160] [INFO] SERVER - register: get /haha
+[2015-07-26 11:21:09.164] [INFO] SERVER - register: use /
+[2015-07-26 11:21:09.177] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:21:12.910] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:21:12.920] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:21:12.938] [ERROR] SERVER - function (req, res, next){
+	res.render('test.html', {}); 
+	next();
+}
+[2015-07-26 11:31:23.404] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:31:23.429] [INFO] SERVER - register: get /haha
+[2015-07-26 11:31:23.434] [INFO] SERVER - register: use /
+[2015-07-26 11:31:23.449] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:31:27.305] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:31:27.312] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:31:27.324] [ERROR] SERVER - function (req, res, next){
+	res.render('test.html', {}); 
+	next();
+}
+[2015-07-26 11:33:34.974] [INFO] SERVER - 127.0.0.1:8888 GET /haha
+[2015-07-26 11:33:34.978] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:33:34.990] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 11:33:35.324] [INFO] SERVER - 127.0.0.1:8888 GET /favicon.ico
+[2015-07-26 11:33:35.327] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:35:01.345] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:35:01.368] [INFO] SERVER - register: get /haha
+[2015-07-26 11:35:01.374] [INFO] SERVER - register: use /
+[2015-07-26 11:35:01.385] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:35:07.047] [INFO] SERVER - 127.0.0.1:8888 GET /haha
+[2015-07-26 11:35:07.057] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:35:07.076] [ERROR] SERVER - function (req, res, next){	
+	res.end("It's ok la \n");
+	next();
+}
+[2015-07-26 11:35:07.331] [INFO] SERVER - 127.0.0.1:8888 GET /favicon.ico
+[2015-07-26 11:35:07.334] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:35:09.937] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:35:09.942] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:35:09.959] [ERROR] SERVER - function (req, res, next){
+	res.render('test.html', {}); 
+	next();
+}
+[2015-07-26 11:36:28.945] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:36:28.967] [INFO] SERVER - register: get /haha
+[2015-07-26 11:36:28.971] [INFO] SERVER - register: use /
+[2015-07-26 11:36:28.980] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:36:31.143] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:36:31.158] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:36:31.179] [ERROR] SERVER - function (req, res, next){
+	res.render('test.html', {}); 
+	next();
+}
+[2015-07-26 11:38:31.149] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:38:31.151] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:38:31.159] [ERROR] SERVER - function (req, res, next){
+	res.render('test.html', {}); 
+	next();
+}
+[2015-07-26 11:39:06.640] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:39:06.664] [INFO] SERVER - register: get /haha
+[2015-07-26 11:39:06.669] [INFO] SERVER - register: use /
+[2015-07-26 11:39:06.680] [INFO] SERVER - Server running at http://127.0.0.1
+[2015-07-26 11:39:09.806] [INFO] SERVER - 127.0.0.1:8888 GET /
+[2015-07-26 11:39:09.821] [ERROR] SERVER - function (req, res, next){
+	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
+	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
+	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
+	next();
+}
+[2015-07-26 11:39:09.849] [ERROR] SERVER - function (req, res, next){
+	res.render('test.html', {}); 
+	next();
+}
+[2015-07-26 11:39:49.763] [INFO] SERVER - register: use /static/*
+[2015-07-26 11:39:49.784] [INFO] SERVER - register: get /haha
+[2015-07-26 11:39:49.789] [INFO] SERVER - register: use /
+[2015-07-26 11:39:49.799] [INFO] SERVER - Server running at http://127.0.0.1

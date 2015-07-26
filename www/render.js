@@ -1,3 +1,14 @@
+/*!
+ * FreeMind
+ * Copyright(c) 2014-2015 freemind
+ * MIT Licensed
+ */
+
+'use strict';
+
+/**
+ * Module dependencies.
+ */
 //通常将渲染方法设计为render()，参数就是模板路径和数据
 //形成模板技术的四个要素:
 //1.模板语言
@@ -16,8 +27,12 @@ var logger = require('./logger');
 var handlers = require('./controllers/handlers');
 var fs = require('fs');
 var path = require('path');
-
+var http = require('http');
 var handle500 = handlers.handle500;
+
+var res = module.exports = {
+  __proto__: http.ServerResponse.prototype
+};
 
 //cache用于缓存模板
 var cache = {};
@@ -45,7 +60,6 @@ var complie = function(str){
 	//模板技术，就是替换特殊字标签的技术
 	//预解析子模板
 	str = preComplie(str);
-	return str;
 	var tpl  = str.replace(/\n/g, '\\n') //将换行符替换掉
 	.replace(/<%=(\s\S)+?%>/g, function(match, code){
 		//转义
@@ -65,7 +79,7 @@ var complie = function(str){
 	tpl = tpl.replace(/''/g, '\'\\n\'');
 	tpl = 'var tpl = "";\nwith(obj || {}){\n' + tpl +'\n}\nreturn tpl;';
 	//加上escape函数 
-	logger.trace(tpl);
+	logger.warn(tpl);
 	return new Function('obj', 'escape', tpl);
 };
 
@@ -96,7 +110,6 @@ var renderLayout = function(str, viewname){
 	return str.replace(/<%-\s*body\s*%>/g, function(match, code){
 		if(!cache[viewname]){
 			cache[viewname] = fs.readFileSync(path.join(VIEW_FOLDER, viewname), 'utf8');
-			//console.log(path.join(VIEW_FOLDER, viewname).toString());
 		}
 		return cache[viewname];
 	});
@@ -113,7 +126,8 @@ var renderLayout = function(str, viewname){
 //	layout: 'layout.html',
 //	users: []
 //});
-var render = function(res, viewname, data){
+res.render = function(viewname, data){
+	logger.error('come in');
 	var layout;
 	if(data && data.hasOwnProperty(layout)){
 		layout = data.layout;
@@ -124,8 +138,8 @@ var render = function(res, viewname, data){
 				cache[layout] = fs.readFileSync(path.join(VIEW_FOLDER, layout), 'utf8');
 			}
 			catch(e){
-				res.writeHead(500, {'Content-Type': 'text/html;charset=utf8'});
-				res.end('布局文件错误');
+				this.writeHead(500, {'Content-Type': 'text/html;charset=utf8'});
+				this.end('布局文件错误');
 				return;
 			}
 		}
@@ -138,7 +152,7 @@ var render = function(res, viewname, data){
 	}
 	catch(e){
 		logger.error('模板文件错误'+e.toString());
-		handle500(null, res);
+		handle500(null, this);
 		return;
 	}
 	//将模板和布局文件名做key缓存
@@ -147,10 +161,7 @@ var render = function(res, viewname, data){
 		//编译模板
 		cache[key] = complie(replaced);
 	}
-	res.writeHead(200, {'Content-Type': 'text/html'});
-	//var html = cache[key](data);
-	var html = cache[key];
-	res.write(html);
+	this.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
+	var html = cache[key](data);
+	this.end(html);
 };
-
-module.exports = render;

@@ -1,3 +1,14 @@
+/*!
+ * FreeMind
+ * Copyright(c) 2014-2015 freemind
+ * MIT Licensed
+ */
+
+'use strict';
+
+/**
+ * Module dependencies.
+ */
 //RESTful
 //RESTful主要思想是对一个资源的操作主要体现在HTTP请求方法上，而不是体现在URL上
 var url = require('url');
@@ -8,11 +19,6 @@ var handle404 = handlers.handle404;
 var routes = {'all': []};
 var app = {};
 
-//记录中间件和路由注册
-var recordRegister = function(method, path){
-	logger.info('register: ' + method + ' ' + path );
-}
-
 //可以使用如下注册中间件方法
 //app.use(querystring)
 //app.use(cookie)
@@ -22,7 +28,7 @@ var recordRegister = function(method, path){
 app.use = function(path){
 	var handle;
 	if(typeof path === 'string'){
-		recordRegister('use', path);
+		logger.info('register: ' + 'use' + ' ' + path );
 		handle = {
 			//第一个参数作为路径
 			path : pathRegexp(path),
@@ -31,10 +37,9 @@ app.use = function(path){
 		};
 	}
 	else{
-		recordRegister('use', 'all');
 		handle = {
 			//第一个参数作为路径
-			path : pathRegexp('all'),
+			path : pathRegexp('*'),
 			//其他是处理单元
 			stack : Array.prototype.slice.call(arguments, 0)
 		};
@@ -48,7 +53,7 @@ app.use = function(path){
 	app[method] = function(path){
 		var handle;
 		if(typeof path === 'string'){
-			recordRegister(method, path);
+			logger.info('register: ' + method + ' ' + path );
 			handle = {
 				//第一个参数作为路径
 				path : pathRegexp(path),
@@ -57,10 +62,9 @@ app.use = function(path){
 			};
 		}
 		else{
-			recordRegister(method, 'all');
 			handle = {
 				//第一个参数作为路径
-				path : pathRegexp('all'),
+				path : pathRegexp('*'),
 				//其他是处理单元
 				stack : Array.prototype.slice.call(arguments, 0)
 			};
@@ -81,6 +85,7 @@ var handle = function(req, res, stack){
 		if(middleware){
 			//传入next()函数自身，使中间件能够执行结束后递归
 			try{
+				logger.error(middleware.toString());
 				middleware(req, res, next);
 			}		
 			catch(err){
@@ -165,13 +170,6 @@ var dispatch = function(req, res){
 var pathRegexp = function(path){
 	var keys = [];
 	var strict = strict || false;
-
-	if(path === 'all'){
-		return {
-			keys : keys,
-			regexp : new RegExp('^.*$')
-		};
-	}
 
 	path = path
 		   .concat(strict ? '' : '/?')

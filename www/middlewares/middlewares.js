@@ -55,7 +55,7 @@ var staticFile = function(req, res, next){
 	var PATH = url.parse(req.url).pathname;
 	var pathname = PATH.slice(PATH.lastIndexOf('static'));
 
-	fs.readFile(path.join(ROOT, pathname), function(err, file){
+	fs.readFile(path.join(ROOT, pathname), 'utf8',function(err, file){
 		if(err){
 			return next(err);
 		}
