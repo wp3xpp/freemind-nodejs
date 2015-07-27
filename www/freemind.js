@@ -33,7 +33,7 @@ function createApplication(){
 	merge(app, EventEmitter.prototype, false);
 	app.response = { __proto__: res, app: app };
 	return app;
-};
+}
 
 //简化创建方式，初始化中间件
 app.listen = function listen(port){
@@ -41,7 +41,7 @@ app.listen = function listen(port){
 		 throw new TypeError('argument port must be a number');
 	}
 	try{
-		var Server = app.createServer();
+		var Server = this.createServer();
 		Server.listen(port, '127.0.0.1');
 		logger.info('Server running at http://127.0.0.1:' + port);
 		var self = this;
@@ -49,20 +49,20 @@ app.listen = function listen(port){
 		Server.on('request', function(req, res){
 			res.__proto__ = self.response;
 			logger.info(req.headers['host'] + ' ' + req.method + ' ' + req.url);
-			app.dispatch(req, res); //分发请求
-		})
+			self.dispatch(req, res); //分发请求
+		});
 		
 		Server.on('close', function(){
 			logger.info('SERVER CLOSED');
-		})
+		});
 	}
 	catch(e){
 		logger.error(e.toString());
 	}
-}
+};
 
 var showFunctions = function(object){
  Object.getOwnPropertyNames(object).forEach(function forEachOwnPropertyName(name) {
      console.log(name);
- })
+ });
 };

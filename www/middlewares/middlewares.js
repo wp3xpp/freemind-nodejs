@@ -18,7 +18,7 @@ exports.getQueryString = function(req, res, next){
 	//var query = querystring.parse(url.parse(req.url).query); //一种获得查询字符串的方法
 	//var query = url.parse(req.url, true).query; //更简洁的获得查询字符串的方法
 	req.query = url.parse(req.url, true).query; //将查询字符串挂载在req上 
-	next();
+	return next();
 };
 
 //cookie解析中间件
@@ -34,7 +34,7 @@ exports.cookie = function(req, res, next){
 	}
 
 	req.cookies = cookies;
-	next();
+	return next();
 };
 
 //由于异步方法不能直接捕获，中间件异步产生的异常需要自己传递出来
@@ -59,29 +59,21 @@ exports.staticFile = function(req, res, next){
 	var PATH = url.parse(req.url).pathname;
 	var pathname = PATH.slice(PATH.lastIndexOf('static'));
 	var contenType = mime.lookup(pathname);
-	var woff = /^static\/fonts\/.*$/g;
-	if(woff.test(pathname)){
-		contenType = "application/octet-stream";
+	var isFont = /^static\/fonts\/.*$/g;
+	if(isFont.test(pathname)){
+		//字体文件需要用流形式传送
+		res.sendfile(path.join(ROOT, pathname));
 	}
-
-	fs.readFile(path.join(ROOT, pathname), 'utf8', function(err, file){
+	else{
+		fs.readFile(path.join(ROOT, pathname), 'utf8', function(err, file){
 		if(err){
 			return next(err);
 		}
 		res.setHeader("Access-Control-Allow-Origin", "*");
 		res.setHeader("Content-Type", contenType +';charset=utf8');
 		res.end(file);
-		next();
-	});
-	/*try{
-		var file = fs.readFileSync(path.join(ROOT, pathname), 'utf8');
-		res.setHeader("Access-Control-Allow-Origin", "*");
-		res.setHeader("Content-Type", contenType +';charset=utf8');
-		res.end(file);
-		next();
+		});
 	}
-	catch(e){
-		logger.error(e.toString());
-	}*/
+	return next();
 };
 

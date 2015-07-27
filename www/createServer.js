@@ -34,9 +34,9 @@ var renderTest = function(req, res, next){
 
 var addRoutes = function(){
 	app.use(middlewares.getQueryString);
-	app.use('/static/*', middlewares.staticFile);
+	app.get('/static/*', middlewares.staticFile);
 	app.get('/haha', test);
-	app.use('/', renderTest);
+	app.get('/', renderTest);
 };
 addRoutes(); 
 

@@ -1,8 +1,7 @@
 var logger = require('../logger.js');
 
 var handle404 = function(req, res){
-	res.writeHead(404, {'Content-Type': 'text/html; charset=utf8'});
-	res.end('404 Not Found!\n');
+	res.render('404.html', {});
 }
 
 var handle500 = function(req, res){

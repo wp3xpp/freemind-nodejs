@@ -32,6 +32,7 @@ var handlers = require('./controllers/handlers');
 var fs = require('fs');
 var path = require('path');
 var http = require('http');
+var mime = require('mime');
 var handle500 = handlers.handle500;
 
 var res = module.exports = {
@@ -65,6 +66,7 @@ var complie = function(str){
 	//预解析子模板
 	str = preComplie(str);
 	var tpl  = str.replace(/\n/g, '\\n') //将换行符替换掉
+	.replace(/\'/g, '\"')
 	.replace(/<%=([\s\S+]+?)%>/g, function(match, code){
 		//转义
 		return "' + escape(" + code + ") + '";
@@ -165,8 +167,45 @@ res.render = function render(viewname, data){
 		cache[key] = complie(replaced);
 	}
 	this.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
-	console.log(data.user);
 	var html = cache[key](data, escape);
-	logger.trace(html);
+	/*logger.trace(cache[key].toString());*/
 	this.end(html);
+};
+
+//附件下载
+//Content-Disposition字段是用来判断报文数据是当浏览器内容还是可下载附件
+//当时内容时，值为inline，当数据可以存为附件时为attachment
+//还能通过参数指定保存时的文件名
+//例如: Content-Disposition: attachment; filename="filename.txt"
+//响应一个附件下载的API方法大致如下
+res.sendfile = function sendfile(filepath){
+	var self = this;
+	fs.stat(filepath, function(err, stat){
+		if(err){
+			logger.error(err.toString());
+		}
+		var stream = fs.createReadStream(filepath);
+		//设置内容
+		self.setHeader('Content-Type', mime.lookup(filepath));
+		//设置长度
+		self.setHeader('Content-Length', stat.size);
+		//设置附件
+		self.setHeader('Content-Disposition', 'attachment; filename="' + path.basename(filepath) + '"');
+		self.writeHead(200);
+		stream.pipe(self);
+	});
+};
+
+//响应JSON
+res.json = function json(data){
+	this.setHeader('Content-Type', 'application/json');
+	this.writeHead(200);
+	this.end(JSON.stringify(data));
+};
+
+//响应跳转
+res.redirect = function redirect(url){
+	this.setHeader('Location', url);
+	this.writeHead(302);
+	this.end('Redirect to' + url);
 };

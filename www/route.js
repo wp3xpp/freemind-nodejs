@@ -80,7 +80,7 @@ app.use = function(path){
 var handle = function(req, res, stack){
 	var next = function(err){
 		if (err) {
-			return handle500(err, req, res, stack);
+			return handleError(err, req, res, stack);
 		}
 		//从stack数组中取出中间件并执行
 		var middleware = stack.shift();
@@ -99,8 +99,8 @@ var handle = function(req, res, stack){
 	next();
 };
 
-//为了区分普通中间件和异常处理中间件,handle500()方法会按照参数个数进行选取
-var handle500 = function(err, req, res, stack){
+//为了区分普通中间件和异常处理中间件,handleError()方法会按照参数个数进行选取
+var handleError = function(err, req, res, stack){
 	//选取异常处理中间件
 	stack = stack.filter(function(middleware){
 		return middleware.length === 4;
@@ -153,12 +153,13 @@ app.dispatch = function(req, res){
 	var method = req.method.toLowerCase();
 	//获取all方法的中间件
 	var stacks = match(pathname, routes.all, req);
+	var middlewareLength = stacks.length;
 	if(routes.hasOwnProperty(method)){
 		//根据请求方法分发,获取相关的中间件	
 		//stacks.concat(match(pathname, routes[method], req, res));
 		stacks.push.apply(stacks, match(pathname, routes[method], req));
 	}
-	if(stacks.length){
+	if(middlewareLength < stacks.length){
 		handle(req, res, stacks);
 	}
 	else{
