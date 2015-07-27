@@ -12,33 +12,16 @@
 var logger = require('./logger.js');
 var freemind = require('./freemind.js');
 var middlewares = require('./middlewares/middlewares.js');
+var handles = require('./controllers/handlers.js');
 
 var app = freemind(); 
 
-var test = function(req, res, next){	
-	res.end("It's ok la \n");
-	next();
-};
-
-var renderTest = function(req, res, next){
-	try{
-		res.render('index.html', {user:'freemind'}); 
-		next();
-	}
-	catch(e){
-		logger.error(e.toString());
-	}
-	
-};
-
-
-var addRoutes = function(){
+(function(){
 	app.use(middlewares.getQueryString);
 	app.get('/static/*', middlewares.staticFile);
-	app.get('/haha', test);
-	app.get('/', renderTest);
-};
-addRoutes(); 
+	app.get('/', handles.index);
+})();
+
 
 app.listen(8000);
 
