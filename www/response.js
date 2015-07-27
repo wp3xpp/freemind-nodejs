@@ -56,7 +56,7 @@ var escape = function(html){
 			.replace(/'/g, '&#039;'); //IE不支持&apos;(单引号)转义
 };
 
-//上述模板编译技术中间生成函数只与模板字符串相关，与具体数据无关，如果每次生成这个
+//模板编译技术中间生成函数只与模板字符串相关，与具体数据无关，如果每次生成这个
 //中间函数，会浪费CPU，为了提升模板渲染性能，会使用模板预编译的方式
 
 //<%= %>表示转义 <%- %>表示非转义
@@ -65,24 +65,25 @@ var complie = function(str){
 	//预解析子模板
 	str = preComplie(str);
 	var tpl  = str.replace(/\n/g, '\\n') //将换行符替换掉
-	.replace(/<%=(\s\S)+?%>/g, function(match, code){
+	.replace(/<%=([\s\S+]+?)%>/g, function(match, code){
 		//转义
 		return "' + escape(" + code + ") + '";
-	}).replace(/<%-(\s\S)+?%>/g, function(match, code){
+	}).replace(/<%-([\s\S]+?)%>/g, function(match, code){
 		//正常输出
 		return "' + " + code + "+ '";
-	}).replace(/<%(\s\S)+?%>/g, function(match, code){
+	}).replace(/<%([\s\S]+?)%>/g, function(match, code){
 		//可执行代码
 		return "';\n" + code + "\ntpl += '";
 	}).replace(/\'\n/g, '\'')
-	.replace(/\n\'/gm, '\'');
+	.replace(/\n\'/gm, '\'')
+	.replace(/\s/gm, ' ');
 
 	//为了使字符串继续表达为字符串，变量能够自寻找属于他的对象，这里使用with
 	tpl = "tpl = '" + tpl + "';";
 	//转换空行
 	tpl = tpl.replace(/''/g, '\'\\n\'');
 	tpl = 'var tpl = "";\nwith(obj || {}){\n' + tpl +'\n}\nreturn tpl;';
-	//加上escape函数 
+	//加上escape函数
 	return new Function('obj', 'escape', tpl);
 };
 
@@ -164,6 +165,8 @@ res.render = function render(viewname, data){
 		cache[key] = complie(replaced);
 	}
 	this.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
-	var html = cache[key](data);
+	console.log(data.user);
+	var html = cache[key](data, escape);
+	logger.trace(html);
 	this.end(html);
 };

@@ -12,7 +12,6 @@
 var logger = require('./logger.js');
 var freemind = require('./freemind.js');
 var middlewares = require('./middlewares/middlewares.js');
-var init = require('./middlewares/middlewares.js').init;
 
 var app = freemind(); 
 
@@ -23,7 +22,7 @@ var test = function(req, res, next){
 
 var renderTest = function(req, res, next){
 	try{
-		res.render('test.html', {}); 
+		res.render('index.html', {user:'freemind'}); 
 		next();
 	}
 	catch(e){
@@ -32,7 +31,7 @@ var renderTest = function(req, res, next){
 	
 };
 
-app.listen(8000);
+
 var addRoutes = function(){
 	app.use(middlewares.getQueryString);
 	app.use('/static/*', middlewares.staticFile);
@@ -41,5 +40,5 @@ var addRoutes = function(){
 };
 addRoutes(); 
 
-
+app.listen(8000);
 

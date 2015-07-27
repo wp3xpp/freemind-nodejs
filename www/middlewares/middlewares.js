@@ -3,6 +3,7 @@ var querystring = require('querystring');
 var logger = require('../logger.js');
 var fs = require('fs');
 var path = require('path');
+var mime = require('mime');
 var application = require('../freemind.js');
 
 /**中间件统一格式
@@ -57,14 +58,30 @@ exports.staticFile = function(req, res, next){
 	var ROOT = './';
 	var PATH = url.parse(req.url).pathname;
 	var pathname = PATH.slice(PATH.lastIndexOf('static'));
+	var contenType = mime.lookup(pathname);
+	var woff = /^static\/fonts\/.*$/g;
+	if(woff.test(pathname)){
+		contenType = "application/octet-stream";
+	}
 
-	fs.readFile(path.join(ROOT, pathname), 'utf8',function(err, file){
+	fs.readFile(path.join(ROOT, pathname), 'utf8', function(err, file){
 		if(err){
 			return next(err);
 		}
-		res.writeHead(200, 'text/html; charset=utf8');
+		res.setHeader("Access-Control-Allow-Origin", "*");
+		res.setHeader("Content-Type", contenType +';charset=utf8');
 		res.end(file);
 		next();
 	});
+	/*try{
+		var file = fs.readFileSync(path.join(ROOT, pathname), 'utf8');
+		res.setHeader("Access-Control-Allow-Origin", "*");
+		res.setHeader("Content-Type", contenType +';charset=utf8');
+		res.end(file);
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}*/
 };
 
