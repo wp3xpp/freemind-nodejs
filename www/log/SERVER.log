@@ -1655,3 +1655,18 @@ return tpl;
 [2015-07-27 22:10:45.024] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
 [2015-07-27 22:10:45.250] [INFO] SERVER - 127.0.0.1:8000 GET /static/fonts/fontawesome-webfont.woff2
 [2015-07-27 22:10:46.762] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-07-28 11:01:26.153] [INFO] SERVER - register: get /static/*
+[2015-07-28 11:01:26.168] [INFO] SERVER - register: get /
+[2015-07-28 11:01:26.168] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-28 13:32:40.007] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-28 13:32:40.082] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-28 13:32:40.092] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-28 13:32:40.097] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-28 13:32:40.099] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-28 13:32:40.103] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-07-28 13:32:40.105] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/uikit.min.js
+[2015-07-28 13:32:40.126] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sticky.min.js
+[2015-07-28 13:32:40.132] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
+[2015-07-28 13:32:40.135] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-28 13:32:40.359] [INFO] SERVER - 127.0.0.1:8000 GET /static/fonts/fontawesome-webfont.woff2
+[2015-07-28 13:32:40.564] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
