@@ -1724,3 +1724,141 @@ return tpl;
 [2015-07-28 23:06:43.751] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
 [2015-07-28 23:06:48.209] [INFO] SERVER - 127.0.0.1:8000 GET /static/fonts/fontawesome-webfont.woff2
 [2015-07-28 23:06:50.841] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-29 21:54:12.533] [INFO] SERVER - register: get /static/*
+[2015-07-29 21:54:12.545] [INFO] SERVER - register: get /
+[2015-07-29 22:14:29.413] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:14:29.422] [INFO] SERVER - register: get /
+[2015-07-29 22:17:03.683] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:17:03.691] [INFO] SERVER - register: get /
+[2015-07-29 22:21:08.494] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:21:08.503] [INFO] SERVER - register: get /
+[2015-07-29 22:21:08.507] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:21:09.475] [INFO] SERVER - users has been created!
+[2015-07-29 22:21:09.478] [INFO] SERVER - blogs has been created!
+[2015-07-29 22:21:09.482] [INFO] SERVER - comments has been created!
+[2015-07-29 22:26:17.221] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:26:17.228] [INFO] SERVER - register: get /
+[2015-07-29 22:26:17.238] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:26:17.352] [INFO] SERVER - users has been created!
+[2015-07-29 22:26:17.363] [INFO] SERVER - blogs has been created!
+[2015-07-29 22:26:17.375] [INFO] SERVER - comments has been created!
+[2015-07-29 22:30:05.671] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:30:05.677] [INFO] SERVER - register: get /
+[2015-07-29 22:31:12.499] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:31:12.506] [INFO] SERVER - register: get /
+[2015-07-29 22:31:19.665] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:31:19.672] [INFO] SERVER - register: get /
+[2015-07-29 22:34:32.730] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:34:32.737] [INFO] SERVER - register: get /
+[2015-07-29 22:34:44.411] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:34:44.418] [INFO] SERVER - register: get /
+[2015-07-29 22:35:17.822] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:35:17.829] [INFO] SERVER - register: get /
+[2015-07-29 22:35:24.793] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:35:24.799] [INFO] SERVER - register: get /
+[2015-07-29 22:35:24.810] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:36:03.858] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:36:03.865] [INFO] SERVER - register: get /
+[2015-07-29 22:36:03.868] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:36:04.197] [INFO] SERVER - users has been created!
+[2015-07-29 22:36:04.328] [INFO] SERVER - blogs has been created!
+[2015-07-29 22:36:04.495] [INFO] SERVER - comments has been created!
+[2015-07-29 22:36:11.764] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:36:11.771] [INFO] SERVER - register: get /
+[2015-07-29 22:36:11.780] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:36:11.887] [INFO] SERVER - users has been created!
+[2015-07-29 22:36:11.896] [INFO] SERVER - blogs has been created!
+[2015-07-29 22:36:11.905] [INFO] SERVER - comments has been created!
+[2015-07-29 22:46:20.593] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:46:20.602] [INFO] SERVER - register: get /
+[2015-07-29 22:46:20.612] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:46:20.728] [INFO] SERVER - users has been created!
+[2015-07-29 22:46:20.740] [INFO] SERVER - blogs has been created!
+[2015-07-29 22:46:20.752] [INFO] SERVER - comments has been created!
+[2015-07-29 22:53:33.277] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:53:33.287] [INFO] SERVER - register: get /
+[2015-07-29 22:53:33.299] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:53:33.364] [INFO] SERVER - users has been created!
+[2015-07-29 22:53:33.367] [INFO] SERVER - blogs has been created!
+[2015-07-29 22:53:33.369] [INFO] SERVER - comments has been created!
+[2015-07-29 22:53:51.802] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:53:51.812] [INFO] SERVER - register: get /
+[2015-07-29 22:53:51.824] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:54:22.639] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:54:22.648] [INFO] SERVER - register: get /
+[2015-07-29 22:54:22.659] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:56:24.753] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:56:24.762] [INFO] SERVER - register: get /
+[2015-07-29 22:56:24.773] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:56:24.827] [INFO] SERVER - users has been created!
+[2015-07-29 22:56:24.833] [INFO] SERVER - blogs has been created!
+[2015-07-29 22:56:24.835] [INFO] SERVER - comments has been created!
+[2015-07-29 22:57:16.697] [INFO] SERVER - register: get /static/*
+[2015-07-29 22:57:16.707] [INFO] SERVER - register: get /
+[2015-07-29 22:57:16.716] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 22:57:16.771] [INFO] SERVER - users has been created!
+[2015-07-29 22:57:16.774] [INFO] SERVER - blogs has been created!
+[2015-07-29 22:57:16.775] [INFO] SERVER - comments has been created!
+[2015-07-29 23:00:12.296] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:00:12.306] [INFO] SERVER - register: get /
+[2015-07-29 23:00:12.317] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:00:12.371] [INFO] SERVER - users has been created!
+[2015-07-29 23:00:12.375] [INFO] SERVER - blogs has been created!
+[2015-07-29 23:00:12.377] [INFO] SERVER - comments has been created!
+[2015-07-29 23:02:19.932] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:02:19.942] [INFO] SERVER - register: get /
+[2015-07-29 23:02:19.954] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:02:20.010] [INFO] SERVER - users has been created!
+[2015-07-29 23:02:20.014] [INFO] SERVER - blogs has been created!
+[2015-07-29 23:02:20.016] [INFO] SERVER - comments has been created!
+[2015-07-29 23:06:04.506] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:06:04.515] [INFO] SERVER - register: get /
+[2015-07-29 23:06:04.525] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:06:04.578] [INFO] SERVER - users has been created!
+[2015-07-29 23:06:04.582] [INFO] SERVER - blogs has been created!
+[2015-07-29 23:06:04.584] [INFO] SERVER - comments has been created!
+[2015-07-29 23:06:28.701] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:06:28.711] [INFO] SERVER - register: get /
+[2015-07-29 23:06:28.722] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:06:59.275] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:06:59.284] [INFO] SERVER - register: get /
+[2015-07-29 23:06:59.288] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:06:59.747] [INFO] SERVER - users has been created!
+[2015-07-29 23:06:59.931] [INFO] SERVER - blogs has been created!
+[2015-07-29 23:07:00.035] [INFO] SERVER - comments has been created!
+[2015-07-29 23:07:08.207] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:07:08.217] [INFO] SERVER - register: get /
+[2015-07-29 23:07:08.230] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:07:08.287] [INFO] SERVER - users has been created!
+[2015-07-29 23:07:08.292] [INFO] SERVER - blogs has been created!
+[2015-07-29 23:07:08.294] [INFO] SERVER - comments has been created!
+[2015-07-29 23:08:38.210] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:08:38.219] [INFO] SERVER - register: get /
+[2015-07-29 23:08:38.230] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:08:38.284] [INFO] SERVER - users has been created!
+[2015-07-29 23:08:38.288] [INFO] SERVER - blogs has been created!
+[2015-07-29 23:08:38.290] [INFO] SERVER - comments has been created!
+[2015-07-29 23:10:28.855] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:10:28.866] [INFO] SERVER - register: get /
+[2015-07-29 23:10:28.877] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:10:28.929] [INFO] SERVER - users has been created!
+[2015-07-29 23:10:28.933] [INFO] SERVER - blogs has been created!
+[2015-07-29 23:10:28.935] [INFO] SERVER - comments has been created!
+[2015-07-29 23:11:05.093] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:11:05.103] [INFO] SERVER - register: get /
+[2015-07-29 23:11:05.114] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:11:17.909] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:11:17.918] [INFO] SERVER - register: get /
+[2015-07-29 23:11:17.930] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:16:40.859] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:16:40.869] [INFO] SERVER - register: get /
+[2015-07-29 23:16:40.875] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:16:40.929] [INFO] SERVER - blogs has been created!
+[2015-07-29 23:16:40.933] [INFO] SERVER - comments has been created!
+[2015-07-29 23:16:41.216] [INFO] SERVER - users has been created!
+[2015-07-29 23:16:49.457] [INFO] SERVER - register: get /static/*
+[2015-07-29 23:16:49.466] [INFO] SERVER - register: get /
+[2015-07-29 23:16:49.478] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-29 23:16:49.534] [INFO] SERVER - users has been created!
+[2015-07-29 23:16:49.537] [INFO] SERVER - blogs has been created!
+[2015-07-29 23:16:49.539] [INFO] SERVER - comments has been created!
