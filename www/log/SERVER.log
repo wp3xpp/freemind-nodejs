@@ -1670,3 +1670,57 @@ return tpl;
 [2015-07-28 13:32:40.135] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
 [2015-07-28 13:32:40.359] [INFO] SERVER - 127.0.0.1:8000 GET /static/fonts/fontawesome-webfont.woff2
 [2015-07-28 13:32:40.564] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-28 18:48:54.910] [INFO] SERVER - register: get /static/*
+[2015-07-28 18:48:54.921] [INFO] SERVER - register: get /
+[2015-07-28 18:48:54.927] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-28 18:49:04.771] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-28 18:49:04.872] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-28 18:49:04.929] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-28 18:49:04.935] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-28 18:49:04.938] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-28 18:49:04.943] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-07-28 18:49:04.947] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/uikit.min.js
+[2015-07-28 18:49:04.996] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sticky.min.js
+[2015-07-28 18:49:05.014] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
+[2015-07-28 18:49:05.016] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-28 18:49:05.307] [INFO] SERVER - 127.0.0.1:8000 GET /static/fonts/fontawesome-webfont.woff2
+[2015-07-28 18:49:05.531] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-28 18:49:06.906] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-07-28 18:49:07.207] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-28 18:50:41.035] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-07-28 18:50:41.490] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-28 18:50:45.092] [INFO] SERVER - register: get /static/*
+[2015-07-28 18:50:45.107] [INFO] SERVER - register: get /
+[2015-07-28 18:50:45.114] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-28 18:50:46.502] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-07-28 18:50:46.829] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-28 18:50:56.649] [INFO] SERVER - register: get /static/*
+[2015-07-28 18:50:56.665] [INFO] SERVER - register: get /
+[2015-07-28 18:50:56.674] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-28 18:50:58.025] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-07-28 18:50:58.328] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-28 18:52:05.272] [INFO] SERVER - register: get /static/*
+[2015-07-28 18:52:05.285] [INFO] SERVER - register: get /
+[2015-07-28 18:52:05.293] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-28 18:52:06.770] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-07-28 18:52:35.480] [INFO] SERVER - register: get /static/*
+[2015-07-28 18:52:35.491] [INFO] SERVER - register: get /
+[2015-07-28 18:52:35.497] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-07-28 18:52:37.145] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-07-28 18:52:37.512] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-28 19:12:38.556] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-07-28 19:12:38.862] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-28 23:06:38.154] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-07-28 23:06:38.639] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-07-28 23:06:42.797] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-07-28 23:06:43.435] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.min.css
+[2015-07-28 23:06:43.716] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/uikit.gradient.min.css
+[2015-07-28 23:06:43.723] [INFO] SERVER - 127.0.0.1:8000 GET /static/css/awesome.css
+[2015-07-28 23:06:43.725] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-07-28 23:06:43.728] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-07-28 23:06:43.731] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/uikit.min.js
+[2015-07-28 23:06:43.734] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sticky.min.js
+[2015-07-28 23:06:43.747] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/vue.min.js
+[2015-07-28 23:06:43.751] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/awesome.js
+[2015-07-28 23:06:48.209] [INFO] SERVER - 127.0.0.1:8000 GET /static/fonts/fontawesome-webfont.woff2
+[2015-07-28 23:06:50.841] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico

@@ -12,6 +12,7 @@
 var logger = require('../logger.js');
 
 exports.handle404 = function handle404(req, res){
+	res.writeHead(404);
 	res.render('404.html', {});
 };
 
