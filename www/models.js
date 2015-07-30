@@ -21,7 +21,8 @@ var db = orm.connect(opts, function (err, db) {
 	db.settings.set('instance.cache', true);    
 });
 
-var initDB = function(){
+var initDB = function(callback){
+
 	users.sync(function (err) {
 	    !err && logger.info("users has been created!");
 	});
@@ -33,6 +34,8 @@ var initDB = function(){
 	comments.sync(function (err) {
 	    !err && logger.info("comments has been created!");
 	});
+
+    setTimeout(callback, 5000);
 }
 
 exports = module.exports = initDB;
@@ -50,15 +53,15 @@ exports = module.exports = initDB;
     primary key (`id`)
 ) engine=innodb default charset=utf8;*/
 var users = exports.users = db.define('users', {      
-    email : { type:"text", size:50, required:true, key:true },
+    email : { type:"text", size:50, required:true},
     passwd : { type:"text", size:50, required:true },
     admin : { type:"boolean", required:true },
     name : { type:"text", size:50, required:true },
     image : { type:"text", size:500 },
-    created_at: { type:"number", required:true, key:true, size:8, defaultValue:new Date().getTime() },
+    created_at: { type:"number", required:true, size:8, defaultValue:new Date().getTime() },
 }, {
     // options (optional)
-    id : "id"
+    
 });
 
 /*
@@ -83,9 +86,9 @@ var blogs = exports.blogs = db.define('blogs', {
 	name : { type:"text", size:50, required:true },
 	summary : { type:"text", size:200, required:true },
 	content : { type:"text", required:true },
-	created_at: { type:"number", required:true, key:true, unsigned:true, defaultValue:new Date().getTime() },
+	created_at: { type:"number", required:true, unsigned:true, defaultValue:new Date().getTime() },
 }, {
-	id : "id"
+	
 });
 
 /*
@@ -108,7 +111,7 @@ var comments = exports.comments = db.define('comments', {
 	user_name : { type:"text", size:50, required:true },
 	user_image : { type:"text", size:500, required:true },
 	content : { type:"text", required:true },
-	created_at: { type:"number", required:true, key:true, unsigned:true, defaultValue:new Date().getTime() },
+	created_at: { type:"number", required:true, unsigned:true, defaultValue:new Date().getTime() },
 }, {
-	id : "id"
+	
 });

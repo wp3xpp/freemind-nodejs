@@ -9,6 +9,7 @@
 /**
  * Module dependencies.
  */
+
 var logger = require('./logger.js');
 var freemind = require('./freemind.js');
 var middlewares = require('./middlewares/middlewares.js');
@@ -16,22 +17,26 @@ var handles = require('./controllers/handlers.js');
 var modles = require('./models.js');
 
 var app = freemind();
-modles(); 
 
-(function(){
+modles(insertModel);
+
+var initMiddlewares = function(){
 	app.use(middlewares.getQueryString);
 	app.get('/static/*', middlewares.staticFile);
 	app.get('/', handles.index);
-})();
+};
+initMiddlewares();
 
-modles.users.create([
+function insertModel(){
+	modles.users.create([
 	{
 		email : "wp3xpp",
     	passwd : "Hsw2mapei",
     	admin : true,
     	name : "freemind"
 	}
-],function(err){if(err) throw err;});
+	],function(err){if(err) throw err;})
+};
 
 
 app.listen(8000);
