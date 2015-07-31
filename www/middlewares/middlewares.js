@@ -59,8 +59,8 @@ exports.staticFile = function(req, res, next){
 	var PATH = url.parse(req.url).pathname;
 	var pathname = PATH.slice(PATH.lastIndexOf('static'));
 	var contenType = mime.lookup(pathname);
-	var isFont = /^static\/fonts\/.*$/g;
-	if(isFont.test(pathname)){
+	var pipeStream = /^static\/[fonts]\/.*$/g;
+	if(pipeStream.test(pathname)){
 		//字体文件需要用流形式传送
 		res.sendfile(path.join(ROOT, pathname));
 	}

@@ -1,70 +1,55 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
-    <title>Awesome Python Webapp</title>
-    <link rel="stylesheet" href="/static/css/uikit.min.css">
-    <link rel="stylesheet" href="/static/css/uikit.gradient.min.css">
-    <link rel="stylesheet" href="/static/css/awesome.css" />
-    <script src="/static/js/jquery.min.js"></script>
-    <script src="/static/js/sha1.min.js"></script>
-    <script src="/static/js/uikit.min.js"></script>
-    <script src="/static/js/sticky.min.js"></script>
-    <script src="/static/js/vue.min.js"></script>
-    <script src="/static/js/awesome.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Freemind Blog</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="static/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="static/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <!-- Amaze UI CSS -->
+  <link rel="stylesheet" href="//cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">
+
 </head>
 <body>
-    <nav class="uk-navbar uk-navbar-attached uk-margin-bottom">
-        <div class="uk-container uk-container-center">
-            <a href="/" class="uk-navbar-brand">Awesome</a>
-            <ul class="uk-navbar-nav">
-                <li data-url="blogs"><a href="/"><i class="uk-icon-home"></i> 日志</a></li>
-                <li><a target="_blank" href="http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000"><i class="uk-icon-book"></i> 教程</a></li>
-                <li><a target="_blank" href="https://github.com/michaelliao/awesome-python3-webapp"><i class="uk-icon-code"></i> 源码</a></li>
-            </ul>
-            <div class="uk-navbar-flip">
-                <ul class="uk-navbar-nav">
-                <% if(obj.user) {%>
-                    <li class="uk-parent" data-uk-dropdown>
-                        <a href="/manage/blogs"><i class="uk-icon-user"></i> <%=user%></a>
-                        <div class="uk-dropdown uk-dropdown-navbar">
-                            <ul class="uk-nav uk-nav-navbar">
-                                <li><a href="/signout"><i class="uk-icon-sign-out"></i> 登出</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                <% } else { %>
-                    <li><a href="/signin"><i class="uk-icon-sign-in"></i> 登陆</a></li>
-                    <li><a href="/register"><i class="uk-icon-edit"></i> 注册</a></li>
-                <% } %>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <div class="uk-container uk-container-center">
-        <div class="uk-grid">
-            <!-- content -->
-         
-            <!-- // content -->
-        </div>
-    </div>
+<div>开始写你的码...</div>
 
-    <div class="uk-margin-large-top" style="background-color:#eee; border-top:1px solid #ccc;">
-        <div class="uk-container uk-container-center uk-text-center">
-            <div class="uk-panel uk-margin-top uk-margin-bottom">
-                <p>
-                    <a target="_blank" href="http://weibo.com/liaoxuefeng" class="uk-icon-button uk-icon-weibo"></a>
-                    <a target="_blank" href="https://github.com/michaelliao" class="uk-icon-button uk-icon-github"></a>
-                    <a target="_blank" href="http://www.linkedin.com/in/liaoxuefeng" class="uk-icon-button uk-icon-linkedin-square"></a>
-                    <a target="_blank" href="https://twitter.com/liaoxuefeng" class="uk-icon-button uk-icon-twitter"></a>
-                </p>
-                <p>Powered by <a href="http://awesome.liaoxuefeng.com">Awesome Python Webapp</a>. Copyright &copy; 2014. [<a href="/manage/" target="_blank">Manage</a>]</p>
-                <p><a href="http://www.liaoxuefeng.com/" target="_blank">www.liaoxuefeng.com</a>. All rights reserved.</p>
-                <a target="_blank" href="http://www.w3.org/TR/html5/"><i class="uk-icon-html5" style="font-size:64px; color: #444;"></i></a>
-            </div>
+<!--[if lt IE 9]>
+<script src="//libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="/js/polyfill/rem.min.js"></script>
+<script src="//libs.useso.com/js/respond.js/1.4.2/respond.min.js"></script>
+<script src="//cdn.amazeui.org/amazeui/2.1.0/js/amazeui.legacy.min.js"></script>
+<![endif]-->
 
-        </div>
-    </div>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="//libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
+<script src="//cdn.amazeui.org/amazeui/2.1.0/js/amazeui.min.js"></script>
+<!--<![endif]-->
+
 </body>
 </html>
