@@ -30,5 +30,14 @@ exports.index = function index(req, res, next){
 	catch(e){
 		logger.error(e.toString());
 	}
-	
 };
+
+exports.login = function login(req, res, next){
+	try{
+		res.render('login.html', {}); 
+		next();
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+}

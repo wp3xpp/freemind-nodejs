@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>404 Not Found</title>
+  <title>登录</title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -14,11 +14,11 @@
   <!-- No Baidu Siteapp-->
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
 
-  <link rel="icon" type="image/png" href="static/i/favicon.png">
+  <link rel="icon" type="image/png" href="/static/i/favicon.png">
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="static/i/app-icon72x72@2x.png">
+  <link rel="icon" sizes="192x192" href="/static/i/app-icon72x72@2x.png">
 
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -35,27 +35,39 @@
 
 </head>
 <body>
-    <div class="am-g">
-      <div class="am-u-sm-12">
-        <h2 class="am-text-center am-text-xxxl am-margin-top-lg">404. Not Found</h2>
-        <p class="am-text-center">没有找到你要的页面</p>
-        <pre class="page-404 am-text-center" style="border:0px;background-color:#ffffff;">
-          .----.
-       _.'__    `.
-   .--($)($$)---/#\
- .' @          /###\
- :         ,   #####
-  `-..__.-' _.-\###/
-        `;_:    `"'
-      .'"""""`.
-     /,  ya ,\\
-    //  404!  \\
-    `-._______.-'
-    ___`. | .'___
-   (______|______)
-        </pre>
-      </div>
+
+<div class="am-g">
+  <div class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
+    <h3>登录</h3>
+    <hr>
+    <div class="am-btn-group">
+      <a href="#" class="am-btn am-btn-secondary am-btn-sm"><i class="am-icon-github am-icon-sm"></i> Github</a>
+      <a href="#" class="am-btn am-btn-success am-btn-sm"><i class="am-icon-google-plus-square am-icon-sm"></i> Google+</a>
+      <a href="#" class="am-btn am-btn-primary am-btn-sm"><i class="am-icon-stack-overflow am-icon-sm"></i> stackOverflow</a>
     </div>
+    <br>
+    <br>
+
+    <form method="post" class="am-form">
+      <label for="email">邮箱:</label>
+      <input type="email" name="" id="email" value="">
+      <br>
+      <label for="password">密码:</label>
+      <input type="password" name="" id="password" value="">
+      <br>
+      <label for="remember-me">
+        <input id="remember-me" type="checkbox">
+        记住密码
+      </label>
+      <br />
+      <div class="am-cf">
+        <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
+      </div>
+    </form>
+    <hr>
+    <p>© 2015 AllMobilize, Inc. Licensed under MIT license.</p>
+  </div>
+</div>
 
 <!--[if lt IE 9]>
 <script src="//libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>
