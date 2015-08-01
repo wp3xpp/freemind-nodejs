@@ -3141,3 +3141,845 @@
 [2015-07-31 22:29:12.669] [INFO] SERVER - 127.0.0.1:8000 GET /manage/
 [2015-07-31 22:29:13.154] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
 [2015-07-31 22:29:13.185] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-07-31 22:37:22.255] [INFO] SERVER - 127.0.0.1:8000 GET /manage/
+[2015-07-31 22:37:22.699] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:42:25.711] [INFO] SERVER - register: get /static/*
+[2015-08-01 14:42:25.711] [INFO] SERVER - register: get /
+[2015-08-01 14:42:25.711] [INFO] SERVER - register: get /manage
+[2015-08-01 14:42:25.711] [INFO] SERVER - register: get /registe
+[2015-08-01 14:42:25.727] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 14:42:25.946] [INFO] SERVER - comments has been created!
+[2015-08-01 14:42:25.946] [INFO] SERVER - users has been created!
+[2015-08-01 14:42:25.962] [INFO] SERVER - blogs has been created!
+[2015-08-01 14:42:33.539] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-08-01 14:42:34.052] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-01 14:42:34.961] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:42:43.755] [INFO] SERVER - 127.0.0.1:8000 GET /register
+[2015-08-01 14:42:45.748] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:42:53.129] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 14:42:53.295] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 14:42:53.299] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 14:42:53.571] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:43:00.650] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:43:00.867] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:43:00.898] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:43:03.165] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:43:05.944] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:43:06.169] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:43:06.193] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:43:08.648] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:43:12.716] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:43:13.114] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:43:13.166] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:43:16.736] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:43:17.582] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:43:17.971] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:43:18.035] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:43:25.337] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:43:27.615] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:43:27.990] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:43:28.053] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:43:41.060] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:45:45.825] [INFO] SERVER - register: get /static/*
+[2015-08-01 14:45:45.840] [INFO] SERVER - register: get /
+[2015-08-01 14:45:45.840] [INFO] SERVER - register: get /manage
+[2015-08-01 14:45:45.840] [INFO] SERVER - register: get /registe
+[2015-08-01 14:45:45.840] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 14:45:45.918] [INFO] SERVER - users has been created!
+[2015-08-01 14:45:45.934] [INFO] SERVER - blogs has been created!
+[2015-08-01 14:45:45.949] [INFO] SERVER - comments has been created!
+[2015-08-01 14:45:52.711] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:45:53.127] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:45:53.174] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:45:54.760] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:46:05.885] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:46:06.217] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:46:06.248] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:46:07.817] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:46:08.617] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 14:46:08.678] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 14:46:08.682] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 14:46:09.051] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:46:09.082] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-01 14:46:09.597] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 14:46:09.715] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 14:46:09.717] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 14:46:09.997] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:46:10.040] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-01 14:47:56.350] [INFO] SERVER - register: get /static/*
+[2015-08-01 14:47:56.366] [INFO] SERVER - register: get /
+[2015-08-01 14:47:56.366] [INFO] SERVER - register: get /manage
+[2015-08-01 14:47:56.366] [INFO] SERVER - register: get /registe
+[2015-08-01 14:47:56.366] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 14:47:56.459] [INFO] SERVER - users has been created!
+[2015-08-01 14:47:56.459] [INFO] SERVER - blogs has been created!
+[2015-08-01 14:47:56.459] [INFO] SERVER - comments has been created!
+[2015-08-01 14:47:59.909] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 14:48:00.022] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 14:48:00.037] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 14:48:00.616] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:48:00.856] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-01 14:48:02.833] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:48:03.266] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:48:03.313] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:48:05.845] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:48:36.784] [INFO] SERVER - register: get /static/*
+[2015-08-01 14:48:36.803] [INFO] SERVER - register: get /
+[2015-08-01 14:48:36.804] [INFO] SERVER - register: get /manage
+[2015-08-01 14:48:36.805] [INFO] SERVER - register: get /registe
+[2015-08-01 14:48:36.808] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 14:48:36.909] [INFO] SERVER - users has been created!
+[2015-08-01 14:48:36.924] [INFO] SERVER - blogs has been created!
+[2015-08-01 14:48:36.924] [INFO] SERVER - comments has been created!
+[2015-08-01 14:48:39.515] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 14:48:39.602] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 14:48:39.617] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 14:48:40.148] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:48:40.282] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-01 14:48:41.186] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:48:41.565] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:48:41.650] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:48:43.188] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:48:43.954] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:48:44.349] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:48:44.446] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:48:45.831] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:54:48.335] [INFO] SERVER - register: get /static/*
+[2015-08-01 14:54:48.335] [INFO] SERVER - register: get /
+[2015-08-01 14:54:48.335] [INFO] SERVER - register: get /manage
+[2015-08-01 14:54:48.335] [INFO] SERVER - register: get /registe
+[2015-08-01 14:54:48.350] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 14:54:48.428] [INFO] SERVER - users has been created!
+[2015-08-01 14:54:48.444] [INFO] SERVER - blogs has been created!
+[2015-08-01 14:54:48.444] [INFO] SERVER - comments has been created!
+[2015-08-01 14:54:51.991] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 14:54:52.093] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 14:54:52.104] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 14:54:52.607] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:54:52.670] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-01 14:54:53.465] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:54:53.841] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:54:53.926] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:55:14.269] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:55:23.384] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:55:23.724] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:55:23.756] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:55:26.285] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:55:28.069] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:55:28.987] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:55:29.571] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:55:32.954] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:55:34.247] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:55:34.861] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:55:35.833] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 14:55:35.934] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 14:55:35.937] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 14:55:36.320] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:57:24.816] [INFO] SERVER - register: get /static/*
+[2015-08-01 14:57:24.816] [INFO] SERVER - register: get /
+[2015-08-01 14:57:24.816] [INFO] SERVER - register: get /manage
+[2015-08-01 14:57:24.816] [INFO] SERVER - register: get /registe
+[2015-08-01 14:57:24.832] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 14:57:24.910] [INFO] SERVER - users has been created!
+[2015-08-01 14:57:24.925] [INFO] SERVER - blogs has been created!
+[2015-08-01 14:57:24.925] [INFO] SERVER - comments has been created!
+[2015-08-01 14:57:26.216] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 14:57:26.302] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 14:57:26.306] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 14:57:26.774] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:57:27.781] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:57:28.019] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:57:28.037] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:57:29.701] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:57:41.971] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:57:42.213] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:57:42.237] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:57:44.004] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:59:44.986] [INFO] SERVER - register: get /static/*
+[2015-08-01 14:59:44.986] [INFO] SERVER - register: get /
+[2015-08-01 14:59:44.986] [INFO] SERVER - register: get /manage
+[2015-08-01 14:59:44.986] [INFO] SERVER - register: get /registe
+[2015-08-01 14:59:44.986] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 14:59:45.079] [INFO] SERVER - users has been created!
+[2015-08-01 14:59:45.095] [INFO] SERVER - blogs has been created!
+[2015-08-01 14:59:45.095] [INFO] SERVER - comments has been created!
+[2015-08-01 14:59:47.329] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 14:59:47.433] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 14:59:47.873] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 14:59:49.233] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 14:59:49.454] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 14:59:49.470] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 14:59:51.182] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:01:50.612] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:01:50.612] [INFO] SERVER - register: get /
+[2015-08-01 15:01:50.612] [INFO] SERVER - register: get /manage
+[2015-08-01 15:01:50.612] [INFO] SERVER - register: get /registe
+[2015-08-01 15:01:50.627] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:01:50.705] [INFO] SERVER - users has been created!
+[2015-08-01 15:01:50.721] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:01:50.721] [INFO] SERVER - comments has been created!
+[2015-08-01 15:01:54.000] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:01:54.084] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:01:54.517] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:01:55.482] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:01:55.704] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:01:55.735] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:01:57.588] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:02:01.665] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:02:01.896] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:02:01.927] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:02:03.713] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:03:01.303] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:03:01.318] [INFO] SERVER - register: get /
+[2015-08-01 15:03:01.318] [INFO] SERVER - register: get /manage
+[2015-08-01 15:03:01.318] [INFO] SERVER - register: get /registe
+[2015-08-01 15:03:01.318] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:03:01.427] [INFO] SERVER - users has been created!
+[2015-08-01 15:03:01.427] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:03:01.443] [INFO] SERVER - comments has been created!
+[2015-08-01 15:03:11.729] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:03:11.797] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:03:12.150] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:03:14.445] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:03:14.493] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:03:14.914] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:11.022] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:06:11.022] [INFO] SERVER - register: get /
+[2015-08-01 15:06:11.022] [INFO] SERVER - register: get /manage
+[2015-08-01 15:06:11.022] [INFO] SERVER - register: get /registe
+[2015-08-01 15:06:11.038] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:06:11.116] [INFO] SERVER - users has been created!
+[2015-08-01 15:06:11.131] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:06:11.131] [INFO] SERVER - comments has been created!
+[2015-08-01 15:06:13.032] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:06:13.104] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:06:13.108] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:06:13.454] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:14.792] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:06:14.853] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:06:14.856] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:06:15.053] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:15.540] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:06:15.578] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:06:15.581] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:06:15.772] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:16.159] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:06:16.209] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:06:16.211] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:06:16.456] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:16.799] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:06:16.856] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:06:16.858] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:06:17.081] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:17.502] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:06:17.560] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:06:17.564] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:06:17.765] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:18.280] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:06:18.332] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:06:18.334] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:06:18.517] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:20.826] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:21.534] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:22.052] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:23.261] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:06:23.582] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:06:23.613] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:06:24.977] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:07:43.043] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:07:43.058] [INFO] SERVER - register: get /
+[2015-08-01 15:07:43.058] [INFO] SERVER - register: get /manage
+[2015-08-01 15:07:43.058] [INFO] SERVER - register: get /registe
+[2015-08-01 15:07:43.058] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:07:43.136] [INFO] SERVER - users has been created!
+[2015-08-01 15:07:43.152] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:07:43.167] [INFO] SERVER - comments has been created!
+[2015-08-01 15:07:44.473] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:07:44.568] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:07:44.573] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:07:44.959] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:07:46.526] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:07:46.573] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:07:46.577] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:07:46.846] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:07:48.737] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:07:48.965] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:07:48.996] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:07:50.849] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:08:37.610] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:08:37.610] [INFO] SERVER - register: get /
+[2015-08-01 15:08:37.610] [INFO] SERVER - register: get /manage
+[2015-08-01 15:08:37.610] [INFO] SERVER - register: get /registe
+[2015-08-01 15:08:37.626] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:08:37.704] [INFO] SERVER - users has been created!
+[2015-08-01 15:08:37.719] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:08:37.719] [INFO] SERVER - comments has been created!
+[2015-08-01 15:08:38.817] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:08:38.892] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:08:38.898] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:08:39.160] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:08:57.662] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:08:57.662] [INFO] SERVER - register: get /
+[2015-08-01 15:08:57.662] [INFO] SERVER - register: get /manage
+[2015-08-01 15:08:57.662] [INFO] SERVER - register: get /registe
+[2015-08-01 15:08:57.662] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:08:57.755] [INFO] SERVER - users has been created!
+[2015-08-01 15:08:57.771] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:08:57.771] [INFO] SERVER - comments has been created!
+[2015-08-01 15:08:59.360] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:08:59.429] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:08:59.435] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:08:59.657] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:09:51.233] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:09:51.233] [INFO] SERVER - register: get /
+[2015-08-01 15:09:51.233] [INFO] SERVER - register: get /manage
+[2015-08-01 15:09:51.248] [INFO] SERVER - register: get /registe
+[2015-08-01 15:09:51.248] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:09:51.326] [INFO] SERVER - users has been created!
+[2015-08-01 15:09:51.342] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:09:51.342] [INFO] SERVER - comments has been created!
+[2015-08-01 15:09:52.972] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:09:53.053] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:09:53.064] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:09:54.424] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:14:45.270] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:14:45.606] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:14:45.637] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:14:48.301] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:17:51.942] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:17:51.957] [INFO] SERVER - register: get /
+[2015-08-01 15:17:51.957] [INFO] SERVER - register: get /manage
+[2015-08-01 15:17:51.957] [INFO] SERVER - register: get /registe
+[2015-08-01 15:17:51.973] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:17:52.098] [INFO] SERVER - users has been created!
+[2015-08-01 15:17:52.113] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:17:52.129] [INFO] SERVER - comments has been created!
+[2015-08-01 15:17:54.202] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:17:54.283] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:17:54.289] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:17:54.505] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:17:56.354] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:17:56.412] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:17:56.415] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:17:56.651] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:19:56.456] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:19:56.472] [INFO] SERVER - register: get /
+[2015-08-01 15:19:56.472] [INFO] SERVER - register: get /manage
+[2015-08-01 15:19:56.472] [INFO] SERVER - register: get /registe
+[2015-08-01 15:19:56.472] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:19:56.565] [INFO] SERVER - users has been created!
+[2015-08-01 15:19:56.565] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:19:56.581] [INFO] SERVER - comments has been created!
+[2015-08-01 15:20:00.792] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:20:00.873] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:20:00.894] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:20:01.398] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:20:04.759] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:20:05.046] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:20:05.077] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:20:06.818] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:20:07.926] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:20:08.444] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:20:08.822] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:21:32.658] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:21:32.658] [INFO] SERVER - register: get /
+[2015-08-01 15:21:32.658] [INFO] SERVER - register: get /manage
+[2015-08-01 15:21:32.658] [INFO] SERVER - register: get /registe
+[2015-08-01 15:21:32.658] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:21:32.752] [INFO] SERVER - users has been created!
+[2015-08-01 15:21:32.752] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:21:32.767] [INFO] SERVER - comments has been created!
+[2015-08-01 15:21:36.942] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:21:37.025] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:21:37.035] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:21:37.490] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:21:50.211] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:21:51.150] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:21:51.519] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:21:51.801] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:21:52.423] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:21:52.684] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:21:52.715] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:21:53.937] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:22:47.841] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:22:47.841] [INFO] SERVER - register: get /
+[2015-08-01 15:22:47.841] [INFO] SERVER - register: get /manage
+[2015-08-01 15:22:47.841] [INFO] SERVER - register: get /registe
+[2015-08-01 15:22:47.841] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:22:47.935] [INFO] SERVER - users has been created!
+[2015-08-01 15:22:47.950] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:22:47.950] [INFO] SERVER - comments has been created!
+[2015-08-01 15:22:50.309] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:22:50.386] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:22:50.393] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:22:50.913] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:23:56.926] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:23:56.926] [INFO] SERVER - register: get /
+[2015-08-01 15:23:56.926] [INFO] SERVER - register: get /manage
+[2015-08-01 15:23:56.926] [INFO] SERVER - register: get /registe
+[2015-08-01 15:23:56.926] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:23:57.035] [INFO] SERVER - users has been created!
+[2015-08-01 15:23:57.035] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:23:57.051] [INFO] SERVER - comments has been created!
+[2015-08-01 15:23:59.043] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:23:59.119] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:23:59.132] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:23:59.781] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:26:42.702] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:26:42.702] [INFO] SERVER - register: get /
+[2015-08-01 15:26:42.702] [INFO] SERVER - register: get /manage
+[2015-08-01 15:26:42.702] [INFO] SERVER - register: get /registe
+[2015-08-01 15:26:42.717] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:26:42.811] [INFO] SERVER - users has been created!
+[2015-08-01 15:26:42.811] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:26:42.827] [INFO] SERVER - comments has been created!
+[2015-08-01 15:26:44.554] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:26:44.613] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:26:44.620] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:26:46.394] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:28:40.144] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:28:40.144] [INFO] SERVER - register: get /
+[2015-08-01 15:28:40.144] [INFO] SERVER - register: get /manage
+[2015-08-01 15:28:40.144] [INFO] SERVER - register: get /registe
+[2015-08-01 15:28:40.144] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:28:40.238] [INFO] SERVER - users has been created!
+[2015-08-01 15:28:40.253] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:28:40.253] [INFO] SERVER - comments has been created!
+[2015-08-01 15:28:41.600] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:28:41.667] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:28:41.673] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:28:43.406] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:28:44.259] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:28:44.302] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:28:44.306] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:28:45.791] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:29:11.221] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:29:11.557] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:29:11.573] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:29:14.507] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:29:16.788] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:29:16.837] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:29:16.845] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:29:18.089] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:29:22.121] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:29:22.137] [INFO] SERVER - register: get /
+[2015-08-01 15:29:22.137] [INFO] SERVER - register: get /manage
+[2015-08-01 15:29:22.137] [INFO] SERVER - register: get /registe
+[2015-08-01 15:29:22.137] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:29:22.230] [INFO] SERVER - users has been created!
+[2015-08-01 15:29:22.246] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:29:22.246] [INFO] SERVER - comments has been created!
+[2015-08-01 15:29:23.709] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:29:23.771] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:29:23.777] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:29:24.057] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:29:25.349] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:29:25.570] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:29:25.602] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:29:27.246] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:29:29.116] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:29:29.440] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:29:29.471] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:29:30.782] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:29:35.201] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:29:35.266] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:29:35.279] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:29:35.704] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:37:16.067] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:37:16.067] [INFO] SERVER - register: get /
+[2015-08-01 15:37:16.083] [INFO] SERVER - register: get /manage
+[2015-08-01 15:37:16.083] [INFO] SERVER - register: get /registe
+[2015-08-01 15:37:16.083] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:37:16.192] [INFO] SERVER - users has been created!
+[2015-08-01 15:37:16.208] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:37:16.223] [INFO] SERVER - comments has been created!
+[2015-08-01 15:37:17.772] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:37:17.848] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:37:17.852] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:37:18.259] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:37:19.562] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:37:19.976] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:37:20.092] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:37:21.695] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:37:25.378] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:37:25.425] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:37:25.434] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:37:25.911] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:37:51.737] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:37:51.752] [INFO] SERVER - register: get /
+[2015-08-01 15:37:51.752] [INFO] SERVER - register: get /manage
+[2015-08-01 15:37:51.752] [INFO] SERVER - register: get /registe
+[2015-08-01 15:37:51.752] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:37:51.846] [INFO] SERVER - users has been created!
+[2015-08-01 15:37:51.846] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:37:51.863] [INFO] SERVER - comments has been created!
+[2015-08-01 15:37:53.442] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:37:53.541] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:37:53.550] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:37:53.954] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:37:55.303] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:37:55.683] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:37:55.767] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:37:57.176] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:37:58.761] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:37:59.135] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:37:59.227] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:38:22.792] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:38:22.792] [INFO] SERVER - register: get /
+[2015-08-01 15:38:22.792] [INFO] SERVER - register: get /manage
+[2015-08-01 15:38:22.792] [INFO] SERVER - register: get /registe
+[2015-08-01 15:38:22.807] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:38:22.902] [INFO] SERVER - users has been created!
+[2015-08-01 15:38:22.902] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:38:22.917] [INFO] SERVER - comments has been created!
+[2015-08-01 15:38:29.258] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:38:30.475] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:38:30.892] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:38:30.950] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:38:32.378] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:38:57.613] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:38:57.613] [INFO] SERVER - register: get /
+[2015-08-01 15:38:57.613] [INFO] SERVER - register: get /manage
+[2015-08-01 15:38:57.613] [INFO] SERVER - register: get /registe
+[2015-08-01 15:38:57.613] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:38:57.707] [INFO] SERVER - users has been created!
+[2015-08-01 15:38:57.723] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:38:57.723] [INFO] SERVER - comments has been created!
+[2015-08-01 15:38:59.323] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:38:59.400] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:38:59.412] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:39:00.900] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:41:43.404] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:41:43.404] [INFO] SERVER - register: get /
+[2015-08-01 15:41:43.404] [INFO] SERVER - register: get /manage
+[2015-08-01 15:41:43.404] [INFO] SERVER - register: get /registe
+[2015-08-01 15:41:43.420] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:41:43.513] [INFO] SERVER - users has been created!
+[2015-08-01 15:41:43.513] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:41:43.529] [INFO] SERVER - comments has been created!
+[2015-08-01 15:41:46.552] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:41:46.645] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:41:46.653] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:41:47.080] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:42:22.930] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:42:23.278] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:42:23.294] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:42:25.245] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:42:27.490] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:42:27.730] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:42:27.761] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:42:29.479] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:43:44.234] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:43:44.249] [INFO] SERVER - register: get /
+[2015-08-01 15:43:44.249] [INFO] SERVER - register: get /manage
+[2015-08-01 15:43:44.265] [INFO] SERVER - register: get /registe
+[2015-08-01 15:43:44.265] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:43:44.390] [INFO] SERVER - users has been created!
+[2015-08-01 15:43:44.405] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:43:44.421] [INFO] SERVER - comments has been created!
+[2015-08-01 15:43:45.750] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:43:45.831] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:43:45.836] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:43:46.079] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:43:49.384] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:43:49.727] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:43:49.743] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:43:50.983] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:45:38.971] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:45:38.971] [INFO] SERVER - register: get /
+[2015-08-01 15:45:38.986] [INFO] SERVER - register: get /manage
+[2015-08-01 15:45:38.986] [INFO] SERVER - register: get /registe
+[2015-08-01 15:45:38.986] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:45:39.064] [INFO] SERVER - users has been created!
+[2015-08-01 15:45:39.080] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:45:39.096] [INFO] SERVER - comments has been created!
+[2015-08-01 15:45:45.070] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:45:45.423] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:45:45.439] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:45:48.279] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:45:48.543] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:45:48.574] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:45:50.559] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:45:51.306] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:45:51.352] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:45:51.371] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:45:51.643] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:45:53.493] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:45:53.726] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:45:53.742] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:45:55.391] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:45:57.492] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:45:57.727] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:45:57.758] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:46:22.393] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:46:22.393] [INFO] SERVER - register: get /
+[2015-08-01 15:46:22.393] [INFO] SERVER - register: get /manage
+[2015-08-01 15:46:22.393] [INFO] SERVER - register: get /registe
+[2015-08-01 15:46:22.408] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:46:22.502] [INFO] SERVER - users has been created!
+[2015-08-01 15:46:22.502] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:46:22.518] [INFO] SERVER - comments has been created!
+[2015-08-01 15:46:25.860] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:46:26.785] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:46:26.829] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:46:26.837] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:46:27.207] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:46:29.973] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:46:30.210] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:46:30.226] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:46:31.690] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:47:13.920] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:47:13.920] [INFO] SERVER - register: get /
+[2015-08-01 15:47:13.920] [INFO] SERVER - register: get /manage
+[2015-08-01 15:47:13.920] [INFO] SERVER - register: get /registe
+[2015-08-01 15:47:13.935] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:47:14.029] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:47:14.045] [INFO] SERVER - comments has been created!
+[2015-08-01 15:47:14.045] [INFO] SERVER - users has been created!
+[2015-08-01 15:47:15.307] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:47:15.378] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:47:15.388] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:47:15.759] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:47:17.431] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:47:17.708] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:47:17.739] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:47:19.210] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:47:21.192] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:47:21.550] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:47:21.597] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:47:23.193] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:47:27.896] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:47:27.952] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:47:27.960] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:47:28.363] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:47:30.278] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:47:30.650] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:47:30.747] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:48:19.103] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:48:19.103] [INFO] SERVER - register: get /
+[2015-08-01 15:48:19.103] [INFO] SERVER - register: get /manage
+[2015-08-01 15:48:19.103] [INFO] SERVER - register: get /registe
+[2015-08-01 15:48:19.120] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:48:19.198] [INFO] SERVER - users has been created!
+[2015-08-01 15:48:19.198] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:48:19.214] [INFO] SERVER - comments has been created!
+[2015-08-01 15:48:21.531] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:48:22.218] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:48:22.282] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:48:22.293] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:48:22.717] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:50:52.891] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:50:52.891] [INFO] SERVER - register: get /
+[2015-08-01 15:50:52.891] [INFO] SERVER - register: get /manage
+[2015-08-01 15:50:52.891] [INFO] SERVER - register: get /registe
+[2015-08-01 15:50:52.891] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:50:52.985] [INFO] SERVER - users has been created!
+[2015-08-01 15:50:53.001] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:50:53.001] [INFO] SERVER - comments has been created!
+[2015-08-01 15:50:54.323] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:50:54.399] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:50:54.404] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:50:55.026] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:51:33.313] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:51:33.313] [INFO] SERVER - register: get /
+[2015-08-01 15:51:33.313] [INFO] SERVER - register: get /manage
+[2015-08-01 15:51:33.313] [INFO] SERVER - register: get /registe
+[2015-08-01 15:51:33.313] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:51:33.422] [INFO] SERVER - users has been created!
+[2015-08-01 15:51:33.422] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:51:33.438] [INFO] SERVER - comments has been created!
+[2015-08-01 15:51:34.995] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:51:35.069] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:51:35.076] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:51:35.413] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:52:24.835] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:52:24.851] [INFO] SERVER - register: get /
+[2015-08-01 15:52:24.851] [INFO] SERVER - register: get /manage
+[2015-08-01 15:52:24.851] [INFO] SERVER - register: get /registe
+[2015-08-01 15:52:24.851] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:52:24.961] [INFO] SERVER - users has been created!
+[2015-08-01 15:52:24.976] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:52:24.992] [INFO] SERVER - comments has been created!
+[2015-08-01 15:52:27.602] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:52:27.662] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:52:27.668] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:52:27.989] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:52:47.004] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:52:47.019] [INFO] SERVER - register: get /
+[2015-08-01 15:52:47.019] [INFO] SERVER - register: get /manage
+[2015-08-01 15:52:47.019] [INFO] SERVER - register: get /registe
+[2015-08-01 15:52:47.035] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:52:47.128] [INFO] SERVER - users has been created!
+[2015-08-01 15:52:47.128] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:52:47.144] [INFO] SERVER - comments has been created!
+[2015-08-01 15:52:48.720] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:52:48.792] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:52:48.800] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:52:49.053] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:52:50.115] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:52:50.408] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:52:50.431] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:52:53.962] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:52:55.565] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:52:55.929] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:52:55.960] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:52:57.123] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:54:03.943] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:54:03.943] [INFO] SERVER - register: get /
+[2015-08-01 15:54:03.958] [INFO] SERVER - register: get /manage
+[2015-08-01 15:54:03.958] [INFO] SERVER - register: get /registe
+[2015-08-01 15:54:03.958] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:54:04.036] [INFO] SERVER - users has been created!
+[2015-08-01 15:54:04.052] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:54:04.068] [INFO] SERVER - comments has been created!
+[2015-08-01 15:54:05.466] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:54:05.536] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:54:05.546] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:54:05.835] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:54:06.760] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:54:07.101] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:54:07.179] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:54:08.980] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:54:09.729] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:54:09.951] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:54:09.983] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:54:11.221] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:54:16.394] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:54:16.462] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:54:16.470] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:54:16.924] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:54:18.309] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 15:54:18.684] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 15:54:18.775] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 15:54:20.227] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:54:36.341] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:54:36.356] [INFO] SERVER - register: get /
+[2015-08-01 15:54:36.356] [INFO] SERVER - register: get /manage
+[2015-08-01 15:54:36.356] [INFO] SERVER - register: get /registe
+[2015-08-01 15:54:36.356] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:54:36.481] [INFO] SERVER - users has been created!
+[2015-08-01 15:54:36.497] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:54:36.497] [INFO] SERVER - comments has been created!
+[2015-08-01 15:54:50.394] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:54:50.459] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:54:50.468] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:54:50.933] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 15:58:15.646] [INFO] SERVER - register: get /static/*
+[2015-08-01 15:58:15.662] [INFO] SERVER - register: get /
+[2015-08-01 15:58:15.662] [INFO] SERVER - register: get /manage
+[2015-08-01 15:58:15.662] [INFO] SERVER - register: get /registe
+[2015-08-01 15:58:15.662] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 15:58:15.755] [INFO] SERVER - users has been created!
+[2015-08-01 15:58:15.755] [INFO] SERVER - blogs has been created!
+[2015-08-01 15:58:15.771] [INFO] SERVER - comments has been created!
+[2015-08-01 15:58:17.597] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 15:58:17.671] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 15:58:17.677] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 15:58:18.071] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:08:26.226] [INFO] SERVER - register: get /static/*
+[2015-08-01 16:08:26.226] [INFO] SERVER - register: get /
+[2015-08-01 16:08:26.242] [INFO] SERVER - register: get /manage
+[2015-08-01 16:08:26.242] [INFO] SERVER - register: get /registe
+[2015-08-01 16:08:26.242] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 16:08:26.335] [INFO] SERVER - users has been created!
+[2015-08-01 16:08:26.351] [INFO] SERVER - blogs has been created!
+[2015-08-01 16:08:26.366] [INFO] SERVER - comments has been created!
+[2015-08-01 16:08:27.776] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 16:08:27.871] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 16:08:27.878] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 16:08:28.297] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:09:21.872] [INFO] SERVER - register: get /static/*
+[2015-08-01 16:09:21.887] [INFO] SERVER - register: get /
+[2015-08-01 16:09:21.887] [INFO] SERVER - register: get /manage
+[2015-08-01 16:09:21.887] [INFO] SERVER - register: get /registe
+[2015-08-01 16:09:21.887] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 16:09:21.982] [INFO] SERVER - users has been created!
+[2015-08-01 16:09:21.982] [INFO] SERVER - blogs has been created!
+[2015-08-01 16:09:21.997] [INFO] SERVER - comments has been created!
+[2015-08-01 16:09:23.406] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 16:09:23.479] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 16:09:23.485] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 16:09:23.737] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:09:56.860] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 16:09:57.160] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 16:09:57.235] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 16:15:03.113] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:15:25.548] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-08-01 16:15:25.765] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-01 16:15:26.190] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:15:51.391] [INFO] SERVER - 127.0.0.1:8000 GET /manage/
+[2015-08-01 16:15:51.699] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:22:11.011] [INFO] SERVER - register: get /static/*
+[2015-08-01 16:22:11.027] [INFO] SERVER - register: get /
+[2015-08-01 16:22:11.027] [INFO] SERVER - register: get /manage
+[2015-08-01 16:22:11.027] [INFO] SERVER - register: get /registe
+[2015-08-01 16:22:11.027] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 16:22:11.121] [INFO] SERVER - users has been created!
+[2015-08-01 16:22:11.136] [INFO] SERVER - blogs has been created!
+[2015-08-01 16:22:11.136] [INFO] SERVER - comments has been created!
+[2015-08-01 16:22:17.093] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 16:22:17.234] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 16:22:17.239] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 16:22:17.392] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:22:59.040] [INFO] SERVER - register: get /static/*
+[2015-08-01 16:22:59.056] [INFO] SERVER - register: get /
+[2015-08-01 16:22:59.056] [INFO] SERVER - register: get /manage
+[2015-08-01 16:22:59.056] [INFO] SERVER - register: get /registe
+[2015-08-01 16:22:59.056] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 16:22:59.181] [INFO] SERVER - users has been created!
+[2015-08-01 16:22:59.181] [INFO] SERVER - blogs has been created!
+[2015-08-01 16:22:59.196] [INFO] SERVER - comments has been created!
+[2015-08-01 16:23:00.448] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 16:23:00.511] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 16:23:00.516] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 16:23:00.892] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:23:00.924] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-01 16:23:35.348] [INFO] SERVER - register: get /static/*
+[2015-08-01 16:23:35.348] [INFO] SERVER - register: get /
+[2015-08-01 16:23:35.348] [INFO] SERVER - register: get /manage
+[2015-08-01 16:23:35.364] [INFO] SERVER - register: get /registe
+[2015-08-01 16:23:35.364] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 16:23:35.473] [INFO] SERVER - users has been created!
+[2015-08-01 16:23:35.473] [INFO] SERVER - blogs has been created!
+[2015-08-01 16:23:35.489] [INFO] SERVER - comments has been created!
+[2015-08-01 16:23:37.575] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 16:23:37.637] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/jquery.min.js
+[2015-08-01 16:23:37.648] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 16:23:37.967] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:23:37.998] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-01 16:24:27.184] [INFO] SERVER - register: get /static/*
+[2015-08-01 16:24:27.200] [INFO] SERVER - register: get /
+[2015-08-01 16:24:27.200] [INFO] SERVER - register: get /manage
+[2015-08-01 16:24:27.200] [INFO] SERVER - register: get /registe
+[2015-08-01 16:24:27.200] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 16:24:27.309] [INFO] SERVER - users has been created!
+[2015-08-01 16:24:27.324] [INFO] SERVER - blogs has been created!
+[2015-08-01 16:24:27.324] [INFO] SERVER - comments has been created!
+[2015-08-01 16:24:28.959] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 16:24:29.042] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 16:24:29.396] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:24:29.427] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-01 16:24:30.871] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 16:24:31.115] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 16:24:31.131] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 16:24:32.666] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:24:33.855] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-01 16:24:34.172] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/app-icon72x72@2x.png
+[2015-08-01 16:24:34.312] [INFO] SERVER - 127.0.0.1:8000 GET /api/static/i/favicon.png
+[2015-08-01 16:24:35.427] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:24:59.245] [INFO] SERVER - register: get /static/*
+[2015-08-01 16:24:59.245] [INFO] SERVER - register: get /
+[2015-08-01 16:24:59.245] [INFO] SERVER - register: get /manage
+[2015-08-01 16:24:59.245] [INFO] SERVER - register: get /registe
+[2015-08-01 16:24:59.245] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-01 16:24:59.370] [INFO] SERVER - users has been created!
+[2015-08-01 16:24:59.370] [INFO] SERVER - blogs has been created!
+[2015-08-01 16:24:59.386] [INFO] SERVER - comments has been created!
+[2015-08-01 16:25:01.637] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 16:25:01.701] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 16:25:02.023] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:25:02.054] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-01 16:25:26.654] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-01 16:25:26.703] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-01 16:25:27.064] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-01 16:25:27.099] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png

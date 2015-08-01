@@ -22,22 +22,29 @@ exports.handle500 = function handle500(req, res){
 };
 
 
-exports.index = function index(req, res, next){
+exports.index = function index(req, res){
 	try{
-		res.render('index.html', {user:'freemind'}); 
-		next();
+		res.render('index.html', {}); 
 	}
 	catch(e){
 		logger.error(e.toString());
 	}
 };
 
-exports.login = function login(req, res, next){
+exports.login = function login(req, res){
 	try{
 		res.render('login.html', {}); 
-		next();
 	}
 	catch(e){
 		logger.error(e.toString());
 	}
-}
+};
+
+exports.register = function register(req, res){
+	try{
+		res.render('register.html', {});
+	}
+	catch(e){
+		logger.error(e.toString());
+	}
+};

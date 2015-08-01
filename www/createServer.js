@@ -25,6 +25,7 @@ var initMiddlewares = function(){
 	app.get('/static/*', middlewares.staticFile);
 	app.get('/', handles.index);
 	app.get('/manage', handles.login);
+	app.get('/registe', handles.register);
 };
 initMiddlewares();
 
