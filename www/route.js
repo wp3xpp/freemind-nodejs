@@ -111,6 +111,7 @@ var handleError = function(err, req, res, stack){
 		var middleware = stack.shift();
 		if(middleware){
 			//传递异常对象
+			logger.error(err.toString());
 			middleware(err, req, res, next);
 		}
 	};

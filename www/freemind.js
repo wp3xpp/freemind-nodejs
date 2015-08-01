@@ -14,6 +14,7 @@ var http = require('http');
 var merge = require('merge-descriptors');
 var logger = require('./logger.js');
 var res = require('./response.js');
+var req = require('./request.js');
 var app = require('./route.js');
 
 /**
@@ -32,6 +33,7 @@ function createApplication(){
 	merge(app, http, false);
 	merge(app, EventEmitter.prototype, false);
 	app.response = { __proto__: res, app: app };
+	app.request = { __proto__:req, app:app };
 	return app;
 }
 
@@ -47,6 +49,7 @@ app.listen = function listen(port){
 		var self = this;
 
 		Server.on('request', function(req, res){
+			req.__proto__ = self.request;
 			res.__proto__ = self.response;
 			logger.info(req.headers['host'] + ' ' + req.method + ' ' + req.url);
 			self.dispatch(req, res); //分发请求

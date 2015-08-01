@@ -22,6 +22,8 @@ modles(insertModel);
 
 var initMiddlewares = function(){
 	app.use(middlewares.getQueryString);
+	app.use(middlewares.cookie);
+	app.use(middlewares.handleData, middlewares.handlePostdata);
 	app.get('/static/*', middlewares.staticFile);
 	app.get('/', handles.index);
 	app.get('/manage', handles.login);
@@ -38,7 +40,7 @@ function insertModel(){
     	name : "freemind"
 	}
 	],function(err){if(err) throw err;})
-};
+}
 
 
 app.listen(8000);

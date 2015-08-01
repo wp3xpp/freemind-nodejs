@@ -4,7 +4,8 @@ var logger = require('../logger.js');
 var fs = require('fs');
 var path = require('path');
 var mime = require('mime');
-var application = require('../freemind.js');
+var xml2js = require('xml2js');
+var formidable = require('formidable');
 
 /**中间件统一格式
  *  exports.function(req, res, next){
@@ -47,7 +48,7 @@ exports.session = function(req, res, next){
 			return next(err);
 		}
 		req.session = session;
-		next();
+		return next();
 	});
 };
 
@@ -77,3 +78,83 @@ exports.staticFile = function(req, res, next){
 	return next();
 };
 
+function getType(req){
+	var str = req.headers['content-type'] || '';
+	return str.split(';')[0];
+}
+
+function hasBody(req){
+	return 'transfer-encoding' in req.headers || 'content-length' in req.headers;
+}
+
+//HTTP_Parser解析报头结束后，报文内容部分会用过data事件触发
+exports.handleData = function(req, res, next){
+	
+	try{
+		if(hasBody(req)){
+			var  buffers = [];
+			req.on('data', function(chunk){
+				buffers.push(chunk);
+			});
+			req.on('end', function(){
+				req.rawBody = Buffer.concat(buffers).toString();
+				return next();
+			});
+		}
+		else{
+			return next();
+		}
+	}
+	catch(err){
+		next(err);
+	}
+};
+
+exports.handlePostdata = function(req, res, next){
+	if(hasBody(req)){
+		if(getType(req) === 'application/x-www-form-urlencoded'){
+			req.body = querystring.parse(req.rawBody);
+		}
+	
+		if(getType(req) === 'application/json'){
+			try{
+				req.body = JSON.parse(req.rawBody);
+			}
+			catch(e){
+				//异常内容,响应Bad request
+				res.writeHead(400);
+				res.end('Invalid JSON');
+				return next(err);
+			}
+		}
+
+		if(getType(req) === 'application/xml'){
+			xml2js.parseString(req.rawBody, function(err, xml){
+				if(err){
+					//异常内容,响应Bad request
+					res.writeHead(400);
+					res.end('Invalid xml');
+					return next(err);
+				}
+				req.body = xml;
+			});
+		}
+
+		if(getType(req) === 'multipart/form-data'){
+			try{
+				var form = new formidable.IncomingForm();
+				form.parse(req, function(err, fields, files){
+					req.body = fields;
+					req.files = files;
+				});
+			}
+			catch(err){
+				res.writeHead(400);
+				res.end('upload error');
+				next(err);
+			}		
+		}
+	}
+	logger.info(req.body);
+	return next();
+};	

@@ -47,7 +47,7 @@
   			var errorCode = "";
   			var name = $('#name').val();
   			var email = $('#email').val();
-  			var password = $('#password').val();
+  			var password = $('#password1').val();
   			var password2 = $('#password2').val();
   			if(! name.trim()){
   				errorCode += "用户不能为空 ";
@@ -69,6 +69,8 @@
   				showError(errorCode);
   				return false;
   			}
+  			$('#name').val(name.trim());
+  			$('#passwd').val(CryptoJS.SHA1(email + ':' + password).toString());
   			$('#registeForm').submit();
   		});
   	});
@@ -100,7 +102,8 @@
       <input type="email" name="email" id="email" value="">
       <br>
       <label for="password">密码:</label>
-      <input type="password" name="password" id="password" value="">
+      <input type="password" name="password1" id="password1" value="">
+      <input type="password" name="passwd" id="passwd" value="" style="display:none;">
       <br>
       <label for="password">重复密码:</label>
       <input type="password" name="password2" id="password2" value="">
