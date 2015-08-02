@@ -134,7 +134,7 @@ var renderLayout = function(str, viewname){
 //});
 res.render = function render(viewname, data){
 	var layout;
-	if(data && data.hasOwnProperty(layout)){
+	if(data && data.hasOwnProperty('layout')){
 		layout = data.layout;
 	}
 	if(layout){
@@ -198,7 +198,7 @@ res.sendfile = function sendfile(filepath){
 
 //响应JSON
 res.json = function json(data){
-	this.setHeader('Content-Type', 'application/json');
+	this.setHeader('Content-Type', 'application/json; charset=utf8');
 	this.writeHead(200);
 	this.end(JSON.stringify(data));
 };

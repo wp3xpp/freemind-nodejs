@@ -44,7 +44,7 @@ app.listen = function listen(port){
 	}
 	try{
 		var Server = this.createServer();
-		Server.listen(port, '127.0.0.1');
+		Server.listen(port, '0.0.0.0');
 		logger.info('Server running at http://127.0.0.1:' + port);
 		var self = this;
 

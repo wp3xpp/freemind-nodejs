@@ -1,10 +1,10 @@
 *.sublime-*
 *.njsproj
 *.nodevsdbg
+*.log
 .DS_Store
 node_modules
 test
 lib-cov/
 *~
 /.idea
-*.log

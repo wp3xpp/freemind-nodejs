@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Freemind Blog</title>
+  <title>博客管理</title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -14,11 +14,11 @@
   <!-- No Baidu Siteapp-->
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
 
-  <link rel="icon" type="image/png" href="static/i/favicon.png">
+  <link rel="icon" type="image/png" href="i/favicon.png">
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="static/i/app-icon72x72@2x.png">
+  <link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
 
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -33,59 +33,15 @@
   <!-- Amaze UI CSS -->
   <link rel="stylesheet" href="//cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">
   <style type="text/css">
-      body {
-      	font-size: 1.8rem; /* =16px */
-      	/* font-family: Georgia,"Times New Roman",Times,Kai,"Kaiti SC",KaiTi,BiauKai,FontAwesome,serif; */
-      }
-      p {
-      	text-align: center;
-      }
+  	body{
+  		font-size: 14px;
+  	}
   </style>
 
 </head>
 <body>
-<header class="am-topbar">
-  <h1 class="am-topbar-brand">
-    <a href="#" class="am-icon-github-alt">专业打酱油</a>
-  </h1>
 
-  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
-
-  <div class="am-topbar-right am-collapse am-topbar-collapse" id="doc-topbar-collapse">
-    <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li class="am-active"><a href="#">Blog</a></li>
-      <li><a href="https://github.com/wp3xpp" class="am-icon-github">github</a></li>
-      <li><a href="http://weibo.com/u/1696178397" class="am-icon-weibo">新浪微博</a></li>
-    </ul>
-  </div>
-</header>
-
-<div class="am-container ">
-  <div class="am-g">
-    <div class="am-u-sm-9 am-u-sm-centered">
-      <div class="am-panel am-panel-default">
-		<div class="am-panel-hd">
-		  <h3 class="am-panel-title">Blog</h3>
-		</div>
-		<ul class="am-list am-list-border">
- 		 <li><a href="#">数学和编程</a></li>
- 		 <li><a href="#">谈程序的正确性</a></li>
- 		 <li><a href="#">DRY原则的误区</a></li>
- 		 <li><a href="#">所谓软件工程</a></li>
- 		 <li><a href="#">编程的宗派</a></li>
- 		 <li><a href="#">智商的圈套</a></li>
- 		 <li><a href="#">设计的重要性</a></li>
- 		 <li><a href="#">不要做聪明人</a></li>
- 		 <li><a href="#">创造者的思维方式</a></li>
- 		 <li><a href="#">我和google的故事</a></li>
- 		 <li><a href="#">牛校综合征</a></li>
- 		 <li><a href="#">我爱星际穿越</a></li>
- 		 <li><a href="#">对Go语言的评价</a></li>
-	  </ul>
-       </div>
-    </div>
-  </div>
-</div>
+<%- body%>
 
 <footer class="amz-footer" style="border-top:1px solid #ccc;background:url(/static/i/grid.png);background-color:#f5f5f5;">
     <div class="am-container am-container-center am-text-center">
@@ -93,6 +49,7 @@
             <p><a href="http://freemindx.cn/" target="_blank">freemindx.cn</a>. All rights reserved.</p>
     </div>
 </footer>
+
 <!--[if lt IE 9]>
 <script src="//libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>
 <script src="//cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>

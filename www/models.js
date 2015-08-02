@@ -21,7 +21,7 @@ var db = orm.connect(opts, function (err, db) {
 	db.settings.set('instance.cache', true);    
 });
 
-var initDB = function(callback){
+var initDB = function(){
 
 	users.sync(function (err) {
 	    !err && logger.info("users has been created!");
@@ -35,7 +35,6 @@ var initDB = function(callback){
 	    !err && logger.info("comments has been created!");
 	});
 
-    setTimeout(callback, 5000);
 }
 
 exports = module.exports = initDB;

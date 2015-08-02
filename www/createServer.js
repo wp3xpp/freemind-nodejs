@@ -18,7 +18,7 @@ var modles = require('./models.js');
 
 var app = freemind();
 
-modles(insertModel);
+modles(); //如果还没建立起对应数据库，调用该方法可以创建
 
 var initMiddlewares = function(){
 	app.use(middlewares.getQueryString);
@@ -28,20 +28,11 @@ var initMiddlewares = function(){
 	app.get('/', handles.index);
 	app.get('/manage', handles.login);
 	app.get('/registe', handles.register);
+	app.get('/manage/blogs', handles.manageBlogs);
+	app.get('/manage/users', handles.manageUsers);
+	app.post('/api/register', handles.api_register_user);
 };
 initMiddlewares();
-
-function insertModel(){
-	modles.users.create([
-	{
-		email : "wp3xpp",
-    	passwd : "Hsw2mapei",
-    	admin : true,
-    	name : "freemind"
-	}
-	],function(err){if(err) throw err;})
-}
-
 
 app.listen(8000);
 
