@@ -34,14 +34,14 @@
   <link rel="stylesheet" href="//cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">
   <script src="//libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript">
-  	function validateEmail(email) {
-    		var re = /^[a-z0-9\.\-\_]+\@[a-z0-9\-\_]+(\.[a-z0-9\-\_]+){1,4}$/;
-    		return re.test(email.toLowerCase());
-		}
-	function showError(errorCode){
-  		$('#warning').text(errorCode);
-  		$('.am-alert').css('display', 'block');
-	}
+  	 function validateEmail(email) {
+     		var re = /^[a-z0-9\.\-\_]+\@[a-z0-9\-\_]+(\.[a-z0-9\-\_]+){1,4}$/;
+     		return re.test(email.toLowerCase());
+		 }
+	   function showError(errorCode){
+      		$('#warning').text(errorCode);
+      		$('.am-alert').css('display', 'block');
+	   }
   	$(function(){		
   		$('input[name=submit]').click(function(){
   			var errorCode = "";
@@ -69,9 +69,17 @@
   				showError(errorCode);
   				return false;
   			}
-  			$('#name').val(name.trim());
-  			$('#passwd').val(CryptoJS.SHA1(email + ':' + password).toString());
-  			$('#registeForm').submit();
+        $.post("/api/register",{
+            name : name,
+            email : email,
+            passwd : CryptoJS.SHA1(email + ':' + password).toString(),
+        },function(data){
+          if(data === "success create"){
+            location.assign('/');
+          }
+          showError(data);
+        });
+
   		});
   	});
   </script>
@@ -94,7 +102,7 @@
       <p id="warning"></p>
     </div>
 
-    <form method="post" class="am-form" id="registeForm" action="/api/register">
+    <form class="am-form" id="registeForm" >
       <label for="email">用户名:</label>
       <input type="text" name="name" id="name" value="">
       <br>
@@ -103,13 +111,12 @@
       <br>
       <label for="password">密码:</label>
       <input type="password" name="password1" id="password1" value="">
-      <input type="password" name="passwd" id="passwd" value="" style="display:none;">
       <br>
       <label for="password">重复密码:</label>
       <input type="password" name="password2" id="password2" value="">
       <br>
       <div class="am-cf">
-        <input type="submit" name="submit" value="注 册" class="am-btn am-btn-primary am-btn-sm am-fl" style="outline:none;">
+        <input  name="submit" value="注 册" class="am-btn am-btn-primary am-btn-sm am-fl" style="outline:none;">
       </div>
     </form>
     <hr>

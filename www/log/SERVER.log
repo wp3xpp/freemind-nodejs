@@ -6800,3 +6800,408 @@
 [2015-08-02 22:50:47.379] [INFO] SERVER - undefined
 [2015-08-02 22:50:47.446] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
 [2015-08-02 22:50:47.472] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-03 10:40:28.476] [INFO] SERVER - register: get /static/*
+[2015-08-03 10:40:28.491] [INFO] SERVER - register: get /
+[2015-08-03 10:40:28.491] [INFO] SERVER - register: get /manage
+[2015-08-03 10:40:28.491] [INFO] SERVER - register: get /registe
+[2015-08-03 10:40:28.491] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 10:40:28.491] [INFO] SERVER - register: get /manage/users
+[2015-08-03 10:40:28.491] [INFO] SERVER - register: post /api/register
+[2015-08-03 10:40:28.507] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 10:40:28.538] [INFO] SERVER - users has been created!
+[2015-08-03 10:40:28.538] [INFO] SERVER - blogs has been created!
+[2015-08-03 10:40:28.554] [INFO] SERVER - comments has been created!
+[2015-08-03 10:40:33.604] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-08-03 10:40:33.608] [INFO] SERVER - undefined
+[2015-08-03 10:40:34.184] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-03 10:40:34.186] [INFO] SERVER - undefined
+[2015-08-03 10:40:34.732] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 10:40:34.732] [INFO] SERVER - undefined
+[2015-08-03 10:40:38.775] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-03 10:40:38.775] [INFO] SERVER - undefined
+[2015-08-03 10:40:38.822] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-03 10:40:38.837] [INFO] SERVER - undefined
+[2015-08-03 10:40:39.430] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 10:40:39.430] [INFO] SERVER - undefined
+[2015-08-03 10:41:02.600] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 10:41:02.606] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  password1: 'dddddd',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e',
+  password2: 'dddddd',
+  submit: '注 册' }
+[2015-08-03 10:41:03.140] [INFO] SERVER - object
+[2015-08-03 10:41:03.245] [INFO] SERVER - 127.0.0.1:8000 GET /favicon.ico
+[2015-08-03 10:41:06.383] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 10:41:06.398] [INFO] SERVER - undefined
+[2015-08-03 10:44:53.022] [INFO] SERVER - register: get /static/*
+[2015-08-03 10:44:53.022] [INFO] SERVER - register: get /
+[2015-08-03 10:44:53.022] [INFO] SERVER - register: get /manage
+[2015-08-03 10:44:53.037] [INFO] SERVER - register: get /registe
+[2015-08-03 10:44:53.037] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 10:44:53.037] [INFO] SERVER - register: get /manage/users
+[2015-08-03 10:44:53.037] [INFO] SERVER - register: post /api/register
+[2015-08-03 10:44:53.037] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 10:44:53.100] [INFO] SERVER - users has been created!
+[2015-08-03 10:44:53.100] [INFO] SERVER - blogs has been created!
+[2015-08-03 10:44:53.100] [INFO] SERVER - comments has been created!
+[2015-08-03 10:44:59.186] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-03 10:44:59.197] [INFO] SERVER - undefined
+[2015-08-03 10:44:59.275] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-03 10:44:59.278] [INFO] SERVER - undefined
+[2015-08-03 10:44:59.592] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 10:44:59.592] [INFO] SERVER - undefined
+[2015-08-03 10:44:59.654] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-03 10:44:59.654] [INFO] SERVER - undefined
+[2015-08-03 10:45:12.202] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 10:45:12.209] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 10:45:12.243] [INFO] SERVER - 127.0.0.1:8000 POST /registe
+[2015-08-03 10:45:12.253] [INFO] SERVER - object
+[2015-08-03 10:45:12.585] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 10:45:12.585] [INFO] SERVER - undefined
+[2015-08-03 10:45:48.836] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-03 10:45:48.836] [INFO] SERVER - undefined
+[2015-08-03 10:45:49.081] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 10:45:49.083] [INFO] SERVER - undefined
+[2015-08-03 10:52:24.947] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 10:52:24.951] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 10:52:24.971] [INFO] SERVER - 127.0.0.1:8000 POST /registe
+[2015-08-03 10:52:24.979] [INFO] SERVER - object
+[2015-08-03 10:52:25.358] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 10:52:25.360] [INFO] SERVER - undefined
+[2015-08-03 10:54:45.505] [INFO] SERVER - 127.0.0.1:8000 POST /registe
+[2015-08-03 10:54:45.934] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 10:54:45.936] [INFO] SERVER - undefined
+[2015-08-03 10:54:46.015] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-03 10:54:46.016] [INFO] SERVER - undefined
+[2015-08-03 10:57:48.585] [INFO] SERVER - register: get /static/*
+[2015-08-03 10:57:48.593] [INFO] SERVER - register: get /
+[2015-08-03 10:57:48.595] [INFO] SERVER - register: get /manage
+[2015-08-03 10:57:48.597] [INFO] SERVER - register: get /registe
+[2015-08-03 10:57:48.597] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 10:57:48.598] [INFO] SERVER - register: get /manage/users
+[2015-08-03 10:57:48.599] [INFO] SERVER - register: post /api/register
+[2015-08-03 10:57:48.601] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 10:57:48.645] [INFO] SERVER - users has been created!
+[2015-08-03 10:57:48.649] [INFO] SERVER - blogs has been created!
+[2015-08-03 10:57:48.651] [INFO] SERVER - comments has been created!
+[2015-08-03 10:57:50.943] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-03 10:57:50.949] [INFO] SERVER - undefined
+[2015-08-03 10:57:51.393] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 10:57:51.395] [INFO] SERVER - undefined
+[2015-08-03 10:58:06.162] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 10:58:06.168] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 10:58:06.197] [INFO] SERVER - 127.0.0.1:8000 POST /registe
+[2015-08-03 10:58:06.208] [INFO] SERVER - object
+[2015-08-03 10:58:06.549] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 10:58:06.550] [INFO] SERVER - undefined
+[2015-08-03 11:01:52.328] [INFO] SERVER - register: get /static/*
+[2015-08-03 11:01:52.338] [INFO] SERVER - register: get /
+[2015-08-03 11:01:52.341] [INFO] SERVER - register: get /manage
+[2015-08-03 11:01:52.342] [INFO] SERVER - register: get /registe
+[2015-08-03 11:01:52.344] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 11:01:52.346] [INFO] SERVER - register: get /manage/users
+[2015-08-03 11:01:52.348] [INFO] SERVER - register: post /api/register
+[2015-08-03 11:01:52.352] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 11:01:52.396] [INFO] SERVER - users has been created!
+[2015-08-03 11:01:52.400] [INFO] SERVER - blogs has been created!
+[2015-08-03 11:01:52.403] [INFO] SERVER - comments has been created!
+[2015-08-03 11:01:56.032] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-03 11:01:56.040] [INFO] SERVER - undefined
+[2015-08-03 11:01:56.503] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:01:56.506] [INFO] SERVER - undefined
+[2015-08-03 11:02:01.988] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:02:01.996] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:02:02.031] [INFO] SERVER - 127.0.0.1:8000 POST /registe
+[2015-08-03 11:02:02.043] [INFO] SERVER - object
+[2015-08-03 11:02:02.435] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:02:02.436] [INFO] SERVER - undefined
+[2015-08-03 11:02:38.746] [INFO] SERVER - register: get /static/*
+[2015-08-03 11:02:38.755] [INFO] SERVER - register: get /
+[2015-08-03 11:02:38.757] [INFO] SERVER - register: get /manage
+[2015-08-03 11:02:38.758] [INFO] SERVER - register: get /registe
+[2015-08-03 11:02:38.759] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 11:02:38.760] [INFO] SERVER - register: get /manage/users
+[2015-08-03 11:02:38.761] [INFO] SERVER - register: post /api/register
+[2015-08-03 11:02:38.763] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 11:02:38.810] [INFO] SERVER - users has been created!
+[2015-08-03 11:02:38.813] [INFO] SERVER - blogs has been created!
+[2015-08-03 11:02:38.815] [INFO] SERVER - comments has been created!
+[2015-08-03 11:02:46.346] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-03 11:02:46.354] [INFO] SERVER - undefined
+[2015-08-03 11:02:46.755] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:02:46.757] [INFO] SERVER - undefined
+[2015-08-03 11:02:51.468] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:02:51.472] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:02:51.499] [INFO] SERVER - 127.0.0.1:8000 GET /registe?name=ddd&email=wp3xpp%40163.com&password1=dddddd&password2=dddddd&submit=%E6%B3%A8+%E5%86%8C
+[2015-08-03 11:02:51.502] [INFO] SERVER - undefined
+[2015-08-03 11:02:51.510] [INFO] SERVER - object
+[2015-08-03 11:02:51.745] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-03 11:02:51.747] [INFO] SERVER - undefined
+[2015-08-03 11:02:51.933] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:02:51.935] [INFO] SERVER - undefined
+[2015-08-03 11:03:19.803] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:03:19.807] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'd618ab0dbe4baafbdf809c8c0e95ac5f41cd8983' }
+[2015-08-03 11:03:19.816] [INFO] SERVER - object
+[2015-08-03 11:03:19.823] [INFO] SERVER - 127.0.0.1:8000 GET /registe?name=ddd&email=wp3xpp%40163.com&password1=wwwwww&password2=wwwwww&submit=%E6%B3%A8+%E5%86%8C
+[2015-08-03 11:03:19.826] [INFO] SERVER - undefined
+[2015-08-03 11:03:20.040] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-03 11:03:20.042] [INFO] SERVER - undefined
+[2015-08-03 11:03:20.163] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:03:20.164] [INFO] SERVER - undefined
+[2015-08-03 11:04:01.390] [INFO] SERVER - register: get /static/*
+[2015-08-03 11:04:01.399] [INFO] SERVER - register: get /
+[2015-08-03 11:04:01.401] [INFO] SERVER - register: get /manage
+[2015-08-03 11:04:01.403] [INFO] SERVER - register: get /registe
+[2015-08-03 11:04:01.403] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 11:04:01.404] [INFO] SERVER - register: get /manage/users
+[2015-08-03 11:04:01.405] [INFO] SERVER - register: post /api/register
+[2015-08-03 11:04:01.407] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 11:04:01.452] [INFO] SERVER - users has been created!
+[2015-08-03 11:04:01.456] [INFO] SERVER - blogs has been created!
+[2015-08-03 11:04:01.457] [INFO] SERVER - comments has been created!
+[2015-08-03 11:04:04.133] [INFO] SERVER - 127.0.0.1:8000 GET /registe?name=ddd&email=wp3xpp%40163.com&password1=wwwwww&password2=wwwwww&submit=%E6%B3%A8+%E5%86%8C
+[2015-08-03 11:04:04.142] [INFO] SERVER - undefined
+[2015-08-03 11:04:04.192] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-03 11:04:04.194] [INFO] SERVER - undefined
+[2015-08-03 11:04:04.524] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:04:04.531] [INFO] SERVER - undefined
+[2015-08-03 11:04:04.551] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-03 11:04:04.552] [INFO] SERVER - undefined
+[2015-08-03 11:04:11.580] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:04:11.584] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:04:11.612] [INFO] SERVER - object
+[2015-08-03 11:04:14.611] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:04:14.614] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:04:14.621] [INFO] SERVER - object
+[2015-08-03 11:04:21.340] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:04:21.343] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:04:21.349] [INFO] SERVER - object
+[2015-08-03 11:07:34.476] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-03 11:07:34.479] [INFO] SERVER - undefined
+[2015-08-03 11:07:34.715] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-03 11:07:34.719] [INFO] SERVER - undefined
+[2015-08-03 11:07:34.829] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:07:34.831] [INFO] SERVER - undefined
+[2015-08-03 11:07:42.138] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:07:42.142] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:07:42.149] [INFO] SERVER - object
+[2015-08-03 11:07:44.112] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:07:44.114] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:07:44.120] [INFO] SERVER - object
+[2015-08-03 11:12:55.879] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:12:55.887] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:12:55.896] [INFO] SERVER - object
+[2015-08-03 11:14:12.769] [INFO] SERVER - register: get /static/*
+[2015-08-03 11:14:12.779] [INFO] SERVER - register: get /
+[2015-08-03 11:14:12.782] [INFO] SERVER - register: get /manage
+[2015-08-03 11:14:12.785] [INFO] SERVER - register: get /registe
+[2015-08-03 11:14:12.786] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 11:14:12.788] [INFO] SERVER - register: get /manage/users
+[2015-08-03 11:14:12.790] [INFO] SERVER - register: post /api/register
+[2015-08-03 11:14:12.796] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 11:14:12.869] [INFO] SERVER - users has been created!
+[2015-08-03 11:14:12.874] [INFO] SERVER - blogs has been created!
+[2015-08-03 11:14:12.877] [INFO] SERVER - comments has been created!
+[2015-08-03 11:14:16.485] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-03 11:14:16.493] [INFO] SERVER - undefined
+[2015-08-03 11:14:16.572] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-03 11:14:16.583] [INFO] SERVER - undefined
+[2015-08-03 11:14:17.023] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:14:17.025] [INFO] SERVER - undefined
+[2015-08-03 11:14:17.116] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-03 11:14:17.117] [INFO] SERVER - undefined
+[2015-08-03 11:14:28.688] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:14:28.693] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:14:28.716] [INFO] SERVER - object
+[2015-08-03 11:16:56.851] [INFO] SERVER - register: get /static/*
+[2015-08-03 11:16:56.861] [INFO] SERVER - register: get /
+[2015-08-03 11:16:56.863] [INFO] SERVER - register: get /manage
+[2015-08-03 11:16:56.864] [INFO] SERVER - register: get /registe
+[2015-08-03 11:16:56.866] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 11:16:56.867] [INFO] SERVER - register: get /manage/users
+[2015-08-03 11:16:56.869] [INFO] SERVER - register: post /api/register
+[2015-08-03 11:16:56.872] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 11:16:56.916] [INFO] SERVER - users has been created!
+[2015-08-03 11:16:56.920] [INFO] SERVER - blogs has been created!
+[2015-08-03 11:16:56.922] [INFO] SERVER - comments has been created!
+[2015-08-03 11:17:02.824] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-03 11:17:02.830] [INFO] SERVER - undefined
+[2015-08-03 11:17:02.906] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-03 11:17:02.920] [INFO] SERVER - undefined
+[2015-08-03 11:17:03.351] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:17:03.359] [INFO] SERVER - undefined
+[2015-08-03 11:17:03.395] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-03 11:17:03.397] [INFO] SERVER - undefined
+[2015-08-03 11:17:13.552] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:17:13.558] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:17:13.583] [INFO] SERVER - object
+[2015-08-03 11:18:04.931] [INFO] SERVER - register: get /static/*
+[2015-08-03 11:18:04.941] [INFO] SERVER - register: get /
+[2015-08-03 11:18:04.943] [INFO] SERVER - register: get /manage
+[2015-08-03 11:18:04.946] [INFO] SERVER - register: get /registe
+[2015-08-03 11:18:04.947] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 11:18:04.949] [INFO] SERVER - register: get /manage/users
+[2015-08-03 11:18:04.951] [INFO] SERVER - register: post /api/register
+[2015-08-03 11:18:04.957] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 11:18:05.010] [INFO] SERVER - users has been created!
+[2015-08-03 11:18:05.015] [INFO] SERVER - blogs has been created!
+[2015-08-03 11:18:05.016] [INFO] SERVER - comments has been created!
+[2015-08-03 11:18:14.539] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:18:14.552] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:18:14.579] [INFO] SERVER - object
+[2015-08-03 11:18:35.183] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:18:35.186] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:18:35.199] [INFO] SERVER - object
+[2015-08-03 11:18:45.704] [INFO] SERVER - register: get /static/*
+[2015-08-03 11:18:45.714] [INFO] SERVER - register: get /
+[2015-08-03 11:18:45.716] [INFO] SERVER - register: get /manage
+[2015-08-03 11:18:45.718] [INFO] SERVER - register: get /registe
+[2015-08-03 11:18:45.719] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 11:18:45.721] [INFO] SERVER - register: get /manage/users
+[2015-08-03 11:18:45.722] [INFO] SERVER - register: post /api/register
+[2015-08-03 11:18:45.725] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 11:18:45.771] [INFO] SERVER - users has been created!
+[2015-08-03 11:18:45.775] [INFO] SERVER - blogs has been created!
+[2015-08-03 11:18:45.777] [INFO] SERVER - comments has been created!
+[2015-08-03 11:18:47.021] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:18:47.030] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:18:47.054] [INFO] SERVER - object
+[2015-08-03 11:18:55.525] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:18:55.529] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:18:55.543] [INFO] SERVER - object
+[2015-08-03 11:19:12.970] [INFO] SERVER - register: get /static/*
+[2015-08-03 11:19:12.979] [INFO] SERVER - register: get /
+[2015-08-03 11:19:12.981] [INFO] SERVER - register: get /manage
+[2015-08-03 11:19:12.983] [INFO] SERVER - register: get /registe
+[2015-08-03 11:19:12.984] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 11:19:12.986] [INFO] SERVER - register: get /manage/users
+[2015-08-03 11:19:12.987] [INFO] SERVER - register: post /api/register
+[2015-08-03 11:19:12.991] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 11:19:13.037] [INFO] SERVER - users has been created!
+[2015-08-03 11:19:13.041] [INFO] SERVER - blogs has been created!
+[2015-08-03 11:19:13.044] [INFO] SERVER - comments has been created!
+[2015-08-03 11:19:14.284] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:19:14.293] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:19:14.317] [INFO] SERVER - object
+[2015-08-03 11:20:18.791] [INFO] SERVER - register: get /static/*
+[2015-08-03 11:20:18.801] [INFO] SERVER - register: get /
+[2015-08-03 11:20:18.803] [INFO] SERVER - register: get /manage
+[2015-08-03 11:20:18.805] [INFO] SERVER - register: get /registe
+[2015-08-03 11:20:18.806] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 11:20:18.808] [INFO] SERVER - register: get /manage/users
+[2015-08-03 11:20:18.809] [INFO] SERVER - register: post /api/register
+[2015-08-03 11:20:18.813] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 11:20:18.857] [INFO] SERVER - users has been created!
+[2015-08-03 11:20:18.861] [INFO] SERVER - blogs has been created!
+[2015-08-03 11:20:18.864] [INFO] SERVER - comments has been created!
+[2015-08-03 11:20:21.248] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:20:21.261] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:20:21.283] [INFO] SERVER - object
+[2015-08-03 11:25:58.293] [INFO] SERVER - register: get /static/*
+[2015-08-03 11:25:58.303] [INFO] SERVER - register: get /
+[2015-08-03 11:25:58.306] [INFO] SERVER - register: get /manage
+[2015-08-03 11:25:58.308] [INFO] SERVER - register: get /registe
+[2015-08-03 11:25:58.309] [INFO] SERVER - register: get /manage/blogs
+[2015-08-03 11:25:58.310] [INFO] SERVER - register: get /manage/users
+[2015-08-03 11:25:58.311] [INFO] SERVER - register: post /api/register
+[2015-08-03 11:25:58.314] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-03 11:25:58.359] [INFO] SERVER - users has been created!
+[2015-08-03 11:25:58.363] [INFO] SERVER - blogs has been created!
+[2015-08-03 11:25:58.364] [INFO] SERVER - comments has been created!
+[2015-08-03 11:26:03.227] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:26:03.235] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:26:03.257] [INFO] SERVER - object
+[2015-08-03 11:26:20.971] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-03 11:26:20.974] [INFO] SERVER - undefined
+[2015-08-03 11:26:21.042] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-03 11:26:21.045] [INFO] SERVER - undefined
+[2015-08-03 11:26:21.486] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:26:21.487] [INFO] SERVER - undefined
+[2015-08-03 11:26:21.536] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/favicon.png
+[2015-08-03 11:26:21.537] [INFO] SERVER - undefined
+[2015-08-03 11:26:29.602] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:26:29.605] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-03 11:26:29.611] [INFO] SERVER - object
+[2015-08-03 11:26:41.644] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-03 11:26:41.646] [INFO] SERVER - { name: 'ddd',
+  email: '531409927@qq.com',
+  passwd: '9d2d9e0ab4cccff6c67f8be636447b8880260237' }
+[2015-08-03 11:26:41.763] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-08-03 11:26:41.766] [INFO] SERVER - undefined
+[2015-08-03 11:26:41.934] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-03 11:26:41.936] [INFO] SERVER - undefined
+[2015-08-03 11:26:42.283] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:26:42.286] [INFO] SERVER - undefined
+[2015-08-03 11:29:26.713] [INFO] SERVER - 127.0.0.1:8000 GET /manage/
+[2015-08-03 11:29:26.715] [INFO] SERVER - undefined
+[2015-08-03 11:29:27.024] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-03 11:29:27.026] [INFO] SERVER - undefined
+[2015-08-03 11:29:51.084] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-03 11:29:51.087] [INFO] SERVER - undefined
+[2015-08-03 11:29:51.277] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-03 11:29:51.279] [INFO] SERVER - undefined
+[2015-08-03 11:29:51.469] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-03 11:29:51.542] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-03 11:29:53.049] [INFO] SERVER - 127.0.0.1:8000 GET /manage/users
+[2015-08-03 11:29:53.050] [INFO] SERVER - undefined
+[2015-08-03 11:29:53.233] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-03 11:29:53.235] [INFO] SERVER - undefined
+[2015-08-03 11:29:53.348] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-03 11:29:53.389] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-03 11:29:54.184] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-03 11:29:54.185] [INFO] SERVER - undefined
+[2015-08-03 11:29:54.454] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-03 11:29:54.456] [INFO] SERVER - undefined
+[2015-08-03 11:29:54.545] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-03 11:29:54.576] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-03 11:29:56.948] [INFO] SERVER - 127.0.0.1:8000 GET /manage/users
+[2015-08-03 11:29:56.950] [INFO] SERVER - undefined
+[2015-08-03 11:29:57.104] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-03 11:29:57.106] [INFO] SERVER - undefined
+[2015-08-03 11:29:57.181] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-03 11:29:57.213] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png

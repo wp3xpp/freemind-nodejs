@@ -62,8 +62,7 @@ var salt = "freemind"; //给密码加盐
 exports.api_register_user = function api_register_user(req, res){
 	if (req.body.email === undefined || req.body.passwd === undefined){
 		res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
-		res.write('<h1>email passwd is undefined</h1>');
-		res.end("<script>window.history.go(-1);</script>");
+		res.end("post数据传输过程中丢失");
 	}
 	try{
 		var emailExist = function(req, res){
@@ -90,14 +89,13 @@ exports.api_register_user = function api_register_user(req, res){
 					throw err;
 				}
 				func.res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
-				func.res.end("<script>window.location.href='/';</script>");
+				func.res.end("success create");
 			});
 		})
 		.fail(function(res){
 			logger.info(typeof res);
 			res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
-			res.write('<h1>sorry, email is already in use</h1>');
-			res.end("<script>setTimeout(function(){window.history.go(-1)}, 3000);</script>");
+			res.end("邮箱已经被注册了,不好意思啊");
 		});
 		
 	}
