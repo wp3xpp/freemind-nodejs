@@ -28,6 +28,10 @@ var initMiddlewares = function(){
 	app.get('/', handles.index);
 	app.get('/manage', handles.login);
 	app.get('/registe', handles.register);
+	app.get('/blogs/:blogid', handles.showBlog);
+	app.get('/api/users', handles.getUsers);
+	app.get('/api/blogs', handles.getBlogs);
+	app.get('/api/blog/:blogid', handles.api_get_blog);
 	app.get('/manage/blogs', handles.manageBlogs);
 	app.get('/manage/users', handles.manageUsers);
 	app.post('/api/register', handles.api_register_user);

@@ -14,11 +14,11 @@ var opts = require('./config/dbConfig.js');
 var orm = require('orm');
 
 var db = orm.connect(opts, function (err, db) {
+    db.settings.set('instance.cache', true);
 	if(err){
 		logger.error(err.toString());
 		throw err;
-	}
-	db.settings.set('instance.cache', true);    
+	}    
 });
 
 var initDB = function(){
@@ -79,13 +79,13 @@ create table blogs (
 */
 
 var blogs = exports.blogs = db.define('blogs', {
-	user_id : { type:"text", size:50, required:true },
+	blog_id : { type:"text", size:50, required:true, key:true },
 	user_name : { type:"text", size:50, required:true },
-	user_image : { type:"text", size:500, required:true },
-	name : { type:"text", size:50, required:true },
+	user_image : { type:"text", size:500},
+	title : { type:"text", size:50, required:true },
 	summary : { type:"text", size:200, required:true },
 	content : { type:"text", required:true },
-	created_at: { type:"number", required:true, unsigned:true, defaultValue:new Date().getTime() },
+	created_at: { type:"number", required:true, size:8, defaultValue:new Date().getTime() },
 }, {
 	
 });

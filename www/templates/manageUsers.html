@@ -5,8 +5,11 @@
   		  <li><a href="/" class="am-icon-home">首页</a></li>
   		  <li class="am-active">用户管理</li>
   		  <li><a href="/manage/blogs">博客管理</a></li>
-		</ol>
+		    </ol>
 		<hr>
+        <div id="loading" class="am-width-1-1 am-text-center">
+          <span><i class="am-icon-spinner am-icon-medium am-icon-spin"></i> 正在加载...</span>
+        </div>
         <div class="am-btn-toolbar">
           <div class="am-btn-group am-btn-group-xs" >
             <button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span> 新增</button>
@@ -23,31 +26,31 @@
                   <th>管理员</th>
                 </tr>
 		      </thead>
-		      <tbody>
-		          <tr>
-		              <td><input type="checkbox" /></td>
-		              <td>Amaze UI</td>
-		              <td>http://amazeui.org</td>
-		              <td>2012-10-01</td>
-		              <td>是</td>
-		          </tr>
-		          <tr>
-		          	  <td><input type="checkbox" /></td>
-		              <td>Amaze UI</td>
-		              <td>http://amazeui.org</td>
-		              <td>2012-10-01</td>
-		              <td>是</td>
-		          </tr>
-		          <tr>
-		              <td><input type="checkbox" /></td>
-		              <td>Amaze UI(Active)</td>
-		              <td>http://amazeui.org</td>
-		              <td>2012-10-01</td>
-		              <td>是</td>
-		          </tr>
+		      <tbody id="tbody">
 		      </tbody>
 		  </table>
       <hr>
      </div>
     </div>
 </div>
+<script type="text/javascript">
+  $(function(){
+    $.get('/api/users', function(data, code){
+      $('#loading').hide();
+      initUserTable(data);
+    });
+  });
+  function initUserTable(users){
+    var table = $('#tbody');
+    var addNode = function(user){
+      return  '<tr><td><input type=checkbox /></td><td>'
+              + user.name + '</td><td>'
+              + user.email + '</td><td>'
+              + user.created_at + '</td><td>'
+              + (user.admin ? "是" : "否") + '</td></tr>';
+    };
+    for(var user of users){
+       table.append(addNode(user));
+    }
+  }
+</script>

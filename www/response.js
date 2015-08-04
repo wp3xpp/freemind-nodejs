@@ -76,8 +76,8 @@ var complie = function(str){
 	}).replace(/<%([\s\S]+?)%>/g, function(match, code){
 		//可执行代码
 		return "';\n" + code + "\ntpl += '";
-	}).replace(/\'\n/g, '\'')
-	.replace(/\n\'/gm, '\'')
+	}).replace(/\"\n/g, '\"')
+	.replace(/\n\"/gm, '\"')
 	.replace(/\s/gm, ' ');
 
 	//为了使字符串继续表达为字符串，变量能够自寻找属于他的对象，这里使用with
@@ -168,7 +168,6 @@ res.render = function render(viewname, data){
 	}
 	this.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
 	var html = cache[key](data, escape);
-	/*logger.trace(cache[key].toString());*/
 	this.end(html);
 };
 

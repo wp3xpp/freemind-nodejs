@@ -188,9 +188,9 @@ var pathRegexp = function(path){
 		   		   + (optional ? '' : slash)
 		   		   + '(?:'
 		   		   + (optional ? slash : '')
-		   		   + (format || '') + (capture || (format &&  '([^/.]+?' || '(^/]+?)')) + ')' 
+		   		   + (format || '') + (capture || (format &&  '([^/.]+?' || '([^/]+?)')) + ')' 
 		   		   + (optional || '')
-		   		   + (star ? '(/*)' : '');
+		   		   + (star ? '(/*)?' : '');
 		   })
 		   .replace(/([\/.])/g, '\\$1')
 		   .replace(/\*/g, '(.*)');

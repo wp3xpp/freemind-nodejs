@@ -108,8 +108,8 @@ exports.manageBlogs = function manageBlogs(req, res){
 	try{
 		res.render('manageBlogs.html', {layout:'manage_base.html'});
 	}
-	catch(e){
-		logger.error(e.toString());
+	catch(err){
+		logger.error(err.toString());
 	}
 };
 
@@ -117,7 +117,76 @@ exports.manageUsers = function manageBlogs(req, res){
 	try{
 		res.render('manageUsers.html', {layout:'manage_base.html'});
 	}
-	catch(e){
-		logger.error(e.toString());
+	catch(err){
+		logger.error(err.toString());
+	}
+};
+
+exports.getUsers = function getUsers(req, res){
+	try{
+		models.users.find({}, ["created_at", "Z"], function(err, users){
+			if(err){
+				throw err;
+			}
+			for(var user of users){
+				user.passwd = "******";
+				user.created_at = new Date(user.created_at).toLocaleString();
+			}
+			return res.json(users);
+		});
+	}
+	catch(err){
+		logger.error(err.toString());
+	}
+};
+
+exports.getBlogs = function getUsers(req, res){
+	try{
+		models.blogs.find({}, ["created_at", "Z"], function(err, blogs){
+			if(err){
+				throw err;
+			}
+			for(var blog of blogs){
+				blog.created_at = new Date(blog.created_at).toLocaleString();
+			}
+			return res.json(blogs);
+		});
+	}
+	catch(err){
+		logger.error(err.toString());
+	}
+};
+
+
+exports.api_get_blog = function api_get_blog(req, res){
+	try{
+		models.blogs.find({blog_id: req.params.blogid}, 1, function(err, blog){
+			if(err){
+				throw err;
+			}
+			res.json(blog[0]);
+		});	
+	}
+	catch(err){
+		logger.error(err.toString());
+	}
+};
+
+exports.showBlog = function showBlog(req, res){
+	try{
+		models.blogs.find({blog_id: req.params.blogid}, 1, function(err, blog){
+			if(err){
+				throw err;
+			}
+			if(blog[0]){
+				res.render("blog.html", {blog_id: blog[0].blog_id});
+			}
+			else{
+				exports.handle404(req, res);
+			}
+		});	
+	}
+	catch(err){
+		logger.error(err.toString());
 	}
 };

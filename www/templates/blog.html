@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>博客管理</title>
+  <title></title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -33,22 +33,74 @@
   <!-- Amaze UI CSS -->
   <link rel="stylesheet" href="//cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">
   <script src="//libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/showdownjs/showdown/1.2.1/dist/showdown.min.js"></script>
   <style type="text/css">
-  	body{
-  		font-size: 14px;
-  	}
+  	#blog {
+  		font-size: 18px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		padding: 2% 5% 5% 5%;
+		line-height: 150%;
+		border: 1px solid LightGrey;
+  	}  	
   </style>
+  <script type="text/javascript">
+  	/*function test(){
+  		var converter = new showdown.Converter(),
+    	text      = '###This is a ~~deleted text~~',
+    	html      = converter.makeHtml(text);
+    	var blogBody = $('#blog-body');
+    	blogBody.html(html);
+  	}*/
+  	function makeMarkdown(text){
+  		var converter = new showdown.Converter();
+    	var html      = converter.makeHtml(text);
+    	var blogBody = $('#blog-content');
+    	blogBody.html(html); 		
+  	};
+  	function initBlog(blog){
+  		var title = $('#blog-title');
+  		var summary = $('#blog-summary');
+  		var author = $('#blog-author');
+  		title.text(blog.title);
+  		author.text(blog.user_name);
+  		summary.text(blog.summary);
+  		$(document).attr('title', blog.title);
+  		makeMarkdown(blog.content);
+  	}
+  	$(function(){
+  		$.get('/api/blog/<%= blog_id%>', function(blog){
+  			$('#loading').hide();
+  			initBlog(blog);
+  		});
+  	});
+  </script>
 </head>
 <body>
 
-<%- body%>
+<div class="am-container">
+  <div class="am-g">
+    <div class="am-u-sm-9 am-u-sm-centered" id="blog">
+      <article class="am-article">
+  		<div class="am-article-hd">
+    	<h1 class="am-article-title" id="blog-title"></h1>
+    	<hr>
+   		 <p class="am-article-meta" id="blog-author" style="font-size:18px;"></p>
+  		</div>
 
-<footer class="amz-footer" style="border-top:1px solid #ccc;background:url(/static/i/grid.png);background-color:#f5f5f5;">
-    <div class="am-container am-container-center am-text-center">
-            <p>Powered by <a href="https://github.com/wp3xpp/awesomeFreeMind-nodejs">Awesome NodeJs Webapp</a>. Copyright &copy; 2015. [<a href="/manage/" target="_blank">Manage</a>]</p>
-            <p><a href="http://freemindx.cn/" target="_blank">freemindx.cn</a>. All rights reserved.</p>
+ 	 <div class="am-article-bd">
+    	<p class="am-article-lead" id="blog-summary"></p>
+    	<div id="loading" class="am-width-1-1 am-text-center">
+          <span><i class="am-icon-spinner am-icon-medium am-icon-spin"></i> 正在加载...</span>
+        </div>
+    	<div id="blog-content">
+    	　　
+		</div>
+ 	 </div>
+	</article>
     </div>
-</footer>
+  </div>
+</div>
 
 <!--[if lt IE 9]>
 <script src="//libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>

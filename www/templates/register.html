@@ -41,6 +41,7 @@
 	   function showError(errorCode){
       		$('#warning').text(errorCode);
       		$('.am-alert').css('display', 'block');
+          $('.am-alert').addClass('am-animation-shake');
 	   }
   	$(function(){		
   		$('input[name=submit]').click(function(){
