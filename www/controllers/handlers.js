@@ -190,3 +190,12 @@ exports.showBlog = function showBlog(req, res){
 		logger.error(err.toString());
 	}
 };
+
+exports.editBlog = function editBlog(req, res){
+	try{
+		res.render("manage_blog_edit.html", {});
+	}
+	catch(err){
+		logger.error(err.toString());
+	}
+}

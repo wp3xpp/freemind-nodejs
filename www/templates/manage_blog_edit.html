@@ -1,4 +1,4 @@
-<<!doctype html>
+<!doctype html>
 <html class="no-js">
 <head>
   <meta charset="utf-8">
@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>你的标题</title>
+  <title>标题</title>
 
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
@@ -32,11 +32,66 @@
 
   <!-- Amaze UI CSS -->
   <link rel="stylesheet" href="//cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">
+  <script src="//libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
+  <style type="text/css">
+  	#edit_content {
+  		font-size: 18px;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		padding: 2% 5% 5% 5%;
+		line-height: 150%;
+		border: 1px solid LightGrey;
+  	}
+  </style>
+  <script type="text/javascript">
+  	$(function(){
+  		$('#cancel').click(function(){
+  			return location.assign('/manage/blos');
+  		});
+  	});
+  </script>
 
 </head>
 <body>
 
-<div>开始写你的码...</div>
+<div class="am-container">
+  <div class="am-g">
+    <div class="am-u-sm-9 am-u-sm-centered" id="edit_content">
+		<ol class="am-breadcrumb" style="font-size:18px;">
+  		  <li><a href="/" class="am-icon-home">首页</a></li>
+  		  <li><a href="/manage/users">用户管理</a></li>
+  		  <li><a href="/manage/blogs">博客管理</a></li>
+		</ol>
+
+      	<form role="form" class="am-form">
+      	  <legend>编辑博客</legend>
+      	
+      	  <div class="am-form-group">
+      	    <label for="">博客标题</label>
+      	    <input type="text" id="blog-title" placeholder="标题">
+      	  </div>
+
+      	  <div class="am-form-group">
+      	    <label for="">作者</label>
+      	    <input type="text" id="blog-author" placeholder="作者">
+      	  </div>
+
+      	  <div class="am-form-group">
+      	    <label for="">摘要</label>
+      	    <textarea id="blog-summary" rows="4" placeholder="摘要" style="resize:none;"></textarea>
+      	  </div>
+
+      	  <div class="am-form-group">
+      	    <label for="am-form">内容:</label>
+      	    <textarea id="blog-content" rows="16" placeholder="内容 支持MarkDown语法" style="resize:none"></textarea>
+      	  </div>
+      	
+      	  <button type="submit" class="am-btn am-btn-primary am-round" id="save">保存</button>
+      	  <button class="am-btn am-btn-success am-round" id="cancel">取消</button>
+      	</form>
+    </div>
+  </div>
+</div>
 
 <!--[if lt IE 9]>
 <script src="//libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>
@@ -47,9 +102,8 @@
 <![endif]-->
 
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="//libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
 <script src="//cdn.amazeui.org/amazeui/2.1.0/js/amazeui.min.js"></script>
 <!--<![endif]-->
 
 </body>
-</html>>
+</html>
