@@ -2654,3 +2654,941 @@
 [2015-08-04 22:39:02.651] [INFO] SERVER - undefined
 [2015-08-04 22:39:02.877] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
 [2015-08-04 22:39:02.908] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:06:06.845] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:06:06.855] [INFO] SERVER - register: get /
+[2015-08-05 14:06:06.857] [INFO] SERVER - register: get /registe
+[2015-08-05 14:06:06.859] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:06:06.860] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:06:06.861] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:06:06.861] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:06:06.862] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:06:06.863] [INFO] SERVER - register: get /manage
+[2015-08-05 14:06:06.864] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:06:06.864] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:06:06.865] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:06:06.867] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:06:06.911] [INFO] SERVER - users has been created!
+[2015-08-05 14:06:06.915] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:06:06.917] [INFO] SERVER - comments has been created!
+[2015-08-05 14:06:12.339] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-08-05 14:06:12.347] [INFO] SERVER - undefined
+[2015-08-05 14:06:12.892] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 14:06:12.894] [INFO] SERVER - undefined
+[2015-08-05 14:06:14.064] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-05 14:06:14.066] [INFO] SERVER - undefined
+[2015-08-05 14:06:17.872] [INFO] SERVER - 127.0.0.1:8000 GET /manage/
+[2015-08-05 14:06:17.874] [INFO] SERVER - undefined
+[2015-08-05 14:06:18.320] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-05 14:06:18.322] [INFO] SERVER - undefined
+[2015-08-05 14:06:27.446] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 14:06:27.449] [INFO] SERVER - undefined
+[2015-08-05 14:06:27.635] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 14:06:27.637] [INFO] SERVER - undefined
+[2015-08-05 14:06:27.868] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 14:06:27.910] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 14:06:29.625] [INFO] SERVER - 127.0.0.1:8000 GET /manage/users
+[2015-08-05 14:06:29.631] [INFO] SERVER - undefined
+[2015-08-05 14:06:29.791] [INFO] SERVER - 127.0.0.1:8000 GET /api/users
+[2015-08-05 14:06:29.793] [INFO] SERVER - undefined
+[2015-08-05 14:06:29.820] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 14:06:29.825] [INFO] SERVER - undefined
+[2015-08-05 14:06:29.941] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 14:06:30.048] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 14:06:44.855] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 14:06:44.856] [INFO] SERVER - undefined
+[2015-08-05 14:06:45.021] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 14:06:45.023] [INFO] SERVER - undefined
+[2015-08-05 14:06:45.094] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 14:06:45.125] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 14:06:48.894] [INFO] SERVER - 127.0.0.1:8000 GET /manage/users
+[2015-08-05 14:06:48.895] [INFO] SERVER - undefined
+[2015-08-05 14:06:49.070] [INFO] SERVER - 127.0.0.1:8000 GET /api/users
+[2015-08-05 14:06:49.071] [INFO] SERVER - undefined
+[2015-08-05 14:06:49.092] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 14:06:49.094] [INFO] SERVER - undefined
+[2015-08-05 14:06:49.204] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 14:06:49.213] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 14:07:03.595] [INFO] SERVER - 127.0.0.1:8000 GET /manage/users
+[2015-08-05 14:07:03.596] [INFO] SERVER - undefined
+[2015-08-05 14:07:03.779] [INFO] SERVER - 127.0.0.1:8000 GET /api/users
+[2015-08-05 14:07:03.781] [INFO] SERVER - undefined
+[2015-08-05 14:07:03.809] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 14:07:03.810] [INFO] SERVER - undefined
+[2015-08-05 14:07:03.960] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 14:07:03.984] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 14:07:05.516] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-08-05 14:07:05.518] [INFO] SERVER - undefined
+[2015-08-05 14:07:05.691] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 14:07:05.693] [INFO] SERVER - undefined
+[2015-08-05 14:07:05.795] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-05 14:07:05.797] [INFO] SERVER - undefined
+[2015-08-05 14:07:07.310] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 14:07:07.355] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 14:07:12.752] [INFO] SERVER - 127.0.0.1:8000 GET /blog/1
+[2015-08-05 14:07:13.081] [INFO] SERVER - 127.0.0.1:8000 GET /blog/static/i/app-icon72x72@2x.png
+[2015-08-05 14:07:13.107] [INFO] SERVER - 127.0.0.1:8000 GET /blog/static/i/favicon.png
+[2015-08-05 14:07:15.993] [INFO] SERVER - 127.0.0.1:8000 GET /blog/2
+[2015-08-05 14:07:16.190] [INFO] SERVER - 127.0.0.1:8000 GET /blog/static/i/app-icon72x72@2x.png
+[2015-08-05 14:07:16.211] [INFO] SERVER - 127.0.0.1:8000 GET /blog/static/i/favicon.png
+[2015-08-05 14:07:20.431] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/2
+[2015-08-05 14:07:20.433] [INFO] SERVER - undefined
+[2015-08-05 14:07:21.277] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/static/i/app-icon72x72@2x.png
+[2015-08-05 14:07:21.322] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/static/i/favicon.png
+[2015-08-05 14:07:23.141] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/1
+[2015-08-05 14:07:23.143] [INFO] SERVER - undefined
+[2015-08-05 14:07:23.448] [INFO] SERVER - 127.0.0.1:8000 GET /api/blog/1
+[2015-08-05 14:07:23.450] [INFO] SERVER - undefined
+[2015-08-05 14:07:23.562] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/i/app-icon72x72@2x.png
+[2015-08-05 14:07:23.740] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/i/favicon.png
+[2015-08-05 14:21:37.530] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:21:37.547] [INFO] SERVER - register: get /
+[2015-08-05 14:21:37.550] [INFO] SERVER - register: get /registe
+[2015-08-05 14:21:37.551] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:21:37.553] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:21:37.555] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:21:37.556] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:21:37.558] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:21:37.559] [INFO] SERVER - register: get /manage
+[2015-08-05 14:21:37.563] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:21:37.564] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:21:37.565] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:21:37.569] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:21:37.613] [INFO] SERVER - users has been created!
+[2015-08-05 14:21:37.616] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:21:37.618] [INFO] SERVER - comments has been created!
+[2015-08-05 14:21:38.989] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/
+[2015-08-05 14:21:39.530] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/static/i/app-icon72x72@2x.png
+[2015-08-05 14:21:39.578] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/static/i/favicon.png
+[2015-08-05 14:23:08.573] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/%EF%BC%9F
+[2015-08-05 14:23:08.582] [INFO] SERVER - undefined
+[2015-08-05 14:23:08.932] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/static/i/app-icon72x72@2x.png
+[2015-08-05 14:23:08.962] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/static/i/favicon.png
+[2015-08-05 14:23:14.301] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/a
+[2015-08-05 14:23:14.313] [INFO] SERVER - undefined
+[2015-08-05 14:23:14.560] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/static/i/app-icon72x72@2x.png
+[2015-08-05 14:23:14.584] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/static/i/favicon.png
+[2015-08-05 14:23:18.161] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/1
+[2015-08-05 14:23:18.165] [INFO] SERVER - undefined
+[2015-08-05 14:23:18.361] [INFO] SERVER - 127.0.0.1:8000 GET /api/blog/1
+[2015-08-05 14:23:18.362] [INFO] SERVER - undefined
+[2015-08-05 14:23:18.521] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/i/app-icon72x72@2x.png
+[2015-08-05 14:23:18.561] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/i/favicon.png
+[2015-08-05 14:23:20.243] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/2
+[2015-08-05 14:23:20.245] [INFO] SERVER - undefined
+[2015-08-05 14:23:20.551] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/static/i/app-icon72x72@2x.png
+[2015-08-05 14:23:20.585] [INFO] SERVER - 127.0.0.1:8000 GET /blogs/static/i/favicon.png
+[2015-08-05 14:24:16.132] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:24:16.143] [INFO] SERVER - register: get /
+[2015-08-05 14:24:16.146] [INFO] SERVER - register: get /registe
+[2015-08-05 14:24:16.148] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:24:16.150] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:24:16.151] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:24:16.153] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:24:16.155] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:24:16.157] [INFO] SERVER - register: get /manage
+[2015-08-05 14:24:16.159] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:24:16.161] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:24:16.163] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:24:16.166] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:24:16.216] [INFO] SERVER - users has been created!
+[2015-08-05 14:24:16.220] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:24:16.221] [INFO] SERVER - comments has been created!
+[2015-08-05 14:24:29.844] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 14:24:29.852] [INFO] SERVER - undefined
+[2015-08-05 14:24:30.331] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:24:30.350] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:24:32.135] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:24:32.138] [INFO] SERVER - undefined
+[2015-08-05 14:24:32.397] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:24:32.432] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:24:33.805] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:24:33.806] [INFO] SERVER - undefined
+[2015-08-05 14:24:34.328] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:24:34.364] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:24:35.327] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:24:35.329] [INFO] SERVER - undefined
+[2015-08-05 14:24:35.635] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:24:35.671] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:25:50.053] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:25:50.074] [INFO] SERVER - undefined
+[2015-08-05 14:25:50.493] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:25:50.601] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:25:58.762] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 14:25:58.764] [INFO] SERVER - undefined
+[2015-08-05 14:25:59.167] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:25:59.234] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:26:02.161] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:26:02.162] [INFO] SERVER - undefined
+[2015-08-05 14:26:02.556] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:26:02.632] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:26:29.528] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:26:29.539] [INFO] SERVER - register: get /
+[2015-08-05 14:26:29.542] [INFO] SERVER - register: get /registe
+[2015-08-05 14:26:29.543] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:26:29.545] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:26:29.546] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:26:29.548] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:26:29.549] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:26:29.550] [INFO] SERVER - register: get /manage
+[2015-08-05 14:26:29.551] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:26:29.552] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:26:29.553] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:26:29.556] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:26:29.604] [INFO] SERVER - users has been created!
+[2015-08-05 14:26:29.607] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:26:29.609] [INFO] SERVER - comments has been created!
+[2015-08-05 14:26:30.871] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:26:30.879] [INFO] SERVER - undefined
+[2015-08-05 14:26:31.387] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:26:31.451] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:26:32.600] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:26:32.602] [INFO] SERVER - undefined
+[2015-08-05 14:26:33.010] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:26:33.112] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:26:34.736] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:26:34.738] [INFO] SERVER - undefined
+[2015-08-05 14:26:35.146] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:26:35.222] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:26:47.502] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:26:47.512] [INFO] SERVER - register: get /
+[2015-08-05 14:26:47.515] [INFO] SERVER - register: get /registe
+[2015-08-05 14:26:47.516] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:26:47.517] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:26:47.518] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:26:47.519] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:26:47.520] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:26:47.521] [INFO] SERVER - register: get /manage
+[2015-08-05 14:26:47.522] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:26:47.523] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:26:47.523] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:26:47.527] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:26:47.588] [INFO] SERVER - users has been created!
+[2015-08-05 14:26:47.593] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:26:47.594] [INFO] SERVER - comments has been created!
+[2015-08-05 14:26:49.117] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:26:49.129] [INFO] SERVER - undefined
+[2015-08-05 14:26:49.671] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:26:49.742] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:26:52.730] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:26:52.731] [INFO] SERVER - undefined
+[2015-08-05 14:26:53.120] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:26:53.193] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:27:26.398] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:27:26.408] [INFO] SERVER - register: get /
+[2015-08-05 14:27:26.410] [INFO] SERVER - register: get /registe
+[2015-08-05 14:27:26.411] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:27:26.413] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:27:26.413] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:27:26.414] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:27:26.415] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:27:26.416] [INFO] SERVER - register: get /manage
+[2015-08-05 14:27:26.417] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:27:26.417] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:27:26.418] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:27:26.420] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:27:26.463] [INFO] SERVER - users has been created!
+[2015-08-05 14:27:26.467] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:27:26.468] [INFO] SERVER - comments has been created!
+[2015-08-05 14:27:28.219] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:27:28.229] [INFO] SERVER - undefined
+[2015-08-05 14:27:28.847] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:27:28.922] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:27:30.215] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:27:30.217] [INFO] SERVER - undefined
+[2015-08-05 14:27:30.595] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:27:30.669] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:27:33.015] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:27:33.017] [INFO] SERVER - undefined
+[2015-08-05 14:27:33.432] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:27:33.545] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:29:57.812] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:29:57.836] [INFO] SERVER - register: get /
+[2015-08-05 14:29:57.842] [INFO] SERVER - register: get /registe
+[2015-08-05 14:29:57.843] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:29:57.845] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:29:57.847] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:29:57.848] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:29:57.849] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:29:57.851] [INFO] SERVER - register: get /manage
+[2015-08-05 14:29:57.854] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:29:57.855] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:29:57.856] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:29:57.859] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:29:57.930] [INFO] SERVER - users has been created!
+[2015-08-05 14:29:57.936] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:29:57.937] [INFO] SERVER - comments has been created!
+[2015-08-05 14:30:04.167] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:30:04.186] [INFO] SERVER - undefined
+[2015-08-05 14:30:04.898] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:30:05.083] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:30:06.054] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:30:06.057] [INFO] SERVER - undefined
+[2015-08-05 14:30:06.509] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:30:06.584] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:30:08.437] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:30:08.441] [INFO] SERVER - undefined
+[2015-08-05 14:30:08.874] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:30:08.972] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:30:20.844] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:30:20.858] [INFO] SERVER - register: get /
+[2015-08-05 14:30:20.861] [INFO] SERVER - register: get /registe
+[2015-08-05 14:30:20.863] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:30:20.865] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:30:20.866] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:30:20.867] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:30:20.868] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:30:20.868] [INFO] SERVER - register: get /manage
+[2015-08-05 14:30:20.870] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:30:20.871] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:30:20.872] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:30:20.874] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:30:20.920] [INFO] SERVER - users has been created!
+[2015-08-05 14:30:20.923] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:30:20.925] [INFO] SERVER - comments has been created!
+[2015-08-05 14:30:23.255] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:30:23.269] [INFO] SERVER - undefined
+[2015-08-05 14:30:23.810] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:30:23.902] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:30:25.580] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:30:25.582] [INFO] SERVER - undefined
+[2015-08-05 14:30:26.115] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:30:26.239] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:30:27.349] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-08-05 14:30:27.352] [INFO] SERVER - undefined
+[2015-08-05 14:30:27.743] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 14:30:27.745] [INFO] SERVER - undefined
+[2015-08-05 14:30:27.879] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-05 14:30:27.881] [INFO] SERVER - undefined
+[2015-08-05 14:30:29.255] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:30:29.360] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:32:58.643] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:32:58.668] [INFO] SERVER - register: get /
+[2015-08-05 14:32:58.670] [INFO] SERVER - register: get /registe
+[2015-08-05 14:32:58.672] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:32:58.673] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:32:58.674] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:32:58.674] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:32:58.675] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:32:58.676] [INFO] SERVER - register: get /manage
+[2015-08-05 14:32:58.677] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:32:58.678] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:32:58.678] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:32:58.682] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:32:58.726] [INFO] SERVER - users has been created!
+[2015-08-05 14:32:58.729] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:32:58.731] [INFO] SERVER - comments has been created!
+[2015-08-05 14:33:01.467] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:33:01.481] [INFO] SERVER - undefined
+[2015-08-05 14:33:02.020] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:33:02.053] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:33:03.284] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:33:03.286] [INFO] SERVER - undefined
+[2015-08-05 14:33:03.562] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:33:03.588] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:33:05.005] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:33:05.007] [INFO] SERVER - undefined
+[2015-08-05 14:33:05.260] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:33:05.287] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:33:06.706] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:33:06.708] [INFO] SERVER - undefined
+[2015-08-05 14:33:07.112] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:33:07.143] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:33:18.584] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:33:18.597] [INFO] SERVER - register: get /
+[2015-08-05 14:33:18.600] [INFO] SERVER - register: get /registe
+[2015-08-05 14:33:18.602] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:33:18.604] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:33:18.605] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:33:18.606] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:33:18.608] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:33:18.609] [INFO] SERVER - register: get /manage
+[2015-08-05 14:33:18.610] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:33:18.611] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:33:18.613] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:33:18.616] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:33:18.684] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:33:18.688] [INFO] SERVER - users has been created!
+[2015-08-05 14:33:18.690] [INFO] SERVER - comments has been created!
+[2015-08-05 14:33:20.204] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:33:20.214] [INFO] SERVER - undefined
+[2015-08-05 14:33:20.596] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:33:20.625] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:33:21.852] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:33:21.854] [INFO] SERVER - undefined
+[2015-08-05 14:33:22.227] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:33:22.269] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:33:23.532] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:33:23.534] [INFO] SERVER - undefined
+[2015-08-05 14:33:23.769] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:33:23.799] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:33:25.275] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:33:25.278] [INFO] SERVER - undefined
+[2015-08-05 14:33:25.684] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:33:25.722] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:35:49.502] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:35:49.512] [INFO] SERVER - register: get /
+[2015-08-05 14:35:49.515] [INFO] SERVER - register: get /registe
+[2015-08-05 14:35:49.516] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:35:49.517] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:35:49.518] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:35:49.519] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:35:49.520] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:35:49.521] [INFO] SERVER - register: get /manage
+[2015-08-05 14:35:49.522] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:35:49.523] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:35:49.524] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:35:49.527] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:35:49.592] [INFO] SERVER - users has been created!
+[2015-08-05 14:35:49.596] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:35:49.597] [INFO] SERVER - comments has been created!
+[2015-08-05 14:35:52.280] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:35:52.289] [INFO] SERVER - undefined
+[2015-08-05 14:35:52.734] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:35:52.756] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:38:04.149] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:38:04.159] [INFO] SERVER - register: get /
+[2015-08-05 14:38:04.162] [INFO] SERVER - register: get /registe
+[2015-08-05 14:38:04.163] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:38:04.164] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:38:04.165] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:38:04.165] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:38:04.166] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:38:04.167] [INFO] SERVER - register: get /manage
+[2015-08-05 14:38:04.168] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:38:04.169] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:38:04.169] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:38:04.172] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:38:04.226] [INFO] SERVER - users has been created!
+[2015-08-05 14:38:04.230] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:38:04.232] [INFO] SERVER - comments has been created!
+[2015-08-05 14:38:07.365] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:38:07.374] [INFO] SERVER - undefined
+[2015-08-05 14:38:08.028] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:38:08.065] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:38:47.603] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:38:47.612] [INFO] SERVER - register: get /
+[2015-08-05 14:38:47.614] [INFO] SERVER - register: get /registe
+[2015-08-05 14:38:47.616] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:38:47.617] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:38:47.618] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:38:47.619] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:38:47.620] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:38:47.621] [INFO] SERVER - register: get /manage
+[2015-08-05 14:38:47.622] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:38:47.622] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:38:47.623] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:38:47.629] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:38:47.716] [INFO] SERVER - users has been created!
+[2015-08-05 14:38:47.720] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:38:47.726] [INFO] SERVER - comments has been created!
+[2015-08-05 14:38:48.996] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:38:49.006] [INFO] SERVER - undefined
+[2015-08-05 14:38:49.487] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:38:49.513] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:39:51.593] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:39:51.606] [INFO] SERVER - register: get /
+[2015-08-05 14:39:51.609] [INFO] SERVER - register: get /registe
+[2015-08-05 14:39:51.611] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:39:51.613] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:39:51.614] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:39:51.615] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:39:51.616] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:39:51.617] [INFO] SERVER - register: get /manage
+[2015-08-05 14:39:51.618] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:39:51.619] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:39:51.620] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:39:51.622] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:39:51.688] [INFO] SERVER - users has been created!
+[2015-08-05 14:39:51.696] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:39:51.699] [INFO] SERVER - comments has been created!
+[2015-08-05 14:39:54.769] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:39:54.780] [INFO] SERVER - undefined
+[2015-08-05 14:39:55.263] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:39:55.305] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:41:10.692] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:41:10.701] [INFO] SERVER - register: get /
+[2015-08-05 14:41:10.703] [INFO] SERVER - register: get /registe
+[2015-08-05 14:41:10.705] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:41:10.706] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:41:10.707] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:41:10.708] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:41:10.709] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:41:10.710] [INFO] SERVER - register: get /manage
+[2015-08-05 14:41:10.711] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:41:10.712] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:41:10.713] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:41:10.715] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:41:10.768] [INFO] SERVER - users has been created!
+[2015-08-05 14:41:10.772] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:41:10.773] [INFO] SERVER - comments has been created!
+[2015-08-05 14:41:14.279] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:41:14.287] [INFO] SERVER - undefined
+[2015-08-05 14:41:14.864] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:41:14.907] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:42:29.117] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:42:29.128] [INFO] SERVER - register: get /
+[2015-08-05 14:42:29.131] [INFO] SERVER - register: get /registe
+[2015-08-05 14:42:29.132] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:42:29.133] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:42:29.134] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:42:29.135] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:42:29.135] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:42:29.136] [INFO] SERVER - register: get /manage
+[2015-08-05 14:42:29.137] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:42:29.138] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:42:29.138] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:42:29.141] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:42:29.184] [INFO] SERVER - users has been created!
+[2015-08-05 14:42:29.188] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:42:29.189] [INFO] SERVER - comments has been created!
+[2015-08-05 14:42:31.833] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:42:31.841] [INFO] SERVER - undefined
+[2015-08-05 14:42:32.373] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:42:32.394] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:44:19.025] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:44:19.034] [INFO] SERVER - register: get /
+[2015-08-05 14:44:19.036] [INFO] SERVER - register: get /registe
+[2015-08-05 14:44:19.037] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:44:19.038] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:44:19.039] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:44:19.040] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:44:19.041] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:44:19.042] [INFO] SERVER - register: get /manage
+[2015-08-05 14:44:19.043] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:44:19.044] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:44:19.045] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:44:19.048] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:44:19.103] [INFO] SERVER - users has been created!
+[2015-08-05 14:44:19.107] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:44:19.108] [INFO] SERVER - comments has been created!
+[2015-08-05 14:44:21.086] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:44:21.097] [INFO] SERVER - undefined
+[2015-08-05 14:44:21.740] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:44:21.798] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:47:21.097] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:47:21.106] [INFO] SERVER - register: get /
+[2015-08-05 14:47:21.109] [INFO] SERVER - register: get /registe
+[2015-08-05 14:47:21.110] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:47:21.112] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:47:21.114] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:47:21.116] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:47:21.117] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:47:21.119] [INFO] SERVER - register: get /manage
+[2015-08-05 14:47:21.120] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:47:21.123] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:47:21.125] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:47:21.128] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:47:21.182] [INFO] SERVER - users has been created!
+[2015-08-05 14:47:21.185] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:47:21.187] [INFO] SERVER - comments has been created!
+[2015-08-05 14:47:23.893] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:47:23.905] [INFO] SERVER - undefined
+[2015-08-05 14:47:24.309] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:47:24.364] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:49:18.687] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:49:18.697] [INFO] SERVER - register: get /
+[2015-08-05 14:49:18.699] [INFO] SERVER - register: get /registe
+[2015-08-05 14:49:18.701] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:49:18.704] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:49:18.706] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:49:18.708] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:49:18.714] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:49:18.716] [INFO] SERVER - register: get /manage
+[2015-08-05 14:49:18.719] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:49:18.722] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:49:18.724] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:49:18.732] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:49:18.791] [INFO] SERVER - users has been created!
+[2015-08-05 14:49:18.795] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:49:18.797] [INFO] SERVER - comments has been created!
+[2015-08-05 14:49:20.963] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1?
+[2015-08-05 14:49:20.973] [INFO] SERVER - undefined
+[2015-08-05 14:49:21.465] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:49:21.493] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:49:22.803] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 14:49:22.804] [INFO] SERVER - undefined
+[2015-08-05 14:49:22.960] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 14:49:22.964] [INFO] SERVER - undefined
+[2015-08-05 14:49:23.039] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 14:49:23.073] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 14:50:41.656] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:50:41.704] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:50:44.142] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit%E3%80%81
+[2015-08-05 14:50:44.421] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/static/i/app-icon72x72@2x.png
+[2015-08-05 14:50:44.449] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/static/i/favicon.png
+[2015-08-05 14:50:47.391] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 14:50:47.393] [INFO] SERVER - undefined
+[2015-08-05 14:50:47.717] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:50:47.760] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:50:49.779] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/
+[2015-08-05 14:50:50.161] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/static/i/app-icon72x72@2x.png
+[2015-08-05 14:50:50.361] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/static/i/favicon.png
+[2015-08-05 14:50:52.157] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 14:50:52.159] [INFO] SERVER - undefined
+[2015-08-05 14:50:52.440] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:50:52.478] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:55:22.602] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:55:22.613] [INFO] SERVER - register: get /
+[2015-08-05 14:55:22.616] [INFO] SERVER - register: get /registe
+[2015-08-05 14:55:22.618] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:55:22.620] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:55:22.622] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:55:22.623] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:55:22.626] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:55:22.628] [INFO] SERVER - register: get /manage
+[2015-08-05 14:55:22.629] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:55:22.631] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:55:22.633] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:55:22.638] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:55:22.691] [INFO] SERVER - users has been created!
+[2015-08-05 14:55:22.694] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:55:22.696] [INFO] SERVER - comments has been created!
+[2015-08-05 14:55:25.082] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 14:55:25.090] [INFO] SERVER - undefined
+[2015-08-05 14:55:25.618] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:55:25.641] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:55:39.882] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:55:39.891] [INFO] SERVER - register: get /
+[2015-08-05 14:55:39.893] [INFO] SERVER - register: get /registe
+[2015-08-05 14:55:39.895] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:55:39.898] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:55:39.900] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:55:39.902] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:55:39.904] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:55:39.906] [INFO] SERVER - register: get /manage
+[2015-08-05 14:55:39.907] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:55:39.909] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:55:39.911] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:55:39.915] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:55:39.966] [INFO] SERVER - users has been created!
+[2015-08-05 14:55:39.970] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:55:39.972] [INFO] SERVER - comments has been created!
+[2015-08-05 14:55:41.263] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 14:55:41.271] [INFO] SERVER - undefined
+[2015-08-05 14:55:41.690] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:55:41.722] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:56:02.870] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:56:02.879] [INFO] SERVER - register: get /
+[2015-08-05 14:56:02.881] [INFO] SERVER - register: get /registe
+[2015-08-05 14:56:02.882] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:56:02.883] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:56:02.885] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:56:02.887] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:56:02.889] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:56:02.891] [INFO] SERVER - register: get /manage
+[2015-08-05 14:56:02.893] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:56:02.894] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:56:02.896] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:56:02.900] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:56:02.946] [INFO] SERVER - users has been created!
+[2015-08-05 14:56:02.949] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:56:02.951] [INFO] SERVER - comments has been created!
+[2015-08-05 14:56:04.777] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 14:56:04.784] [INFO] SERVER - undefined
+[2015-08-05 14:58:24.356] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:58:24.366] [INFO] SERVER - register: get /
+[2015-08-05 14:58:24.369] [INFO] SERVER - register: get /registe
+[2015-08-05 14:58:24.371] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:58:24.374] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:58:24.375] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:58:24.377] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:58:24.379] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:58:24.381] [INFO] SERVER - register: get /manage
+[2015-08-05 14:58:24.382] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:58:24.383] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:58:24.384] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:58:24.387] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:58:24.445] [INFO] SERVER - users has been created!
+[2015-08-05 14:58:24.450] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:58:24.451] [INFO] SERVER - comments has been created!
+[2015-08-05 14:58:26.029] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 14:58:26.035] [INFO] SERVER - undefined
+[2015-08-05 14:58:26.517] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:58:26.542] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:59:35.646] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:59:35.658] [INFO] SERVER - register: get /
+[2015-08-05 14:59:35.660] [INFO] SERVER - register: get /registe
+[2015-08-05 14:59:35.662] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:59:35.663] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:59:35.664] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:59:35.665] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:59:35.666] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:59:35.667] [INFO] SERVER - register: get /manage
+[2015-08-05 14:59:35.668] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:59:35.669] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:59:35.670] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:59:35.674] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:59:35.723] [INFO] SERVER - users has been created!
+[2015-08-05 14:59:35.727] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:59:35.728] [INFO] SERVER - comments has been created!
+[2015-08-05 14:59:37.611] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 14:59:37.617] [INFO] SERVER - undefined
+[2015-08-05 14:59:38.072] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:59:38.091] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 14:59:56.145] [INFO] SERVER - register: get /static/*
+[2015-08-05 14:59:56.158] [INFO] SERVER - register: get /
+[2015-08-05 14:59:56.161] [INFO] SERVER - register: get /registe
+[2015-08-05 14:59:56.162] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 14:59:56.164] [INFO] SERVER - register: get /api/users
+[2015-08-05 14:59:56.165] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 14:59:56.166] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 14:59:56.167] [INFO] SERVER - register: post /api/register
+[2015-08-05 14:59:56.169] [INFO] SERVER - register: get /manage
+[2015-08-05 14:59:56.170] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 14:59:56.171] [INFO] SERVER - register: get /manage/users
+[2015-08-05 14:59:56.172] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 14:59:56.175] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 14:59:56.226] [INFO] SERVER - users has been created!
+[2015-08-05 14:59:56.230] [INFO] SERVER - blogs has been created!
+[2015-08-05 14:59:56.231] [INFO] SERVER - comments has been created!
+[2015-08-05 14:59:57.552] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 14:59:57.563] [INFO] SERVER - undefined
+[2015-08-05 14:59:57.893] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 14:59:57.920] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:00:05.132] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/2
+[2015-08-05 15:00:05.133] [INFO] SERVER - undefined
+[2015-08-05 15:00:35.292] [INFO] SERVER - register: get /static/*
+[2015-08-05 15:00:35.302] [INFO] SERVER - register: get /
+[2015-08-05 15:00:35.304] [INFO] SERVER - register: get /registe
+[2015-08-05 15:00:35.306] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 15:00:35.307] [INFO] SERVER - register: get /api/users
+[2015-08-05 15:00:35.308] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 15:00:35.309] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 15:00:35.310] [INFO] SERVER - register: post /api/register
+[2015-08-05 15:00:35.311] [INFO] SERVER - register: get /manage
+[2015-08-05 15:00:35.312] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 15:00:35.313] [INFO] SERVER - register: get /manage/users
+[2015-08-05 15:00:35.315] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 15:00:35.318] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 15:00:35.373] [INFO] SERVER - users has been created!
+[2015-08-05 15:00:35.377] [INFO] SERVER - blogs has been created!
+[2015-08-05 15:00:35.379] [INFO] SERVER - comments has been created!
+[2015-08-05 15:00:36.887] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/2
+[2015-08-05 15:00:36.896] [INFO] SERVER - undefined
+[2015-08-05 15:00:37.345] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:00:37.436] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:00:39.461] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/2
+[2015-08-05 15:00:39.462] [INFO] SERVER - undefined
+[2015-08-05 15:00:39.832] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:00:39.869] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:01:54.608] [INFO] SERVER - register: get /static/*
+[2015-08-05 15:01:54.616] [INFO] SERVER - register: get /
+[2015-08-05 15:01:54.618] [INFO] SERVER - register: get /registe
+[2015-08-05 15:01:54.619] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 15:01:54.620] [INFO] SERVER - register: get /api/users
+[2015-08-05 15:01:54.621] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 15:01:54.622] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 15:01:54.623] [INFO] SERVER - register: post /api/register
+[2015-08-05 15:01:54.624] [INFO] SERVER - register: get /manage
+[2015-08-05 15:01:54.625] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 15:01:54.625] [INFO] SERVER - register: get /manage/users
+[2015-08-05 15:01:54.626] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 15:01:54.629] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 15:01:54.672] [INFO] SERVER - comments has been created!
+[2015-08-05 15:01:54.675] [INFO] SERVER - users has been created!
+[2015-08-05 15:01:54.676] [INFO] SERVER - blogs has been created!
+[2015-08-05 15:01:56.221] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/2
+[2015-08-05 15:01:56.232] [INFO] SERVER - undefined
+[2015-08-05 15:01:56.877] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:01:56.902] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:02:07.309] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:02:07.313] [INFO] SERVER - undefined
+[2015-08-05 15:02:07.689] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:02:07.722] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:04:05.891] [INFO] SERVER - register: get /static/*
+[2015-08-05 15:04:05.900] [INFO] SERVER - register: get /
+[2015-08-05 15:04:05.902] [INFO] SERVER - register: get /registe
+[2015-08-05 15:04:05.903] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 15:04:05.904] [INFO] SERVER - register: get /api/users
+[2015-08-05 15:04:05.905] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 15:04:05.906] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 15:04:05.907] [INFO] SERVER - register: post /api/register
+[2015-08-05 15:04:05.908] [INFO] SERVER - register: get /manage
+[2015-08-05 15:04:05.909] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 15:04:05.910] [INFO] SERVER - register: get /manage/users
+[2015-08-05 15:04:05.910] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 15:04:05.913] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 15:04:05.972] [INFO] SERVER - users has been created!
+[2015-08-05 15:04:05.976] [INFO] SERVER - blogs has been created!
+[2015-08-05 15:04:05.977] [INFO] SERVER - comments has been created!
+[2015-08-05 15:04:07.725] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:04:07.738] [INFO] SERVER - undefined
+[2015-08-05 15:04:08.107] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:04:08.133] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:04:10.157] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:04:10.160] [INFO] SERVER - undefined
+[2015-08-05 15:04:10.496] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:04:10.531] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:04:10.939] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:04:10.941] [INFO] SERVER - undefined
+[2015-08-05 15:04:11.244] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:04:11.276] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:06:23.628] [INFO] SERVER - register: get /static/*
+[2015-08-05 15:06:23.638] [INFO] SERVER - register: get /
+[2015-08-05 15:06:23.640] [INFO] SERVER - register: get /registe
+[2015-08-05 15:06:23.642] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 15:06:23.643] [INFO] SERVER - register: get /api/users
+[2015-08-05 15:06:23.643] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 15:06:23.644] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 15:06:23.645] [INFO] SERVER - register: post /api/register
+[2015-08-05 15:06:23.646] [INFO] SERVER - register: get /manage
+[2015-08-05 15:06:23.647] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 15:06:23.648] [INFO] SERVER - register: get /manage/users
+[2015-08-05 15:06:23.648] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 15:06:23.651] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 15:06:23.713] [INFO] SERVER - users has been created!
+[2015-08-05 15:06:23.716] [INFO] SERVER - blogs has been created!
+[2015-08-05 15:06:23.718] [INFO] SERVER - comments has been created!
+[2015-08-05 15:06:36.600] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:06:36.610] [INFO] SERVER - undefined
+[2015-08-05 15:06:37.196] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:06:37.227] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:06:58.815] [INFO] SERVER - register: get /static/*
+[2015-08-05 15:06:58.825] [INFO] SERVER - register: get /
+[2015-08-05 15:06:58.827] [INFO] SERVER - register: get /registe
+[2015-08-05 15:06:58.829] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 15:06:58.830] [INFO] SERVER - register: get /api/users
+[2015-08-05 15:06:58.831] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 15:06:58.832] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 15:06:58.833] [INFO] SERVER - register: post /api/register
+[2015-08-05 15:06:58.834] [INFO] SERVER - register: get /manage
+[2015-08-05 15:06:58.835] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 15:06:58.836] [INFO] SERVER - register: get /manage/users
+[2015-08-05 15:06:58.837] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 15:06:58.840] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 15:06:58.888] [INFO] SERVER - users has been created!
+[2015-08-05 15:06:58.892] [INFO] SERVER - blogs has been created!
+[2015-08-05 15:06:58.893] [INFO] SERVER - comments has been created!
+[2015-08-05 15:07:00.335] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:07:00.342] [INFO] SERVER - undefined
+[2015-08-05 15:07:00.678] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:07:00.736] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:10:17.011] [INFO] SERVER - register: get /static/*
+[2015-08-05 15:10:17.020] [INFO] SERVER - register: get /
+[2015-08-05 15:10:17.023] [INFO] SERVER - register: get /registe
+[2015-08-05 15:10:17.025] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 15:10:17.026] [INFO] SERVER - register: get /api/users
+[2015-08-05 15:10:17.028] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 15:10:17.030] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 15:10:17.031] [INFO] SERVER - register: post /api/register
+[2015-08-05 15:10:17.033] [INFO] SERVER - register: get /manage
+[2015-08-05 15:10:17.034] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 15:10:17.035] [INFO] SERVER - register: get /manage/users
+[2015-08-05 15:10:17.037] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 15:10:17.040] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 15:10:17.083] [INFO] SERVER - users has been created!
+[2015-08-05 15:10:17.087] [INFO] SERVER - blogs has been created!
+[2015-08-05 15:10:17.089] [INFO] SERVER - comments has been created!
+[2015-08-05 15:10:18.899] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:10:18.907] [INFO] SERVER - undefined
+[2015-08-05 15:10:25.101] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:10:25.127] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:16:56.863] [INFO] SERVER - register: get /static/*
+[2015-08-05 15:16:56.873] [INFO] SERVER - register: get /
+[2015-08-05 15:16:56.876] [INFO] SERVER - register: get /registe
+[2015-08-05 15:16:56.878] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 15:16:56.880] [INFO] SERVER - register: get /api/users
+[2015-08-05 15:16:56.881] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 15:16:56.882] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 15:16:56.884] [INFO] SERVER - register: post /api/register
+[2015-08-05 15:16:56.886] [INFO] SERVER - register: get /manage
+[2015-08-05 15:16:56.887] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 15:16:56.889] [INFO] SERVER - register: get /manage/users
+[2015-08-05 15:16:56.890] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 15:16:56.893] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 15:16:56.939] [INFO] SERVER - users has been created!
+[2015-08-05 15:16:56.943] [INFO] SERVER - blogs has been created!
+[2015-08-05 15:16:56.945] [INFO] SERVER - comments has been created!
+[2015-08-05 15:17:05.825] [INFO] SERVER - 127.0.0.1:8000 GET /
+[2015-08-05 15:17:06.313] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 15:17:06.873] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-05 15:17:10.053] [INFO] SERVER - 127.0.0.1:8000 GET /registe
+[2015-08-05 15:17:10.126] [INFO] SERVER - 127.0.0.1:8000 GET /static/js/sha1.min.js
+[2015-08-05 15:17:10.772] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/app-icon72x72@2x.png
+[2015-08-05 15:17:17.924] [INFO] SERVER - 127.0.0.1:8000 POST /api/register
+[2015-08-05 15:17:17.931] [INFO] SERVER - { name: 'ddd',
+  email: 'wp3xpp@163.com',
+  passwd: 'cfebb5fdf898c4416605c9ac7b3df42d3345286e' }
+[2015-08-05 15:17:18.015] [INFO] SERVER - object
+[2015-08-05 15:17:41.131] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:17:45.092] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:17:45.121] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 15:53:18.244] [INFO] SERVER - register: get /static/*
+[2015-08-05 15:53:18.255] [INFO] SERVER - register: get /
+[2015-08-05 15:53:18.257] [INFO] SERVER - register: get /registe
+[2015-08-05 15:53:18.258] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 15:53:18.260] [INFO] SERVER - register: get /api/users
+[2015-08-05 15:53:18.262] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 15:53:18.263] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 15:53:18.265] [INFO] SERVER - register: post /api/register
+[2015-08-05 15:53:18.266] [INFO] SERVER - register: get /manage
+[2015-08-05 15:53:18.268] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 15:53:18.270] [INFO] SERVER - register: get /manage/users
+[2015-08-05 15:53:18.271] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 15:53:18.274] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 15:53:18.322] [INFO] SERVER - users has been created!
+[2015-08-05 15:53:18.326] [INFO] SERVER - blogs has been created!
+[2015-08-05 15:53:18.328] [INFO] SERVER - comments has been created!
+[2015-08-05 15:53:20.444] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:53:58.755] [INFO] SERVER - register: get /static/*
+[2015-08-05 15:53:58.767] [INFO] SERVER - register: get /
+[2015-08-05 15:53:58.769] [INFO] SERVER - register: get /registe
+[2015-08-05 15:53:58.770] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 15:53:58.771] [INFO] SERVER - register: get /api/users
+[2015-08-05 15:53:58.772] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 15:53:58.772] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 15:53:58.773] [INFO] SERVER - register: post /api/register
+[2015-08-05 15:53:58.775] [INFO] SERVER - register: get /manage
+[2015-08-05 15:53:58.777] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 15:53:58.779] [INFO] SERVER - register: get /manage/users
+[2015-08-05 15:53:58.781] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 15:53:58.786] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 15:53:58.840] [INFO] SERVER - users has been created!
+[2015-08-05 15:53:58.844] [INFO] SERVER - blogs has been created!
+[2015-08-05 15:53:58.846] [INFO] SERVER - comments has been created!
+[2015-08-05 15:54:00.554] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:57:36.499] [INFO] SERVER - register: get /static/*
+[2015-08-05 15:57:36.508] [INFO] SERVER - register: get /
+[2015-08-05 15:57:36.511] [INFO] SERVER - register: get /registe
+[2015-08-05 15:57:36.512] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 15:57:36.513] [INFO] SERVER - register: get /api/users
+[2015-08-05 15:57:36.514] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 15:57:36.514] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 15:57:36.515] [INFO] SERVER - register: post /api/register
+[2015-08-05 15:57:36.516] [INFO] SERVER - register: get /manage
+[2015-08-05 15:57:36.517] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 15:57:36.518] [INFO] SERVER - register: get /manage/users
+[2015-08-05 15:57:36.518] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 15:57:36.521] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 15:57:36.564] [INFO] SERVER - users has been created!
+[2015-08-05 15:57:36.568] [INFO] SERVER - blogs has been created!
+[2015-08-05 15:57:36.570] [INFO] SERVER - comments has been created!
+[2015-08-05 15:57:38.033] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 15:57:41.420] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 15:57:41.441] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:13:43.578] [INFO] SERVER - register: get /static/*
+[2015-08-05 16:13:43.587] [INFO] SERVER - register: get /
+[2015-08-05 16:13:43.590] [INFO] SERVER - register: get /registe
+[2015-08-05 16:13:43.592] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 16:13:43.593] [INFO] SERVER - register: get /api/users
+[2015-08-05 16:13:43.595] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 16:13:43.597] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 16:13:43.598] [INFO] SERVER - register: post /api/register
+[2015-08-05 16:13:43.600] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 16:13:43.601] [INFO] SERVER - register: get /manage
+[2015-08-05 16:13:43.602] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 16:13:43.605] [INFO] SERVER - register: get /manage/users
+[2015-08-05 16:13:43.606] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 16:13:43.609] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 16:13:43.656] [INFO] SERVER - blogs has been created!
+[2015-08-05 16:13:43.661] [INFO] SERVER - users has been created!
+[2015-08-05 16:13:43.664] [INFO] SERVER - comments has been created!
+[2015-08-05 16:13:50.492] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 16:13:54.220] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:13:54.242] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:14:01.489] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 16:14:01.711] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 16:14:01.805] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 16:14:01.834] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 16:14:06.863] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:14:06.889] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png

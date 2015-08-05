@@ -23,7 +23,7 @@ modles(); //如果还没建立起对应数据库，调用该方法可以创建
 var initMiddlewares = function(){
 	app.use(middlewares.getQueryString);
 	app.use(middlewares.cookie);
-	app.use(middlewares.handleData, middlewares.handlePostdata);
+	app.post(middlewares.handleData, middlewares.handlePostdata);
 	app.get('/static/*', middlewares.staticFile);
 	app.get('/', handles.index);
 	app.get('/registe', handles.register);
@@ -32,6 +32,7 @@ var initMiddlewares = function(){
 	app.get('/api/blogs', handles.getBlogs);
 	app.get('/api/blog/:blogid', handles.api_get_blog);
 	app.post('/api/register', handles.api_register_user);
+	app.post('/api/blog/update', handles.updateBlog);
 	app.get('/manage', handles.login);
 	app.get('/manage/blogs', handles.manageBlogs);
 	app.get('/manage/users', handles.manageUsers);

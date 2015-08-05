@@ -13,6 +13,7 @@ var Q = require('q');
 var crypto = require('crypto');
 var logger = require('../logger.js');
 var models = require('../models.js');
+var uuid = require('../uuid.js');
 
 exports.handle404 = function handle404(req, res){
 	res.writeHead(404);
@@ -76,7 +77,7 @@ exports.api_register_user = function api_register_user(req, res){
 				}
 			});
 			return deferred.promise;
-		}
+		};
 		
 		emailExist(req, res).then(function(func){
 			models.users.create({email : func.req.body.email,
@@ -126,6 +127,7 @@ exports.getUsers = function getUsers(req, res){
 	try{
 		models.users.find({}, ["created_at", "Z"], function(err, users){
 			if(err){
+				logger.error(err.toString());
 				throw err;
 			}
 			for(var user of users){
@@ -144,6 +146,7 @@ exports.getBlogs = function getUsers(req, res){
 	try{
 		models.blogs.find({}, ["created_at", "Z"], function(err, blogs){
 			if(err){
+				logger.error(err.toString());
 				throw err;
 			}
 			for(var blog of blogs){
@@ -162,6 +165,7 @@ exports.api_get_blog = function api_get_blog(req, res){
 	try{
 		models.blogs.find({blog_id: req.params.blogid}, 1, function(err, blog){
 			if(err){
+				logger.error(err.toString());
 				throw err;
 			}
 			res.json(blog[0]);
@@ -176,6 +180,7 @@ exports.showBlog = function showBlog(req, res){
 	try{
 		models.blogs.find({blog_id: req.params.blogid}, 1, function(err, blog){
 			if(err){
+				logger.error(err.toString());
 				throw err;
 			}
 			if(blog[0]){
@@ -193,9 +198,64 @@ exports.showBlog = function showBlog(req, res){
 
 exports.editBlog = function editBlog(req, res){
 	try{
-		res.render("manage_blog_edit.html", {});
+		models.blogs.find({blog_id: req.params.blogid}, 1, function(err, blog){
+			if(err){
+				logger.error(err.toString());
+				throw err;
+			}
+			if(blog[0]){
+				res.render("manage_blog_edit.html", {blog: blog[0]});
+			}
+			else{
+				res.render("manage_blog_edit.html", {blog: {title:'', user_name:'', summary:'', content:''}});
+			}
+		});		
 	}
 	catch(err){
 		logger.error(err.toString());
 	}
-}
+};
+
+exports.updateBlog = function updateBlog(req, res){
+	try{
+		models.blogs.find({blog_id: req.body.blogid}, 1, function(err, blog){
+			if(err){
+				throw err;
+			}
+			if(blog[0]){
+				blog[0].user_name = req.body.author;
+				blog[0].title = req.body.title;
+				blog[0].summary = req.body.summary;
+				blog[0].content = req.body.content;
+				blog[0].save(function(err){
+					if(err){
+						res.end("update failed");
+						logger.error(err.toString());
+						throw err;
+					}
+					res.end("update success");
+				});
+			}
+			else{
+				models.blogs.create({
+					blog_id : uuid(),
+					user_name : req.body.author, 
+					title : req.body.title, 
+					summary : req.body.summary,
+					content : req.body.content
+				},function(err){
+					if(err){
+						res.end("save failed");
+						logger.error(err.toString());
+						throw err;
+					}
+					res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
+					res.end("success save");
+				});
+			}
+		});	
+	}
+	catch(err){
+		logger.info(err.toString());
+	}
+};

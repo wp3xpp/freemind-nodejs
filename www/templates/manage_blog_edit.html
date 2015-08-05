@@ -36,19 +36,32 @@
   <style type="text/css">
   	#edit_content {
   		font-size: 18px;
-		margin-top: 5%;
-		margin-bottom: 5%;
-		padding: 2% 5% 5% 5%;
-		line-height: 150%;
-		border: 1px solid LightGrey;
+		  margin-top: 5%;
+		  margin-bottom: 5%;
+		  padding: 2% 5% 5% 5%;
+		  line-height: 150%;
+		  border: 1px solid LightGrey;
   	}
   </style>
   <script type="text/javascript">
   	$(function(){
-  		$('#cancel').click(function(){
-  			return location.assign('/manage/blos');
-  		});
-  	});
+      $('#cancel').click(function(){
+        location.assign('/manage/blogs');
+      });
+    }); 
+
+    $(function(){
+      var title = $('#blog-title'),
+          author = $('#blog-author'),
+          summary = $('#blog-summary'),
+          content = $('#blog-content');
+    });
+
+    $(function(){
+      $('#save').click(function(){
+
+      });
+    });
   </script>
 
 </head>
@@ -68,27 +81,39 @@
       	
       	  <div class="am-form-group">
       	    <label for="">博客标题</label>
-      	    <input type="text" id="blog-title" placeholder="标题">
+      	    <input type="text" id="blog-title" placeholder="标题" value="<%= blog.title%>" required>
       	  </div>
 
       	  <div class="am-form-group">
       	    <label for="">作者</label>
-      	    <input type="text" id="blog-author" placeholder="作者">
+      	    <input type="text" id="blog-author" placeholder="作者" value="<%= blog.user_name%>" required>
       	  </div>
 
       	  <div class="am-form-group">
       	    <label for="">摘要</label>
-      	    <textarea id="blog-summary" rows="4" placeholder="摘要" style="resize:none;"></textarea>
+      	    <textarea id="blog-summary" rows="4" placeholder="摘要" style="resize:none;" minlength="1"><%= blog.summary%></textarea>
       	  </div>
 
       	  <div class="am-form-group">
-      	    <label for="am-form">内容:</label>
-      	    <textarea id="blog-content" rows="16" placeholder="内容 支持MarkDown语法" style="resize:none"></textarea>
+      	    <label for="am-form">内容</label>
+      	    <textarea id="blog-content" rows="16" placeholder="内容 支持MarkDown语法" style="resize:none" minlength="10"><%= blog.content%></textarea>
       	  </div>
       	
-      	  <button type="submit" class="am-btn am-btn-primary am-round" id="save">保存</button>
-      	  <button class="am-btn am-btn-success am-round" id="cancel">取消</button>
+      	  <button type="button" class="am-btn am-btn-primary am-round" id="save">保存</button>
+      	  <button type="button" class="am-btn am-btn-success am-round" id="cancel" >取消</button>
       	</form>
+    </div>
+  </div>
+</div>
+
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">Amaze UI</div>
+    <div class="am-modal-bd">
+      Hello world！
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn">确定</span>
     </div>
   </div>
 </div>
