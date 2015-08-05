@@ -3592,3 +3592,502 @@
 [2015-08-05 16:14:01.834] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
 [2015-08-05 16:14:06.863] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
 [2015-08-05 16:14:06.889] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:25:22.816] [INFO] SERVER - register: get /static/*
+[2015-08-05 16:25:22.826] [INFO] SERVER - register: get /
+[2015-08-05 16:25:22.828] [INFO] SERVER - register: get /registe
+[2015-08-05 16:25:22.831] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 16:25:22.834] [INFO] SERVER - register: get /api/users
+[2015-08-05 16:25:22.835] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 16:25:22.837] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 16:25:22.840] [INFO] SERVER - register: post /api/register
+[2015-08-05 16:25:22.841] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 16:25:22.845] [INFO] SERVER - register: get /manage
+[2015-08-05 16:25:22.846] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 16:25:22.850] [INFO] SERVER - register: get /manage/users
+[2015-08-05 16:25:22.852] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 16:25:22.856] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 16:25:22.903] [INFO] SERVER - users has been created!
+[2015-08-05 16:25:22.907] [INFO] SERVER - blogs has been created!
+[2015-08-05 16:25:22.909] [INFO] SERVER - comments has been created!
+[2015-08-05 16:25:25.441] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 16:25:25.943] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:25:25.971] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:32:18.226] [INFO] SERVER - register: get /static/*
+[2015-08-05 16:32:18.235] [INFO] SERVER - register: get /
+[2015-08-05 16:32:18.238] [INFO] SERVER - register: get /registe
+[2015-08-05 16:32:18.240] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 16:32:18.242] [INFO] SERVER - register: get /api/users
+[2015-08-05 16:32:18.244] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 16:32:18.247] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 16:32:18.249] [INFO] SERVER - register: post /api/register
+[2015-08-05 16:32:18.251] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 16:32:18.253] [INFO] SERVER - register: get /manage
+[2015-08-05 16:32:18.255] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 16:32:18.257] [INFO] SERVER - register: get /manage/users
+[2015-08-05 16:32:18.259] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 16:32:18.264] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 16:32:18.318] [INFO] SERVER - users has been created!
+[2015-08-05 16:32:18.323] [INFO] SERVER - blogs has been created!
+[2015-08-05 16:32:18.325] [INFO] SERVER - comments has been created!
+[2015-08-05 16:32:21.489] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 16:32:22.259] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:32:22.285] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:32:29.881] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:32:29.889] [INFO] SERVER - { author: 'freemind',
+  title: '我是你爸爸',
+  summary: '我是你爸爸 我也是你妈妈',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 16:33:35.907] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/2b21b22b77df4e31b7c8
+[2015-08-05 16:33:36.159] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:33:36.182] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:33:41.268] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/2b21b22b
+[2015-08-05 16:33:41.501] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:33:41.516] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:33:45.024] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:33:45.049] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:33:46.388] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:33:46.412] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:38:59.997] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:39:00.003] [INFO] SERVER - { author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '我是你爸爸 我也是你妈妈',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 16:39:06.881] [INFO] SERVER - register: get /static/*
+[2015-08-05 16:39:06.891] [INFO] SERVER - register: get /
+[2015-08-05 16:39:06.894] [INFO] SERVER - register: get /registe
+[2015-08-05 16:39:06.895] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 16:39:06.897] [INFO] SERVER - register: get /api/users
+[2015-08-05 16:39:06.898] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 16:39:06.900] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 16:39:06.901] [INFO] SERVER - register: post /api/register
+[2015-08-05 16:39:06.902] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 16:39:06.904] [INFO] SERVER - register: get /manage
+[2015-08-05 16:39:06.905] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 16:39:06.908] [INFO] SERVER - register: get /manage/users
+[2015-08-05 16:39:06.910] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 16:39:06.913] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 16:39:06.962] [INFO] SERVER - blogs has been created!
+[2015-08-05 16:39:06.966] [INFO] SERVER - users has been created!
+[2015-08-05 16:39:06.967] [INFO] SERVER - comments has been created!
+[2015-08-05 16:39:08.324] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 16:39:08.952] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:39:08.973] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:39:13.267] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:39:13.275] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '我是你爸爸',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 16:39:19.310] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:39:19.341] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:39:21.838] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:39:21.863] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:39:23.983] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 16:39:24.395] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:39:24.444] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:52:48.167] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:52:48.172] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: 'ooo',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 16:52:57.037] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 16:52:57.213] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 16:52:57.307] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 16:52:57.347] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 16:53:00.002] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:53:00.035] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:57:01.641] [INFO] SERVER - register: get /static/*
+[2015-08-05 16:57:01.649] [INFO] SERVER - register: get /
+[2015-08-05 16:57:01.651] [INFO] SERVER - register: get /registe
+[2015-08-05 16:57:01.652] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 16:57:01.654] [INFO] SERVER - register: get /api/users
+[2015-08-05 16:57:01.654] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 16:57:01.655] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 16:57:01.656] [INFO] SERVER - register: post /api/register
+[2015-08-05 16:57:01.657] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 16:57:01.658] [INFO] SERVER - register: get /manage
+[2015-08-05 16:57:01.659] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 16:57:01.661] [INFO] SERVER - register: get /manage/users
+[2015-08-05 16:57:01.661] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 16:57:01.664] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 16:57:01.720] [INFO] SERVER - users has been created!
+[2015-08-05 16:57:01.725] [INFO] SERVER - blogs has been created!
+[2015-08-05 16:57:01.727] [INFO] SERVER - comments has been created!
+[2015-08-05 16:57:03.817] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 16:57:04.320] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:57:04.351] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:57:07.506] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:57:07.511] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: 'oooxxx',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 16:57:11.019] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:57:11.022] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: 'oooxxx',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 16:57:12.899] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:57:12.901] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: 'oooxxx',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 16:57:18.963] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:57:18.966] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: 'oooxxx',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 16:57:30.930] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:57:30.932] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: 'oooxxx',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 16:57:35.850] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:57:35.852] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: 'oooxxx',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 16:58:25.003] [INFO] SERVER - register: get /static/*
+[2015-08-05 16:58:25.012] [INFO] SERVER - register: get /
+[2015-08-05 16:58:25.014] [INFO] SERVER - register: get /registe
+[2015-08-05 16:58:25.016] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 16:58:25.017] [INFO] SERVER - register: get /api/users
+[2015-08-05 16:58:25.018] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 16:58:25.019] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 16:58:25.020] [INFO] SERVER - register: post /api/register
+[2015-08-05 16:58:25.021] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 16:58:25.022] [INFO] SERVER - register: get /manage
+[2015-08-05 16:58:25.022] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 16:58:25.023] [INFO] SERVER - register: get /manage/users
+[2015-08-05 16:58:25.025] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 16:58:25.027] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 16:58:25.084] [INFO] SERVER - users has been created!
+[2015-08-05 16:58:25.088] [INFO] SERVER - blogs has been created!
+[2015-08-05 16:58:25.090] [INFO] SERVER - comments has been created!
+[2015-08-05 16:58:27.723] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 16:58:28.102] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 16:58:28.122] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 16:58:29.204] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 16:58:29.211] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: 'oooxxx',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:03:14.746] [INFO] SERVER - register: get /static/*
+[2015-08-05 17:03:14.755] [INFO] SERVER - register: get /
+[2015-08-05 17:03:14.758] [INFO] SERVER - register: get /registe
+[2015-08-05 17:03:14.759] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 17:03:14.760] [INFO] SERVER - register: get /api/users
+[2015-08-05 17:03:14.760] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 17:03:14.761] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 17:03:14.762] [INFO] SERVER - register: post /api/register
+[2015-08-05 17:03:14.763] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 17:03:14.763] [INFO] SERVER - register: get /manage
+[2015-08-05 17:03:14.764] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 17:03:14.765] [INFO] SERVER - register: get /manage/users
+[2015-08-05 17:03:14.766] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 17:03:14.768] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 17:03:14.816] [INFO] SERVER - users has been created!
+[2015-08-05 17:03:14.820] [INFO] SERVER - blogs has been created!
+[2015-08-05 17:03:14.822] [INFO] SERVER - comments has been created!
+[2015-08-05 17:03:18.133] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 17:03:18.813] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:03:18.832] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:03:20.101] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:03:20.107] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: 'oooxxx',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:03:20.160] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 17:03:20.400] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 17:03:20.494] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 17:03:20.523] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 17:03:27.040] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:03:27.072] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:03:28.295] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:03:28.301] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: 'oooxxx',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:03:28.359] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 17:03:28.575] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 17:03:28.656] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 17:03:28.690] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 17:11:48.988] [INFO] SERVER - register: get /static/*
+[2015-08-05 17:11:48.998] [INFO] SERVER - register: get /
+[2015-08-05 17:11:49.000] [INFO] SERVER - register: get /registe
+[2015-08-05 17:11:49.002] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 17:11:49.004] [INFO] SERVER - register: get /api/users
+[2015-08-05 17:11:49.005] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 17:11:49.007] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 17:11:49.009] [INFO] SERVER - register: post /api/register
+[2015-08-05 17:11:49.010] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 17:11:49.012] [INFO] SERVER - register: get /manage
+[2015-08-05 17:11:49.014] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 17:11:49.015] [INFO] SERVER - register: get /manage/users
+[2015-08-05 17:11:49.017] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 17:11:49.021] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 17:11:49.066] [INFO] SERVER - users has been created!
+[2015-08-05 17:11:49.070] [INFO] SERVER - blogs has been created!
+[2015-08-05 17:11:49.072] [INFO] SERVER - comments has been created!
+[2015-08-05 17:11:58.186] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:11:58.208] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:12:09.892] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:12:09.901] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:12:10.081] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 17:12:10.268] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 17:12:10.367] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 17:12:10.408] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 17:12:21.233] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:12:21.256] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:12:58.976] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:12:58.982] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:12:59.026] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 17:12:59.207] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 17:12:59.286] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 17:12:59.316] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 17:13:00.726] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:13:00.767] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:13:05.187] [INFO] SERVER - register: get /static/*
+[2015-08-05 17:13:05.199] [INFO] SERVER - register: get /
+[2015-08-05 17:13:05.201] [INFO] SERVER - register: get /registe
+[2015-08-05 17:13:05.203] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 17:13:05.204] [INFO] SERVER - register: get /api/users
+[2015-08-05 17:13:05.206] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 17:13:05.207] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 17:13:05.209] [INFO] SERVER - register: post /api/register
+[2015-08-05 17:13:05.211] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 17:13:05.213] [INFO] SERVER - register: get /manage
+[2015-08-05 17:13:05.214] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 17:13:05.216] [INFO] SERVER - register: get /manage/users
+[2015-08-05 17:13:05.218] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 17:13:05.221] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 17:13:05.266] [INFO] SERVER - users has been created!
+[2015-08-05 17:13:05.270] [INFO] SERVER - blogs has been created!
+[2015-08-05 17:13:05.272] [INFO] SERVER - comments has been created!
+[2015-08-05 17:13:05.902] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:13:05.943] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:14:03.391] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/2
+[2015-08-05 17:14:04.012] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:14:04.099] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:15:29.456] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/2
+[2015-08-05 17:15:30.001] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:15:30.052] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:20:09.263] [INFO] SERVER - register: get /static/*
+[2015-08-05 17:20:09.273] [INFO] SERVER - register: get /
+[2015-08-05 17:20:09.276] [INFO] SERVER - register: get /registe
+[2015-08-05 17:20:09.277] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 17:20:09.278] [INFO] SERVER - register: get /api/users
+[2015-08-05 17:20:09.279] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 17:20:09.279] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 17:20:09.280] [INFO] SERVER - register: post /api/register
+[2015-08-05 17:20:09.281] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 17:20:09.282] [INFO] SERVER - register: get /manage
+[2015-08-05 17:20:09.282] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 17:20:09.283] [INFO] SERVER - register: get /manage/users
+[2015-08-05 17:20:09.284] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 17:20:09.288] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 17:20:09.334] [INFO] SERVER - users has been created!
+[2015-08-05 17:20:09.338] [INFO] SERVER - blogs has been created!
+[2015-08-05 17:20:09.340] [INFO] SERVER - comments has been created!
+[2015-08-05 17:20:09.595] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/2
+[2015-08-05 17:20:10.160] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:20:10.249] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:20:13.452] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 17:20:13.916] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:20:13.994] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:21:34.635] [INFO] SERVER - register: get /static/*
+[2015-08-05 17:21:34.645] [INFO] SERVER - register: get /
+[2015-08-05 17:21:34.647] [INFO] SERVER - register: get /registe
+[2015-08-05 17:21:34.648] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 17:21:34.649] [INFO] SERVER - register: get /api/users
+[2015-08-05 17:21:34.651] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 17:21:34.651] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 17:21:34.652] [INFO] SERVER - register: post /api/register
+[2015-08-05 17:21:34.653] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 17:21:34.654] [INFO] SERVER - register: get /manage
+[2015-08-05 17:21:34.655] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 17:21:34.656] [INFO] SERVER - register: get /manage/users
+[2015-08-05 17:21:34.656] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 17:21:34.659] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 17:21:34.705] [INFO] SERVER - users has been created!
+[2015-08-05 17:21:34.709] [INFO] SERVER - blogs has been created!
+[2015-08-05 17:21:34.711] [INFO] SERVER - comments has been created!
+[2015-08-05 17:21:36.117] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 17:21:36.775] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:21:36.830] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:21:42.729] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:21:42.737] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:21:53.825] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:21:53.829] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:21:55.671] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:21:55.673] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:21:57.802] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:21:57.805] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:22:19.179] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:22:19.182] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:22:22.401] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:22:22.403] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:27:38.044] [INFO] SERVER - register: get /static/*
+[2015-08-05 17:27:38.052] [INFO] SERVER - register: get /
+[2015-08-05 17:27:38.054] [INFO] SERVER - register: get /registe
+[2015-08-05 17:27:38.055] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 17:27:38.056] [INFO] SERVER - register: get /api/users
+[2015-08-05 17:27:38.057] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 17:27:38.057] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 17:27:38.058] [INFO] SERVER - register: post /api/register
+[2015-08-05 17:27:38.059] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 17:27:38.060] [INFO] SERVER - register: get /manage
+[2015-08-05 17:27:38.061] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 17:27:38.061] [INFO] SERVER - register: get /manage/users
+[2015-08-05 17:27:38.062] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 17:27:38.064] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 17:27:38.108] [INFO] SERVER - blogs has been created!
+[2015-08-05 17:27:38.111] [INFO] SERVER - users has been created!
+[2015-08-05 17:27:38.113] [INFO] SERVER - comments has been created!
+[2015-08-05 17:27:40.310] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 17:27:40.902] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:27:41.072] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:27:41.908] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:27:41.915] [INFO] SERVER - { blog_id: '1',
+  author: 'hahaha',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:27:42.969] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 17:27:43.361] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 17:27:43.514] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 17:27:43.705] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 17:35:00.411] [INFO] SERVER - register: get /static/*
+[2015-08-05 17:35:00.421] [INFO] SERVER - register: get /
+[2015-08-05 17:35:00.424] [INFO] SERVER - register: get /registe
+[2015-08-05 17:35:00.426] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 17:35:00.427] [INFO] SERVER - register: get /api/users
+[2015-08-05 17:35:00.428] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 17:35:00.429] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 17:35:00.430] [INFO] SERVER - register: post /api/register
+[2015-08-05 17:35:00.431] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 17:35:00.431] [INFO] SERVER - register: get /manage
+[2015-08-05 17:35:00.432] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 17:35:00.433] [INFO] SERVER - register: get /manage/users
+[2015-08-05 17:35:00.433] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 17:35:00.436] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 17:35:00.481] [INFO] SERVER - users has been created!
+[2015-08-05 17:35:00.485] [INFO] SERVER - blogs has been created!
+[2015-08-05 17:35:00.486] [INFO] SERVER - comments has been created!
+[2015-08-05 17:35:02.790] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:35:02.851] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:35:08.270] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:35:08.277] [INFO] SERVER - { blog_id: '1',
+  author: '',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:35:10.806] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 17:35:11.121] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 17:35:11.233] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 17:35:11.264] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 17:35:12.842] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:35:12.849] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:35:47.479] [INFO] SERVER - register: get /static/*
+[2015-08-05 17:35:47.489] [INFO] SERVER - register: get /
+[2015-08-05 17:35:47.491] [INFO] SERVER - register: get /registe
+[2015-08-05 17:35:47.493] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 17:35:47.496] [INFO] SERVER - register: get /api/users
+[2015-08-05 17:35:47.497] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 17:35:47.500] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 17:35:47.502] [INFO] SERVER - register: post /api/register
+[2015-08-05 17:35:47.503] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 17:35:47.505] [INFO] SERVER - register: get /manage
+[2015-08-05 17:35:47.507] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 17:35:47.508] [INFO] SERVER - register: get /manage/users
+[2015-08-05 17:35:47.511] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 17:35:47.514] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 17:35:47.564] [INFO] SERVER - users has been created!
+[2015-08-05 17:35:47.568] [INFO] SERVER - blogs has been created!
+[2015-08-05 17:35:47.569] [INFO] SERVER - comments has been created!
+[2015-08-05 17:35:48.883] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 17:35:49.276] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:35:49.301] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:35:52.578] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:35:52.586] [INFO] SERVER - { blog_id: '1',
+  author: '',
+  title: '我是你爸爸',
+  summary: '胡时玮是你大爹',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:35:53.430] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 17:35:53.654] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 17:35:53.734] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 17:35:53.762] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png
+[2015-08-05 17:35:55.115] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:35:55.152] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:42:13.211] [INFO] SERVER - register: get /static/*
+[2015-08-05 17:42:13.221] [INFO] SERVER - register: get /
+[2015-08-05 17:42:13.223] [INFO] SERVER - register: get /registe
+[2015-08-05 17:42:13.225] [INFO] SERVER - register: get /blogs/:blogid
+[2015-08-05 17:42:13.226] [INFO] SERVER - register: get /api/users
+[2015-08-05 17:42:13.227] [INFO] SERVER - register: get /api/blogs
+[2015-08-05 17:42:13.228] [INFO] SERVER - register: get /api/blog/:blogid
+[2015-08-05 17:42:13.229] [INFO] SERVER - register: post /api/register
+[2015-08-05 17:42:13.230] [INFO] SERVER - register: post /api/blog/update
+[2015-08-05 17:42:13.231] [INFO] SERVER - register: get /manage
+[2015-08-05 17:42:13.232] [INFO] SERVER - register: get /manage/blogs
+[2015-08-05 17:42:13.233] [INFO] SERVER - register: get /manage/users
+[2015-08-05 17:42:13.234] [INFO] SERVER - register: get /manage/blog/edit/:blogid
+[2015-08-05 17:42:13.237] [INFO] SERVER - Server running at http://127.0.0.1:8000
+[2015-08-05 17:42:13.297] [INFO] SERVER - users has been created!
+[2015-08-05 17:42:13.303] [INFO] SERVER - blogs has been created!
+[2015-08-05 17:42:13.304] [INFO] SERVER - comments has been created!
+[2015-08-05 17:42:15.020] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/1
+[2015-08-05 17:42:15.536] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/app-icon72x72@2x.png
+[2015-08-05 17:42:15.562] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blog/edit/i/favicon.png
+[2015-08-05 17:42:40.776] [INFO] SERVER - 127.0.0.1:8000 POST /api/blog/update
+[2015-08-05 17:42:40.785] [INFO] SERVER - { blog_id: '1',
+  author: 'dd',
+  title: '我是你爸爸',
+  summary: 'dd',
+  content: '```javascriptvar log4js = require(\'log4js\');\nlog4js.configure({\n  appenders: [\n    { type: \'console\' },\n    { type: \'file\', filename: \'logs/cheese.log\', category: \'cheese\' }\n  ]\n});\n```\n\n## configuration' }
+[2015-08-05 17:42:42.033] [INFO] SERVER - 127.0.0.1:8000 GET /manage/blogs
+[2015-08-05 17:42:42.225] [INFO] SERVER - 127.0.0.1:8000 GET /static/i/grid.png
+[2015-08-05 17:42:42.299] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/app-icon72x72@2x.png
+[2015-08-05 17:42:42.329] [INFO] SERVER - 127.0.0.1:8000 GET /manage/i/favicon.png

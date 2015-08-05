@@ -49,19 +49,35 @@
         location.assign('/manage/blogs');
       });
     }); 
-
     $(function(){
       var title = $('#blog-title'),
           author = $('#blog-author'),
           summary = $('#blog-summary'),
-          content = $('#blog-content');
-    });
-
-    $(function(){
+          content = $('#blog-content'),
+          blog_id = $('#blog-id');
       $('#save').click(function(){
-
+        if(title.val() === '' || author.val() === '' || summary.val() === '' || content.val() === ''){
+            $('#my-modal').modal(open);
+        }
+        else{
+          $.post('/api/blog/update',{
+            blog_id : blog_id.val(),
+            author : author.val(),
+            title : title.val(),
+            summary : summary.val(),
+            content : content.val()
+           },function(data){
+              var modalContent = $('#modal-content');
+              modalContent.text(data);
+              $('#my-modal').modal(open);
+              if(data === "update success" || data === "success save"){
+                $('#modal-confirm').attr('onclick', "location.assign(\\'/manage/blogs\\')");
+            }
+           });
+        }
       });
     });
+
   </script>
 
 </head>
@@ -78,25 +94,26 @@
 
       	<form role="form" class="am-form">
       	  <legend>编辑博客</legend>
+          <input type="text" id="blog-id" value="<%= blog.blog_id%>" style="display:none;">
       	
       	  <div class="am-form-group">
       	    <label for="">博客标题</label>
-      	    <input type="text" id="blog-title" placeholder="标题" value="<%= blog.title%>" required>
+      	    <input type="text" id="blog-title" placeholder="标题" value="<%= blog.title%>">
       	  </div>
 
       	  <div class="am-form-group">
       	    <label for="">作者</label>
-      	    <input type="text" id="blog-author" placeholder="作者" value="<%= blog.user_name%>" required>
+      	    <input type="text" id="blog-author" placeholder="作者" value="<%= blog.user_name%>">
       	  </div>
 
       	  <div class="am-form-group">
       	    <label for="">摘要</label>
-      	    <textarea id="blog-summary" rows="4" placeholder="摘要" style="resize:none;" minlength="1"><%= blog.summary%></textarea>
+      	    <textarea id="blog-summary" rows="4" placeholder="摘要" style="resize:none;"><%= blog.summary%></textarea>
       	  </div>
 
       	  <div class="am-form-group">
       	    <label for="am-form">内容</label>
-      	    <textarea id="blog-content" rows="16" placeholder="内容 支持MarkDown语法" style="resize:none" minlength="10"><%= blog.content%></textarea>
+      	    <textarea id="blog-content" rows="16" placeholder="内容 支持MarkDown语法" style="resize:none"><%= blog.content%></textarea>
       	  </div>
       	
       	  <button type="button" class="am-btn am-btn-primary am-round" id="save">保存</button>
@@ -106,14 +123,14 @@
   </div>
 </div>
 
-<div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+<div class="am-modal am-modal-alert" tabindex="-1" id="my-modal">
   <div class="am-modal-dialog">
-    <div class="am-modal-hd">Amaze UI</div>
-    <div class="am-modal-bd">
-      Hello world！
+    <div class="am-modal-hd">提  醒</div>
+    <div class="am-modal-bd" id="modal-content">
+      还有东西木有填啊，亲^_^
     </div>
     <div class="am-modal-footer">
-      <span class="am-modal-btn">确定</span>
+      <span class="am-modal-btn data-am-modal-confirm" id="modal-confirm">确定</span>
     </div>
   </div>
 </div>

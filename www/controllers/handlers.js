@@ -207,7 +207,7 @@ exports.editBlog = function editBlog(req, res){
 				res.render("manage_blog_edit.html", {blog: blog[0]});
 			}
 			else{
-				res.render("manage_blog_edit.html", {blog: {title:'', user_name:'', summary:'', content:''}});
+				res.render("manage_blog_edit.html", {blog: {blog_id:req.params.blogid, title:'', user_name:'', summary:'', content:''}});
 			}
 		});		
 	}
@@ -218,7 +218,7 @@ exports.editBlog = function editBlog(req, res){
 
 exports.updateBlog = function updateBlog(req, res){
 	try{
-		models.blogs.find({blog_id: req.body.blogid}, 1, function(err, blog){
+		models.blogs.find({blog_id: req.body.blog_id}, 1, function(err, blog){
 			if(err){
 				throw err;
 			}
