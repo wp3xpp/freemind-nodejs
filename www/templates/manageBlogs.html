@@ -1,3 +1,64 @@
+<script type="text/javascript">
+  $.get('/api/blogs', function(data){
+    $('#loading').hide();
+    initBlogTable(data);
+  });
+  function initBlogTable(blogs){
+    var table = $('#tbody');
+    var insertNode = function(blog){
+      return "<tr><td><input type='checkbox' name='select' /></td><td>"
+              + blog.title + "</td><td>"
+              + blog.user_name + "</td><td>"
+              + blog.created_at + "</td><td>"
+              + "<div class=am-btn-toolbar>"
+              + "<div class='am-btn-group am-btn-group-xs'>"
+              + "<button class='am-btn am-btn-default am-btn-xs am-text-secondary'"
+              + "onclick=location.assign('/manage/blog/edit/"+ blog.blog_id +"') >"
+              + "<span class='am-icon-pencil-square-o'></span> 编辑</button> <button"
+              + " class='am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only'"
+              + " onclick=deleteBlog('" + blog.blog_id + "')><span class=am-icon-trash-o>"
+              + "</span> 删除</button>"
+              + "</div>"
+              + "</div>"
+              + "</td>"
+              + "</tr>";
+    };
+    for(var blog of blogs){
+      table.append(insertNode(blog));
+    }
+  }
+  function deleteBlog(blog_id){
+    var modalContent = $('#delete-confirm');
+    $('#delete-confirm').modal({
+      onConfirm : function(){
+        $.post('/api/delete/blog', {
+          blog_id : blog_id
+        }, function(data){
+          var message = $('#message-content');
+          message.text(data);
+          $('#message').modal({
+            onConfirm : function(){
+              location.reload();
+            }
+          });
+          
+        });
+      }
+    }); 
+    
+  }
+  $(function(){
+    $('#selectAll').click(function(){
+      var selectBlog = $('input[name=select]');
+      if ($(this).is(":checked")){
+        selectBlog.prop("checked", "true");
+      }
+      else{
+        selectBlog.prop("checked", "");
+      }
+    });
+  });
+</script>
 <div class="admin-content">    
     <div class="am-g">
       <div class="am-u-sm-9 am-u-sm-centered">
@@ -9,52 +70,27 @@
 		<hr>
         <div class="am-btn-toolbar">
           <div class="am-btn-group am-btn-group-xs" >
-            <button type="button" class="am-btn am-btn-default"><span class="am-icon-plus"></span> 新增</button>
+            <button type="button" class="am-btn am-btn-default" id="addBlog" onclick="location.assign('/manage/blog/edit/create')"><span class="am-icon-plus"></span> 新增</button>
             <button type="button" class="am-btn am-btn-default"><span class="am-icon-trash-o"></span> 删除</button>
           </div>
         </div>
           <table class="am-table">
 		      <thead>
                 <tr>
-                  <th><input type="checkbox"></th>
+                  <th><input type="checkbox" id="selectAll"></th>
                   <th>标题</th>
-                  <th>类别</th>
+                  <th>作者</th>
                   <th>修改日期</th>
                   <th>操作</th>
                 </tr>
 		      </thead>
-		      <tbody>
+		      <tbody id="tbody">
+              <div id="loading" class="am-width-1-1 am-text-center">
+              <span><i class="am-icon-spinner am-icon-medium am-icon-spin"></i> 正在加载...</sp>
+              </div>
 		          <tr>
-		              <td><input type="checkbox" /></td>
+		              <td><input type="checkbox" name="select"/></td>
 		              <td>Amaze UI</td>
-		              <td>http://amazeui.org</td>
-		              <td>2012-10-01</td>
-		              <td>
-                		<div class="am-btn-toolbar">
-                 		<div class="am-btn-group am-btn-group-xs">
-                   		 <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
-                  		  <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
-                 		 </div>
-               		  </div>
-             		  </td>
-		          </tr>
-		          <tr>
-		          	  <td><input type="checkbox" /></td>
-		              <td>Amaze UI</td>
-		              <td>http://amazeui.org</td>
-		              <td>2012-10-01</td>
-		              <td>
-                		<div class="am-btn-toolbar">
-                 		<div class="am-btn-group am-btn-group-xs">
-                   		 <button class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 编辑</button>
-                  		  <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</button>
-                 		 </div>
-               		  </div>
-             		  </td>
-		          </tr>
-		          <tr>
-		              <td><input type="checkbox" /></td>
-		              <td>Amaze UI(Active)</td>
 		              <td>http://amazeui.org</td>
 		              <td>2012-10-01</td>
 		              <td>
@@ -72,3 +108,29 @@
      </div>
     </div>
 </div>
+
+<div class="am-modal am-modal-confirm" tabindex="-1" id="delete-confirm">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">提  醒</div>
+    <div class="am-modal-bd">
+      你，确定要删除这条博客吗？
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" data-am-modal-cancel>取消</span>
+      <span class="am-modal-btn" data-am-modal-confirm>确定</span>
+    </div>
+  </div>
+</div>
+
+<div class="am-modal am-modal-alert" tabindex="-1" id="message">
+  <div class="am-modal-dialog">
+    <div class="am-modal-hd">提  醒</div>
+    <div class="am-modal-bd" id="message-content">
+      xxoo
+    </div>
+    <div class="am-modal-footer">
+      <span class="am-modal-btn" id="message-confirm" data-am-modal-confirm>确定</span>
+    </div>
+  </div>
+</div>
+

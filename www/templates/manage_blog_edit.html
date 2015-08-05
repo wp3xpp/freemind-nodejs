@@ -60,7 +60,7 @@
             $('#my-modal').modal(open);
         }
         else{
-          $.post('/api/blog/update',{
+          $.post('/api/update/blog',{
             blog_id : blog_id.val(),
             author : author.val(),
             title : title.val(),
@@ -71,7 +71,7 @@
               modalContent.text(data);
               $('#my-modal').modal(open);
               if(data === "update success" || data === "success save"){
-                $('#modal-confirm').attr('onclick', "location.assign(\\'/manage/blogs\\')");
+                $('#modal-confirm').attr('onclick', "location.assign('/manage/blogs')");
             }
            });
         }
@@ -130,7 +130,7 @@
       还有东西木有填啊，亲^_^
     </div>
     <div class="am-modal-footer">
-      <span class="am-modal-btn data-am-modal-confirm" id="modal-confirm">确定</span>
+      <span class="am-modal-btn" id="modal-confirm">确定</span>
     </div>
   </div>
 </div>

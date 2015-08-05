@@ -66,7 +66,7 @@ var complie = function(str){
 	//预解析子模板
 	str = preComplie(str);
 	var tpl  = str.replace(/\n/g, '\\n') //将换行符替换掉
-	.replace(/\'/g, '\"')
+	.replace(/\'/g, '\\\'')
 	.replace(/<%=([\s\S+]+?)%>/g, function(match, code){
 		//转义
 		return "' + escape(" + code + ") + '";
@@ -76,8 +76,8 @@ var complie = function(str){
 	}).replace(/<%([\s\S]+?)%>/g, function(match, code){
 		//可执行代码
 		return "';\n" + code + "\ntpl += '";
-	}).replace(/\"\n/g, '\"')
-	.replace(/\n\"/gm, '\"')
+	}).replace(/\'\n/g, '\'')
+	.replace(/\n\'/gm, '\'')
 	.replace(/\s/gm, ' ');
 
 	//为了使字符串继续表达为字符串，变量能够自寻找属于他的对象，这里使用with

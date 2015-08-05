@@ -32,7 +32,8 @@ var initMiddlewares = function(){
 	app.get('/api/blogs', handles.getBlogs);
 	app.get('/api/blog/:blogid', handles.api_get_blog);
 	app.post('/api/register', handles.api_register_user);
-	app.post('/api/blog/update', handles.updateBlog);
+	app.post('/api/update/blog', handles.updateBlog);
+	app.post('/api/delete/blog', handles.deleteBlog);
 	app.get('/manage', handles.login);
 	app.get('/manage/blogs', handles.manageBlogs);
 	app.get('/manage/users', handles.manageUsers);

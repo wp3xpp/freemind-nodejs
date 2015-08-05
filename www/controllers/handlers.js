@@ -128,7 +128,6 @@ exports.getUsers = function getUsers(req, res){
 		models.users.find({}, ["created_at", "Z"], function(err, users){
 			if(err){
 				logger.error(err.toString());
-				throw err;
 			}
 			for(var user of users){
 				user.passwd = "******";
@@ -147,7 +146,6 @@ exports.getBlogs = function getUsers(req, res){
 		models.blogs.find({}, ["created_at", "Z"], function(err, blogs){
 			if(err){
 				logger.error(err.toString());
-				throw err;
 			}
 			for(var blog of blogs){
 				blog.created_at = new Date(blog.created_at).toLocaleString();
@@ -166,7 +164,6 @@ exports.api_get_blog = function api_get_blog(req, res){
 		models.blogs.find({blog_id: req.params.blogid}, 1, function(err, blog){
 			if(err){
 				logger.error(err.toString());
-				throw err;
 			}
 			res.json(blog[0]);
 		});	
@@ -181,7 +178,6 @@ exports.showBlog = function showBlog(req, res){
 		models.blogs.find({blog_id: req.params.blogid}, 1, function(err, blog){
 			if(err){
 				logger.error(err.toString());
-				throw err;
 			}
 			if(blog[0]){
 				res.render("blog.html", {blog_id: blog[0].blog_id});
@@ -201,7 +197,6 @@ exports.editBlog = function editBlog(req, res){
 		models.blogs.find({blog_id: req.params.blogid}, 1, function(err, blog){
 			if(err){
 				logger.error(err.toString());
-				throw err;
 			}
 			if(blog[0]){
 				res.render("manage_blog_edit.html", {blog: blog[0]});
@@ -227,11 +222,11 @@ exports.updateBlog = function updateBlog(req, res){
 				blog[0].title = req.body.title;
 				blog[0].summary = req.body.summary;
 				blog[0].content = req.body.content;
+				blog[0].created_at = new Date().getTime();
 				blog[0].save(function(err){
 					if(err){
 						res.end("update failed");
 						logger.error(err.toString());
-						throw err;
 					}
 					res.end("update success");
 				});
@@ -247,7 +242,6 @@ exports.updateBlog = function updateBlog(req, res){
 					if(err){
 						res.end("save failed");
 						logger.error(err.toString());
-						throw err;
 					}
 					res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
 					res.end("success save");
@@ -259,3 +253,18 @@ exports.updateBlog = function updateBlog(req, res){
 		logger.info(err.toString());
 	}
 };
+
+exports.deleteBlog = function deleteBlog(req, res){
+	try{
+		models.blogs.find({ blog_id:req.body.blog_id }).remove(function (err) {
+    		if(err){
+    			res.end("删除失败");
+    			logger.error(err.toString());
+    		}
+    		res.end("删除成功");
+		});
+	}
+	catch(err){
+		logger.error(err.toString());
+	}
+}
