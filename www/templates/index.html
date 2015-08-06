@@ -32,16 +32,30 @@
 
   <!-- Amaze UI CSS -->
   <link rel="stylesheet" href="//cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">
+  <script src="//libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
   <style type="text/css">
       body {
-      	font-size: 1.8rem; /* =16px */
-      	/* font-family: Georgia,"Times New Roman",Times,Kai,"Kaiti SC",KaiTi,BiauKai,FontAwesome,serif; */
+      	font-size: 1.8rem; 
       }
       p {
       	text-align: center;
       }
   </style>
 
+  <script type="text/javascript">
+    $(function(){
+      var blog_list = $('#blog-list');
+      var insertNode = function(blog){
+        return "<li><a href=/blogs/" + blog.blog_id + ">" + blog.title + "</a></li>";
+      };
+      $.get('/api/blogs', function(blogs){
+        $('#loading').hide();
+        for(var blog of blogs){
+          blog_list.append(insertNode(blog));
+        }
+      });
+    });
+  </script>
 </head>
 <body>
 <header class="am-topbar">
@@ -63,26 +77,16 @@
 <div class="am-container ">
   <div class="am-g">
     <div class="am-u-sm-9 am-u-sm-centered">
-      <div class="am-panel am-panel-default">
+    <div class="am-panel am-panel-default">
 		<div class="am-panel-hd">
 		  <h3 class="am-panel-title">Blog</h3>
 		</div>
-		<ul class="am-list am-list-border">
- 		 <li><a href="#">数学和编程</a></li>
- 		 <li><a href="#">谈程序的正确性</a></li>
- 		 <li><a href="#">DRY原则的误区</a></li>
- 		 <li><a href="#">所谓软件工程</a></li>
- 		 <li><a href="#">编程的宗派</a></li>
- 		 <li><a href="#">智商的圈套</a></li>
- 		 <li><a href="#">设计的重要性</a></li>
- 		 <li><a href="#">不要做聪明人</a></li>
- 		 <li><a href="#">创造者的思维方式</a></li>
- 		 <li><a href="#">我和google的故事</a></li>
- 		 <li><a href="#">牛校综合征</a></li>
- 		 <li><a href="#">我爱星际穿越</a></li>
- 		 <li><a href="#">对Go语言的评价</a></li>
+		<ul class="am-list am-list-border" id="blog-list">
+      <div id="loading" class="am-width-1-1 am-text-center">
+        <span style="font-size:25px;"><i class="am-icon-spinner am-icon-medium am-icon-spin" ></i> 正在加载...</span>
+      </div>
 	  </ul>
-       </div>
+    </div>
     </div>
   </div>
 </div>
@@ -102,7 +106,6 @@
 <![endif]-->
 
 <!--[if (gte IE 9)|!(IE)]><!-->
-<script src="//libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
 <script src="//cdn.amazeui.org/amazeui/2.1.0/js/amazeui.min.js"></script>
 <!--<![endif]-->
 

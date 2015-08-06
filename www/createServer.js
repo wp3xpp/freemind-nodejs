@@ -25,9 +25,7 @@ var initMiddlewares = function(){
 	app.use(middlewares.cookie);
 	app.post(middlewares.handleData, middlewares.handlePostdata);
 	app.get('/static/*', middlewares.staticFile);
-	app.get('/', handles.index);
-	app.get('/registe', handles.register);
-	app.get('/blogs/:blogid', handles.showBlog);
+
 	app.get('/api/users', handles.getUsers);
 	app.get('/api/blogs', handles.getBlogs);
 	app.get('/api/blog/:blogid', handles.api_get_blog);
@@ -35,6 +33,12 @@ var initMiddlewares = function(){
 	app.post('/api/update/blog', handles.updateBlog);
 	app.post('/api/delete/blog', handles.deleteBlog);
 	app.post('/api/delete/user', handles.deleteUser);
+	app.post('/api/login', handles.api_login);
+
+	app.get('/', handles.index);
+	app.get('/registe', handles.register);
+	app.get('/blogs/:blogid', handles.showBlog);
+
 	app.get('/manage', handles.login);
 	app.get('/manage/blogs', handles.manageBlogs);
 	app.get('/manage/users', handles.manageUsers);

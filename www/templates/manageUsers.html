@@ -22,7 +22,32 @@
   }
 
   $(function(){
-
+    $('#deleteMutilple').click(function(){
+      var user_ids = [];
+      var selectBlog = $('input[name=select]');
+      selectBlog.each(function(i){
+        if($(this).is(":checked")){
+          user_ids.push($(this).attr('id'));
+        }
+      })
+      var modalContent = $('#delete-confirm');
+      $('#delete-confirm').modal({
+      onConfirm : function(){
+          for(var user_id of user_ids){
+            $.post('/api/delete/user', {
+              user_id : user_id
+            }, function(data){});      
+          }
+          var message = $('#message-content');
+          message.text("删除完毕");
+          $('#message').modal({
+            onConfirm : function(){
+              location.reload();
+            }
+          });
+        }
+      }); 
+    });
   });
 
   $(function(){

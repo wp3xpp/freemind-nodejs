@@ -15,6 +15,9 @@ var logger = require('../logger.js');
 var models = require('../models.js');
 var uuid = require('../uuid.js');
 
+var salt = "freemind"; //给密码加盐
+var COOKIE_NAME = "googleid"; 
+
 exports.handle404 = function handle404(req, res){
 	res.writeHead(404);
 	res.render('404.html', {});
@@ -37,7 +40,23 @@ exports.index = function index(req, res){
 
 exports.login = function login(req, res){
 	try{
-		res.render('login.html', {}); 
+		if(req.cookies[COOKIE_NAME]){
+			var email = req.cookies[COOKIE_NAME].split('-')[0];
+			var sha1 = req.cookies[COOKIE_NAME].split('-')[1];
+			models.users.find({email:email}, function(err, user){
+				if(err){
+					logger.error(err.toString());
+				}
+				if(getHash(user[0].email+user[0].passwd+salt) === sha1 && user[0].admin === true){
+					res.redirect('/manage/blogs');
+				}else{
+					res.writeHead(403, {"Content-Type" : "text/html; charset=utf8"});
+					res.end("<h1>403 Forbidden, you are not admin</h1>");
+				}				
+			});
+		}else{
+			res.render('login.html', {});
+		}
 	}
 	catch(e){
 		logger.error(e.toString());
@@ -53,12 +72,61 @@ exports.register = function register(req, res){
 	}
 };
 
-var getHash = function(str){
+function getHash(str){
 	var shasum = crypto.createHash('sha1');
 	return shasum.update(str).digest('hex');
-};
+}
 
-var salt = "freemind"; //给密码加盐
+function serialize(name, val, opt){
+	var pairs = [name + '=' + val];
+	opt = opt || {};
+	if(opt.maxAge) pairs.push('Max-Age=' + opt.maxAge);
+	if(opt.domain) pairs.push('Domain=' + opt.domain);
+	if(opt.path) pairs.push('Path=' + opt.path);
+	if(opt.expires) pairs.push('Expires=' + opt.expires.toUTCString());
+	if(opt.httpOnly) pairs.push('HttpOnly');
+	if(opt.secure) pairs.push('Secure');
+
+	return pairs.join(';');
+}
+
+function user2cookie(user){
+	return (user.email + "-" + getHash(user.email+user.passwd+salt));
+}
+
+exports.api_login = function api_login(req, res){
+	try{
+		models.users.find({email:req.body.email}, 1, function(err, user){
+			if(err){
+				logger.error(err.toString());
+			}
+			if(user[0]){
+				if(user[0].passwd === getHash(salt + req.body.passwd)){
+					var opt = {};
+					if(req.body.remember === 'on'){
+						opt.maxAge = 86400*7;
+						opt.path = '/';
+					}else{
+						opt.maxAge = 86400;
+						opt.path = '/';
+					}
+					res.setHeader('Set-Cookie', serialize(COOKIE_NAME, user2cookie(user[0]), opt));
+					res.redirect('/');
+				}else{
+					res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
+					res.end("<script>alert('密码错误');location.assign('/manage')</script>");
+				}
+			}
+			else{
+				res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
+				res.end("<script>alert('该邮箱未注册');location.assign('/manage')</script>");
+			}
+		});
+	}
+	catch(err){
+		logger.error(err.toString());
+	}
+};
 
 exports.api_register_user = function api_register_user(req, res){
 	if (req.body.email === undefined || req.body.passwd === undefined){
@@ -80,25 +148,26 @@ exports.api_register_user = function api_register_user(req, res){
 		};
 		
 		emailExist(req, res).then(function(func){
-			models.users.create({email : func.req.body.email,
+			models.users.create(
+			{	email : func.req.body.email,
 				passwd : getHash(salt + func.req.body.passwd), 
-				admin : true, 
+				admin : false, 
 				name : func.req.body.name
 			},function(err){
 				if(err){
 					logger.error(err.toString());
 					throw err;
 				}
+				var opt = { maxAge : 86400, path : '/' };
+				func.res.setHeader('Set-Cookie', serialize(COOKIE_NAME, user2cookie(func.req.body), opt));
 				func.res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
 				func.res.end("success create");
 			});
 		})
 		.fail(function(res){
-			logger.info(typeof res);
 			res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
 			res.end("邮箱已经被注册了,不好意思啊");
 		});
-		
 	}
 	catch(err){
 		logger.error(err.toString());
@@ -271,7 +340,7 @@ exports.deleteBlog = function deleteBlog(req, res){
 
 exports.deleteUser = function deleteUser(req, res){
 	try{
-		models.users.find({ user_id:req.body.user_id }).remove(function (err) {
+		models.users.find({ id:req.body.user_id }).remove(function (err) {
     		if(err){
     			res.end("删除失败");
     			logger.error(err.toString());

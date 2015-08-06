@@ -39,18 +39,6 @@ var initDB = function(){
 
 exports = module.exports = initDB;
 
-/*create table users (
-    `id` varchar(50) not null,
-    `email` varchar(50) not null,
-    `passwd` varchar(50) not null,
-    `admin` bool not null,
-    `name` varchar(50) not null,
-    `image` varchar(500) not null,
-    `created_at` real not null,
-    unique key `idx_email` (`email`),
-    key `idx_created_at` (`created_at`),
-    primary key (`id`)
-) engine=innodb default charset=utf8;*/
 var users = exports.users = db.define('users', {      
     email : { type:"text", size:50, required:true},
     passwd : { type:"text", size:50, required:true },
@@ -63,21 +51,6 @@ var users = exports.users = db.define('users', {
     
 });
 
-/*
-create table blogs (
-    `id` varchar(50) not null,
-    `user_id` varchar(50) not null,
-    `user_name` varchar(50) not null,
-    `user_image` varchar(500) not null,
-    `name` varchar(50) not null,
-    `summary` varchar(200) not null,
-    `content` mediumtext not null,
-    `created_at` real not null,
-    key `idx_created_at` (`created_at`),
-    primary key (`id`)
-) engine=innodb default charset=utf8;
-*/
-
 var blogs = exports.blogs = db.define('blogs', {
 	blog_id : { type:"text", size:50, required:true, key:true },
 	user_name : { type:"text", size:50, required:true },
@@ -89,20 +62,6 @@ var blogs = exports.blogs = db.define('blogs', {
 }, {
 	
 });
-
-/*
-create table comments (
-    `id` varchar(50) not null,
-    `blog_id` varchar(50) not null,
-    `user_id` varchar(50) not null,
-    `user_name` varchar(50) not null,
-    `user_image` varchar(500) not null,
-    `content` mediumtext not null,
-    `created_at` real not null,
-    key `idx_created_at` (`created_at`),
-    primary key (`id`)
-) engine=innodb default charset=utf8;
-*/
 
 var comments = exports.comments = db.define('comments', {
 	blog_id : { type:"text", size:50, required:true },

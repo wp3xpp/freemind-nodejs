@@ -74,11 +74,12 @@
             name : name,
             email : email,
             passwd : CryptoJS.SHA1(email + ':' + password).toString(),
-        },function(data){
+        },function(data, textStatus, xhr){
           if(data === "success create"){
             location.assign('/');
-          }
-          showError(data);
+          }else{
+            showError(data);
+          }     
         });
 
   		});
