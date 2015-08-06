@@ -9,7 +9,7 @@ var opts = module.exports = {
   query    : {
     pool     : true,   // optional, false by default
     debug    : false,   // optional, false by default
-    strdates : true    // optional, false by default
+    strdates : false    // optional, false by default
   }
 };
 

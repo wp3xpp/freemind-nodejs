@@ -84,7 +84,7 @@ var blogs = exports.blogs = db.define('blogs', {
 	user_image : { type:"text", size:500},
 	title : { type:"text", size:50, required:true },
 	summary : { type:"text", size:200, required:true },
-	content : { type:"text", required:true },
+	content : { type:"text", size:20000, required:true },
 	created_at: { type:"number", required:true, size:8, defaultValue:new Date().getTime() },
 }, {
 	

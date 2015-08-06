@@ -1,6 +1,6 @@
 /*!
  * freemind
- * Copyright(c) 2014-2015 胡时玮 mailto:wp3xpp@163.com
+ * Copyright(c) 2015-2016 胡时玮 mailto:wp3xpp@163.com
  * MIT Licensed
  */
 

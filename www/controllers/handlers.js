@@ -267,4 +267,19 @@ exports.deleteBlog = function deleteBlog(req, res){
 	catch(err){
 		logger.error(err.toString());
 	}
-}
+};
+
+exports.deleteUser = function deleteUser(req, res){
+	try{
+		models.users.find({ user_id:req.body.user_id }).remove(function (err) {
+    		if(err){
+    			res.end("删除失败");
+    			logger.error(err.toString());
+    		}
+    		res.end("删除成功");
+		});
+	}
+	catch(err){
+		logger.error(err.toString());
+	}
+};

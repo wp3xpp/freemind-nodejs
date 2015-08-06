@@ -1,6 +1,6 @@
 /*!
  * FreeMind
- * Copyright(c) 2014-2015 freemind
+ * Copyright(c) 2015-2016 freemind
  * MIT Licensed
  */
 
@@ -34,6 +34,7 @@ var initMiddlewares = function(){
 	app.post('/api/register', handles.api_register_user);
 	app.post('/api/update/blog', handles.updateBlog);
 	app.post('/api/delete/blog', handles.deleteBlog);
+	app.post('/api/delete/user', handles.deleteUser);
 	app.get('/manage', handles.login);
 	app.get('/manage/blogs', handles.manageBlogs);
 	app.get('/manage/users', handles.manageUsers);
