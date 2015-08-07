@@ -25,10 +25,12 @@ var initMiddlewares = function(){
 	app.use(middlewares.cookie);
 	app.post(middlewares.handleData, middlewares.handlePostdata);
 	app.get('/static/*', middlewares.staticFile);
+	app.use('/manage/*', middlewares.authorization);
 
 	app.get('/api/users', handles.getUsers);
 	app.get('/api/blogs', handles.getBlogs);
 	app.get('/api/blog/:blogid', handles.api_get_blog);
+	app.get('/api/signout', handles.signout);
 	app.post('/api/register', handles.api_register_user);
 	app.post('/api/update/blog', handles.updateBlog);
 	app.post('/api/delete/blog', handles.deleteBlog);

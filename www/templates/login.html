@@ -43,19 +43,36 @@
   <script type="text/javascript">
     $(function(){
       $('#submit').click(function(){
-      alert('hehe');
-      var email = $('#email').val();
-      var passwd = $('#passwd').val();
-      if(! email.trim()){
-        alert("email 不能为空");
-        return false;
-      }
-      if(! passwd.trim()){ 
-        alert("密码不能为空");
-        return false;
-      }
-      $('#passwd').val(CryptoJS.SHA1(email + ':' + passwd).toString());
-      $('#form').submit();
+        $('.am-alert').hide();
+        var email = $('#email').val();
+        var passwd = $('#passwd').val();
+        var remember = false;
+        if(! email.trim()){
+          $('#warning').text("请输入Email!");
+          $('.am-alert').show();
+          return false;
+        }
+        if(! passwd.trim()){ 
+          $('#warning').text("请输入密码!");
+          $('.am-alert').show();
+          return false;
+        }
+        if($('#remember-me').is(':checked')){
+          remember = true;
+        }
+        $.post('/api/login', {
+          email : email,
+          passwd : CryptoJS.SHA1(email + ':' + passwd).toString(),
+          remember : remember
+        }, function(data){
+          if(data === "login success"){
+            history.go(0);
+          }
+          else{
+            $('#warning').text(data);
+            $('.am-alert').show();
+          }
+        })
       });
     });
   </script>
@@ -74,8 +91,11 @@
     </div>
     <br>
     <br>
+    <div class="am-alert am-animation-shake" style="display:none;">
+      <p id="warning"></p>
+    </div>
 
-    <form id="form" method="post" class="am-form" action="/api/login">
+    <form id="form" class="am-form">
       <label for="email">邮箱:</label>
       <input type="email" name="email" id="email" value="">
       <br>
@@ -88,7 +108,7 @@
       </label>
       <br />
       <div class="am-cf">
-        <input type="submit" id="submit" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
+        <input type="button" id="submit" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
         <input type="button" value="注 册" onclick="location.assign('/registe')" class="am-btn am-btn-success am-btn-sm am-fl">
       </div>
     </form>

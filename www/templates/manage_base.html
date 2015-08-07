@@ -42,14 +42,21 @@
 <body>
 <header class="am-topbar">
   <h1 class="am-topbar-brand">
-    <a href="#" class="am-icon-github-alt">专业打酱油</a>
+    <a href="/" class="am-icon-github-alt">专业打酱油</a>
   </h1>
 
   <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
 
   <div class="am-topbar-right am-collapse am-topbar-collapse" id="doc-topbar-collapse" style="font-size:1.8rem;">
     <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li class="am-active"><a href="#">Blog</a></li>
+      <li class="am-dropdown" data-am-dropdown>
+        <a class="am-dropdown-toggle am-icon-linux" data-am-dropdown-toggle href="javascript:;">
+          <%= user.name%><span class="am-icon-caret-down"></span>
+        </a>
+        <ul class="am-dropdown-content">
+          <li><a class="am-icon-sign-out" href="/api/signout">登  出</a></li>
+        </ul>
+      </li>
       <li><a href="https://github.com/wp3xpp" class="am-icon-github">github</a></li>
       <li><a href="http://weibo.com/u/1696178397" class="am-icon-weibo">新浪微博</a></li>
     </ul>

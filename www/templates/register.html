@@ -40,11 +40,11 @@
 		 }
 	   function showError(errorCode){
       		$('#warning').text(errorCode);
-      		$('.am-alert').css('display', 'block');
-          $('.am-alert').addClass('am-animation-shake');
+      		$('.am-alert').show();
 	   }
   	$(function(){		
   		$('input[name=submit]').click(function(){
+        $('.am-alert').hide();
   			var errorCode = "";
   			var name = $('#name').val();
   			var email = $('#email').val();
@@ -100,7 +100,7 @@
     </div>
     <br>
     <br>
-    <div class="am-alert" style="display:none;">
+    <div class="am-alert am-animation-shake" style="display:none;">
       <p id="warning"></p>
     </div>
 

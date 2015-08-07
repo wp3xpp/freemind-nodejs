@@ -6,6 +6,8 @@ var path = require('path');
 var mime = require('mime');
 var xml2js = require('xml2js');
 var formidable = require('formidable');
+var crypto = require('crypto');
+var models = require('../models.js');
 
 /**中间件统一格式
  *  exports.function(req, res, next){
@@ -13,6 +15,9 @@ var formidable = require('formidable');
  *	 	next();
  *	}
  */
+//需要与handlers.js中的salt，COOKIE_NAME保持一致
+var salt = "freemind"; //给密码加盐
+var COOKIE_NAME = "googleid"; 
 
 //查询字串中间件
 exports.getQueryString = function(req, res, next){
@@ -178,4 +183,39 @@ exports.basic =  function(req, res, next){
 		res.end();
 	}
 	next();
+};
+
+function getHash(str){
+	var shasum = crypto.createHash('sha1');
+	return shasum.update(str).digest('hex');
+}
+
+exports.authorization = function(req, res, next){
+	if(req.cookies[COOKIE_NAME]){
+		var email = req.cookies[COOKIE_NAME].split('-')[0] || 'delete';
+		var sha1 = req.cookies[COOKIE_NAME].split('-')[1];
+		models.users.find({email:email}, function(err, user){
+			if(err){
+				logger.error(err.toString());
+			}
+			if(user[0]){
+				if(getHash(user[0].email+user[0].passwd+salt) === sha1 && user[0].admin === true){
+					req.__user__ = user[0];
+				}else{
+					res.writeHead(403, {"Content-Type" : "text/html; charset=utf8"});
+					res.end("<h1>403 Forbidden, you are not admin.</h1>");
+				}
+			}
+			else{
+				res.writeHead(403, {"Content-Type" : "text/html; charset=utf8"});
+				res.end("<h1>403 Forbidden, you are not admin.</h1>");
+			}
+			next();				
+		});
+	}
+	else{
+		res.writeHead(403, {"Content-Type" : "text/html; charset=utf8"});
+		res.end("<h1>403 Forbidden, you are not admin.</h1>");
+		next();
+	}
 };

@@ -41,21 +41,26 @@ exports.index = function index(req, res){
 exports.login = function login(req, res){
 	try{
 		if(req.cookies[COOKIE_NAME]){
-			var email = req.cookies[COOKIE_NAME].split('-')[0];
+			var email = req.cookies[COOKIE_NAME].split('-')[0] || 'delete';
 			var sha1 = req.cookies[COOKIE_NAME].split('-')[1];
 			models.users.find({email:email}, function(err, user){
 				if(err){
 					logger.error(err.toString());
 				}
-				if(getHash(user[0].email+user[0].passwd+salt) === sha1 && user[0].admin === true){
-					res.redirect('/manage/blogs');
-				}else{
-					res.writeHead(403, {"Content-Type" : "text/html; charset=utf8"});
-					res.end("<h1>403 Forbidden, you are not admin</h1>");
+				if(user[0]){
+					if(getHash(user[0].email+user[0].passwd+salt) === sha1 && user[0].admin === true){
+						res.redirect('/manage/blogs');
+					}else{
+						res.writeHead(403, {"Content-Type" : "text/html; charset=utf8"});
+						res.end("<script>alert('403 Forbidden, you are not admin');location.assign('/');</script>");
+					}
+				}
+				else{
+					res.render("login.html", {});
 				}				
 			});
 		}else{
-			res.render('login.html', {});
+			res.render("login.html", {});
 		}
 	}
 	catch(e){
@@ -98,12 +103,13 @@ exports.api_login = function api_login(req, res){
 	try{
 		models.users.find({email:req.body.email}, 1, function(err, user){
 			if(err){
+				res.end("login failed");
 				logger.error(err.toString());
 			}
 			if(user[0]){
 				if(user[0].passwd === getHash(salt + req.body.passwd)){
 					var opt = {};
-					if(req.body.remember === 'on'){
+					if(req.body.remember){
 						opt.maxAge = 86400*7;
 						opt.path = '/';
 					}else{
@@ -111,17 +117,26 @@ exports.api_login = function api_login(req, res){
 						opt.path = '/';
 					}
 					res.setHeader('Set-Cookie', serialize(COOKIE_NAME, user2cookie(user[0]), opt));
-					res.redirect('/');
+					res.end("login success");
 				}else{
-					res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
-					res.end("<script>alert('密码错误');location.assign('/manage')</script>");
+					res.end("密码错误!");
 				}
 			}
 			else{
-				res.writeHead(200, {'Content-Type': 'text/html; charset=utf8'});
-				res.end("<script>alert('该邮箱未注册');location.assign('/manage')</script>");
+				res.end("该邮箱未注册!");
 			}
 		});
+	}
+	catch(err){
+		logger.error(err.toString());
+	}
+};
+
+exports.signout = function signout(req, res){
+	try{
+		var opt = { maxAge : 0, path : '/' };
+		res.setHeader('Set-Cookie', serialize(COOKIE_NAME, "-delete-", opt));
+		res.redirect('/');
 	}
 	catch(err){
 		logger.error(err.toString());
@@ -176,7 +191,7 @@ exports.api_register_user = function api_register_user(req, res){
 
 exports.manageBlogs = function manageBlogs(req, res){
 	try{
-		res.render('manageBlogs.html', {layout:'manage_base.html'});
+		res.render('manageBlogs.html', {layout:'manage_base.html', user:req.__user__});
 	}
 	catch(err){
 		logger.error(err.toString());
@@ -185,7 +200,7 @@ exports.manageBlogs = function manageBlogs(req, res){
 
 exports.manageUsers = function manageBlogs(req, res){
 	try{
-		res.render('manageUsers.html', {layout:'manage_base.html'});
+		res.render('manageUsers.html', {layout:'manage_base.html', user:req.__user__});
 	}
 	catch(err){
 		logger.error(err.toString());
