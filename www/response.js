@@ -224,6 +224,6 @@ function serialize(name, val, opt){
 }
 
 res.setCookie = function setCookie(key, value, opt){
-	res.setHeader('Set-Cookie', serialize(key, value, opt));
+	this.setHeader('Set-Cookie', serialize(key, value, opt));
 }
 
