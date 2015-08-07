@@ -37,6 +37,9 @@ function createApplication(){
 	return app;
 }
 
+exports.request = req;
+exports.response = res;
+
 //简化创建方式，初始化中间件
 app.listen = function listen(port){
 	if (typeof port !== 'number'){

@@ -22,7 +22,7 @@ modles(); //如果还没建立起对应数据库，调用该方法可以创建
 
 var initMiddlewares = function(){
 	app.use(middlewares.getQueryString);
-	app.use(middlewares.cookie);
+	app.use(middlewares.cookie, middlewares.session);
 	app.post(middlewares.handleData, middlewares.handlePostdata);
 	app.get('/static/*', middlewares.staticFile);
 	app.use('/manage/*', middlewares.authorization);

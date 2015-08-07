@@ -43,23 +43,15 @@ exports.cookie = function(req, res, next){
 	return next();
 };
 
-//由于异步方法不能直接捕获，中间件异步产生的异常需要自己传递出来
-//下面是session中间件的例子
-exports.session = function(req, res, next){
-	var id = req.cookies.sessionid;
-	store.get(id, function(err, session){
-		if(err){
-			//将异常通过next()传递
-			return next(err);
-		}
-		req.session = session;
-		return next();
-	});
+var getEtag = function(str){
+	var shasum = crypto.createHash('sha1');
+	return shasum.update(str).digest('base64');
 };
 
 //如果app.use(staticFile);这样注册误伤率会太高
 //应该使用app.use('/static', staticFile)类似方式注册提高效率
 //静态文件加载中间件
+//引入缓存机制
 exports.staticFile = function(req, res, next){
 	var ROOT = './';
 	var PATH = url.parse(req.url).pathname;
@@ -72,12 +64,21 @@ exports.staticFile = function(req, res, next){
 	}
 	else{
 		fs.readFile(path.join(ROOT, pathname), 'utf8', function(err, file){
-		if(err){
-			return next(err);
-		}
-		res.setHeader("Access-Control-Allow-Origin", "*");
-		res.setHeader("Content-Type", contenType +';charset=utf8');
-		res.end(file);
+			if(err){
+				return next(err);
+			}
+			var hash = getEtag(file);
+			var noneMatch = req.headers['if-none-match'];
+			if(hash === noneMatch){
+				res.writeHead(304, "Not Modified");
+				res.end();
+			}
+			else{
+				res.setHeader("Etag", hash);
+				res.setHeader("Access-Control-Allow-Origin", "*");
+				res.setHeader("Content-Type", contenType +';charset=utf8');
+				res.end(file);
+			}
 		});
 	}
 	return next();
@@ -219,3 +220,62 @@ exports.authorization = function(req, res, next){
 		next();
 	}
 };
+
+var sessions = {};
+var session_key = 'freemind_session';
+var EXPIRES = 20 * 60 * 1000;
+
+//生成session的代码
+var generate = function(){
+	var session = {};
+	session.id = (new Date()).getTime() + Math.random();
+	session.cookie = {
+		expires: (new Date()).getTime() + EXPIRES
+	};
+	sessions[session.id] = session;
+	return session;
+};
+
+//请求到来时检查cookie的口令和服务端数据，如果过期，就重新生成，这部分只管服务端
+exports.session =  function(req, res, next){
+	var id = req.cookies[session_key];
+	if(!id){
+		req.session = generate();
+	}
+	else{
+		var session = sessions[id];
+		if(session){
+			if(session.cookie.expires > (new Date()).getTime()){
+				//更新超时时间
+				session.cookie.expires = (new Date()).getTime() + EXPIRES;
+				req.session = session;
+			}
+			else{
+				//超时了，删除旧的数据，并重新生成
+				delete sessions[id];
+				req.session = generate();
+			}
+		}
+		else{
+			//如果session过期或者口令不对，重新生成session
+			req.session = generate();
+		}
+	}
+	var session = serialize(session_key, req.session.id, {path : '/'});
+	res.setHeader('Set-Cookie', session);
+	
+	next();
+};
+
+function serialize(name, val, opt){
+	var pairs = [name + '=' + val];
+	opt = opt || {};
+	if(opt.maxAge) pairs.push('Max-Age=' + opt.maxAge);
+	if(opt.domain) pairs.push('Domain=' + opt.domain);
+	if(opt.path) pairs.push('Path=' + opt.path);
+	if(opt.expires) pairs.push('Expires=' + opt.expires.toUTCString());
+	if(opt.httpOnly) pairs.push('HttpOnly');
+	if(opt.secure) pairs.push('Secure');
+
+	return pairs.join(';');
+}

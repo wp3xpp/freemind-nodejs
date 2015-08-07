@@ -33,6 +33,7 @@ var fs = require('fs');
 var path = require('path');
 var http = require('http');
 var mime = require('mime');
+var crypto = require('crypto');
 var handle500 = handlers.handle500;
 
 var res = module.exports = {
@@ -208,3 +209,21 @@ res.redirect = function redirect(url){
 	this.writeHead(302);
 	this.end('Redirect to' + url);
 };
+
+function serialize(name, val, opt){
+	var pairs = [name + '=' + val];
+	opt = opt || {};
+	if(opt.maxAge) pairs.push('Max-Age=' + opt.maxAge);
+	if(opt.domain) pairs.push('Domain=' + opt.domain);
+	if(opt.path) pairs.push('Path=' + opt.path);
+	if(opt.expires) pairs.push('Expires=' + opt.expires.toUTCString());
+	if(opt.httpOnly) pairs.push('HttpOnly');
+	if(opt.secure) pairs.push('Secure');
+
+	return pairs.join(';');
+}
+
+res.setCookie = function setCookie(key, value, opt){
+	res.setHeader('Set-Cookie', serialize(key, value, opt));
+}
+

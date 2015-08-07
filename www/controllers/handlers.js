@@ -109,7 +109,7 @@ exports.api_login = function api_login(req, res){
 			if(user[0]){
 				if(user[0].passwd === getHash(salt + req.body.passwd)){
 					var opt = {};
-					if(req.body.remember){
+					if(req.body.remember === "true"){
 						opt.maxAge = 86400*7;
 						opt.path = '/';
 					}else{
