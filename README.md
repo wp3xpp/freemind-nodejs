@@ -114,7 +114,7 @@ orm.connect("mysql://username:password@host/database", function (err, db) {
 
 ###response:
 
-  * response已集成一下方法
+  * response已集成如下方法
   * render，使用方法下面详述
   * sendfile, 给客户端发送流文件
   * json, 响应json格式数据
