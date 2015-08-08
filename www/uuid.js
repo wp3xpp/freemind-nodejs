@@ -9,6 +9,17 @@
 /**
  * Module dependencies.
  */
+
+/**产生随机序列
+ * return random sequence
+ * Examples:
+ *
+ *     genuuid();
+ *     // => "130a8ac8fd424a5c87bd"
+ * @param {none} 
+ * @return {String}
+ * @public
+ */
 module.exports =  function genuuid() {
       return 'xxxxxxxxxxxx4xxxyxxx'.replace(/[xy]/g, function(c) {
           var r = Math.random() * 16 | 0,

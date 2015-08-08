@@ -9,8 +9,7 @@
 /**
  * Module dependencies.
  */
-//RESTful
-//RESTful主要思想是对一个资源的操作主要体现在HTTP请求方法上，而不是体现在URL上
+
 var url = require('url');
 var logger = require('./logger.js');
 var handlers = require('./controllers/handlers.js');

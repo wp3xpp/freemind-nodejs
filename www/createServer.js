@@ -10,7 +10,6 @@
  * Module dependencies.
  */
 
-var logger = require('./logger.js');
 var freemind = require('./freemind.js');
 var middlewares = require('./middlewares/middlewares.js');
 var handles = require('./controllers/handlers.js');
@@ -18,7 +17,7 @@ var modles = require('./models.js');
 
 var app = freemind();
 
-modles(); //如果还没建立起对应数据库，调用该方法可以创建
+modles(); //如果还没建立起对应数据库，调用该方法可以创建,数据库配置文件为./config/dbConfig.js
 
 var initMiddlewares = function(){
 	app.use(middlewares.getQueryString);
