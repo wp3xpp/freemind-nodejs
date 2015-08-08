@@ -1,7 +1,6 @@
 *.sublime-*
 *.njsproj
 *.nodevsdbg
-*.log
 node_modules
 .DS_Store
 test
