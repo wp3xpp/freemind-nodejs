@@ -168,7 +168,7 @@ app.dispatch = function(req, res){
 }
 
 //以下为改进路由匹配方式,将路径转换为正则表达式
-// /profile/:username => /profile/jacksontian, /profile/hushiwei
+// /profile/:username => /profile/hushiwei
 // /user.:ext => /user.xml, /user.json
 var pathRegexp = function(path){
 	var keys = [];
