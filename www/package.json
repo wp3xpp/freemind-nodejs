@@ -19,7 +19,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "createServer.js"
+    "test": "node createServer.js"
   },
   "repository": {
     "type": "git",

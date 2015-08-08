@@ -116,6 +116,7 @@ exports.handleData = function(req, res, next){
 	}
 };
 
+//获取post数据中间件
 exports.handlePostdata = function(req, res, next){
 	if(hasBody(req)){
 		if(getType(req) === 'application/x-www-form-urlencoded'){
