@@ -52,7 +52,7 @@ app.get('/user/:username', getUser);
 访问匹配路径时，它将被捕获并挂载在`req.params.username`上。
 注意，这里的`:username` 冒号后面的值不能带有除`[a-zA-Z0-9]`之外的值
 
-* 注意:默认的路由功能中，404响应将被捕获并由 `handlers.handle404`处理，你可以按照你的喜好修改
+注意:默认的路由功能中，404响应将被捕获并由 `handlers.handle404`处理，你可以按照你的喜好修改
 
 ###中间件:
 
@@ -109,7 +109,7 @@ orm.connect("mysql://username:password@host/database", function (err, db) {
     });
 });
 ```
-注意，我发下orm2链式调用多次时会出现显示重复数据的bug，所以尽量少用链式调用
+注意，我发现orm2链式调用多次时会出现显示重复数据的bug，所以尽量少用链式调用.
 
 
 ###response:
