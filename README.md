@@ -109,7 +109,7 @@ orm.connect("mysql://username:password@host/database", function (err, db) {
     });
 });
 ```
-###注意，我发下orm2链式调用多次时会出现显示重复数据的bug，所以尽量少用链式调用
+注意，我发下orm2链式调用多次时会出现显示重复数据的bug，所以尽量少用链式调用
 
 
 ###response:
@@ -136,7 +136,7 @@ render方法接受两个参数，第一个参数为响应使用过的模板文�
 <%include a.html%> //如果使用模板嵌套，可以使用该方法替换被嵌套模板
 ```
 
-###注意，模板功能相对较弱，并且现在并不推荐将逻辑与视图混在一起写，推荐使用MVVM框架如`Vue，Angularjs`，或者设计api接口，用ajax完成前后端分离。
+注意，模板功能相对较弱，并且现在并不推荐将逻辑与视图混在一起写，推荐使用MVVM框架如`Vue，Angularjs`，或者设计api接口，用ajax完成前后端分离。
 
 ###request:
   
@@ -145,25 +145,25 @@ render方法接受两个参数，第一个参数为响应使用过的模板文�
 -----------------------------------
 ##Blog Demo
 
-##下面是我使用freemind框架写的一套博客系统。前端采用咱们国人的amazeUI框架##
+下面是我使用freemind框架写的一套博客系统。前端采用咱们国人的amazeUI框架
 
 要使用这套博客系统，需要安装mysql，然后在`./config/dbConfig`中按照本地环境修改配置，
 配置好了之后，使用`node runBlog.js`就可以运行了，访问`http://127.0.0.1:8000`就可以了。
 
 下面是效果图:
-###首页
+####首页
 ![](http://pfile.cn/0zt94c)
-###博客阅读页 支持MarkDown语法编辑博客
-![](http://pfile.cn/rd1h45)
-###注册页
+####博客阅读页 支持MarkDown语法编辑博客
+![](http://pfile.cn/qpqfjh)
+####注册页
 ![](http://pfile.cn/s808hg)
-###博客管理
+####博客管理
 ![](http://pfile.cn/x4mihy)
 
 ![](http://pfile.cn/5hjoxp)
-###用户管理
+####用户管理
 ![](http://pfile.cn/jnlwcw)
-###博客编辑
+####博客编辑
 ![](http://pfile.cn/lrul5m)
 
  * 整套博客系统代码都包含在了包中，用作参考。
