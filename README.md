@@ -150,22 +150,6 @@ render方法接受两个参数，第一个参数为响应使用过的模板文�
 要使用这套博客系统，需要安装mysql，然后在`./config/dbConfig`中按照本地环境修改配置，
 配置好了之后，使用`node runBlog.js`就可以运行了，访问`http://127.0.0.1:8000`就可以了。
 
-下面是效果图:
-####首页
-![](http://pfile.cn/0zt94c)
-####博客阅读页 支持MarkDown语法编辑博客
-![](http://pfile.cn/qpqfjh)
-####注册页
-![](http://pfile.cn/s808hg)
-####博客管理
-![](http://pfile.cn/x4mihy)
-
-![](http://pfile.cn/5hjoxp)
-####用户管理
-![](http://pfile.cn/jnlwcw)
-####博客编辑
-![](http://pfile.cn/lrul5m)
-
  * 整套博客系统代码都包含在了包中，用作参考。
 
 后续需要完成的工作
